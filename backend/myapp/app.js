@@ -27,6 +27,15 @@ app.get('/about', function (req, res) {
   res.send('We are Team 9')
 })
 
+// display couchdb views
+// TODO: display the the minPriceCounter to webpage
+var minPriceViewer = require('./couchdb/couchdb_views/create_views')
+var minPriceCounter = minPriceViewer();
+console.log(minPriceCounter, 'hello');
+app.get('/couchdb', function (req, res) {
+  res.send('There are ' + minPriceCounter + 'records')
+})
+
 // initialise couchdb 
 var initCouch = require('./couchdb/init_couch');
 initCouch(function(err) {  
