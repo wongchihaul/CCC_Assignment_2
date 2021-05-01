@@ -1,0 +1,25 @@
+---
+couchdb_server:
+  hosts:
+    couchdb_master:
+      ansible_host: "{{hostvars['localhost'].couchdbAddrs[0]}}"
+    couchdb_slave-1:
+      ansible_host: "{{hostvars['localhost'].couchdbAddrs[1]}}"
+    couchdb_slave-2:
+      ansible_host: "{{hostvars['localhost'].couchdbAddrs[2]}}"      
+  vars:
+    ansible_user: ubuntu
+    ansible_ssh_private_key_file: ccckey.pem
+    ansible_python_interpreter: /usr/bin/python3
+    homeDir: "/home/ubuntu"
+
+demo_server:
+  hosts:
+    demo:
+      ansible_host: "{{hostvars['localhost'].demoAddrs[0]}}"
+  vars:
+    ansible_user: ubuntu
+    ansible_ssh_private_key_file: ccckey.pem
+    ansible_python_interpreter: /usr/bin/python3
+    homeDir: "/home/ubuntu"
+    repo: "CCC_Assignment_2"
