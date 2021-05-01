@@ -6,6 +6,8 @@ volumes:
     vol_size: 70
   - vol_name: couchdb_vol-3
     vol_size: 70
+  - vol_name: demo-vol
+    vol_size: 40
 
 # Security group
 security_groups:

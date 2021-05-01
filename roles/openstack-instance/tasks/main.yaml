@@ -30,8 +30,13 @@
 - name: demo ipv4 addresses
   set_fact:
     demoAddrs: "{{ demoAddrs | default([]) + [item.openstack.public_v4]}}"
-  with_items: "{{os_instance.results[3]}}"
+  with_items: "{{os_instance.results[3:4]}}"
+
+- name: chmod 700 ccckey.pem
+  file:
+    path: "{{pem}}"
+    mode: 0700
 
 - name: Copy ssh private key to demo_server
-  command: "scp {{SSHPrivateKey}} ubuntu@{{item}}:~"
+  command: "scp -i {{pem}} {{sshPrivateKey}} ubuntu@{{item}}:~"
   loop: '{{demoAddrs}}'

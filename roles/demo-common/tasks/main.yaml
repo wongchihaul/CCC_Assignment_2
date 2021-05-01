@@ -6,9 +6,9 @@
   when: ansible_distribution == "Ubuntu"
 # sudo apt-get update && sudo apt-get upgrade -y
 
-- name: Install nodejs
+- name: Install npm
   apt:
-    name: 'nodejs'
+    name: 'npm'
     state: latest
 
 - name:  Update npm and Install React and Express
@@ -17,20 +17,19 @@
     global: yes
     state: latest
   with_items:
-    - npm
     - create-react-app
     - express
 
 - name: Create APP Directory
   file: 
-    path: "{{homeDir}}/{{repo}}"
+    path: "{{homeDir}}/CCC_Assignment_2"
     state: directory
 
 
 - name: Git clone repo
   git:
-    repo: "git@github.com:Toraycaaa/{{repo}}.git"
-    dest: "{{homeDir}}/{{repo}}"
+    repo: "git@github.com:Toraycaaa/CCC_Assignment_2.git"
+    dest: "{{homeDir}}/CCC_Assignment_2"
     key_file: "{{homeDir}}/id_rsa"
     clone: yes
     update: yes

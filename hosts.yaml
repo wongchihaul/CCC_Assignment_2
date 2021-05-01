@@ -22,4 +22,3 @@ demo_server:
     ansible_ssh_private_key_file: ccckey.pem
     ansible_python_interpreter: /usr/bin/python3
     homeDir: "/home/ubuntu"
-    repo: "CCC_Assignment_2"

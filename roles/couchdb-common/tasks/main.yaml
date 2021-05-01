@@ -1,49 +1,35 @@
 ---
 # Update and upgrade apt package
 - name: Update and upgrade apt package
-  become: yes
   apt:
     update_cache: yes
     upgrade: "yes"
 # sudo apt-get update && sudo apt-get upgrade -y
 
 - name: Install pip and npm
-  become: yes
   apt:
-    name: "{{item}}"
+    name: ['python3-pip', 'npm']
     state: latest
-  with_items:
-    - python3-pip
-    - npm
-
-
 
 - name: Install docker dependencies packages
-  become: yes
   apt:
-    name: "{{item}}"
+    name: ['apt-transport-https', 'ca-certificates', 'curl', 'gnupg', 'lsb-release']
     state: latest
-  with_items:
-    - apt-transport-https 
-    - ca-certificates 
-    - curl 
-    - gnupg 
-    - lsb-release
 
-- name: Add Docker GPG apt Key
+- name: Add an apt signing key for Docker
   apt_key:
     url: https://download.docker.com/linux/ubuntu/gpg
     state: present
 
-- name: Add Docker Repository
+- name: Add apt repository for stable version
   apt_repository:
-    repo: deb https://download.docker.com/linux/ubuntu bionic stable
+    repo: deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable
     state: present
 
-- name: Update apt and install docker-ce
+- name: Install Docker
   apt: 
     update_cache: yes 
-    name: docker-ce 
+    name: ['docker-ce', 'docker-ce-cli', 'containerd.io']
     state: latest
 
 - name: Create comp90024 Directory
