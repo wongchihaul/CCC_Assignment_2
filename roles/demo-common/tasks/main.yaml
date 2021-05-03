@@ -20,24 +20,32 @@
     - create-react-app
     - express
 
-- name: Create APP Directory
-  file: 
-    path: "{{homeDir}}/CCC_Assignment_2"
-    state: directory
+- name: add github.com to known_hosts
+  shell: ssh-keyscan -H github.com > /etc/ssh/ssh_known_hosts
 
+- name: chmod 600 github private key
+  become_user: ubuntu
+  file:
+    path: "{{homeDir}}/id_rsa"
+    mode: 0600
 
 - name: Git clone repo
+  become_user: ubuntu
   git:
-    repo: "git@github.com:Toraycaaa/CCC_Assignment_2.git"
-    dest: "{{homeDir}}/CCC_Assignment_2"
-    key_file: "{{homeDir}}/id_rsa"
-    clone: yes
-    update: yes
+    repo: git@github.com:Toraycaaa/CCC_Assignment_2.git
+    dest: "{{homeDir}}/{{repoDir}}"
+    key_file: /home/ubuntu/id_rsa
+  # shell: export GIT_SSH_COMMAND="ssh -i /home/ubuntu/id_rsa" && git clone git@github.com:Toraycaaa/CCC_Assignment_2.git /home/ubuntu/CCC_Assignment_2
   register: git_finished
+
+- name: Remove private key file
+  file:
+    path: "{{homeDir}}/id_rsa"
+    state: absent
 
 - name: Running NPM install
   npm: 
-    path: "{{homeDir}}/{{repo}}"
+    path: "{{homeDir}}/{{repoDir}}"
   register: npm_finished
   when: git_finished.changed
 

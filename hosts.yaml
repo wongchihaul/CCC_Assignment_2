@@ -9,6 +9,7 @@ couchdb_server:
       ansible_host: "{{hostvars['localhost'].couchdbAddrs[2]}}"      
   vars:
     ansible_user: ubuntu
+    ansible_become: yes
     ansible_ssh_private_key_file: ccckey.pem
     ansible_python_interpreter: /usr/bin/python3
     homeDir: "/home/ubuntu"
@@ -19,6 +20,8 @@ demo_server:
       ansible_host: "{{hostvars['localhost'].demoAddrs[0]}}"
   vars:
     ansible_user: ubuntu
+    ansible_become: yes
     ansible_ssh_private_key_file: ccckey.pem
     ansible_python_interpreter: /usr/bin/python3
     homeDir: "/home/ubuntu"
+    repoDir: "CCC_Assignment_2"

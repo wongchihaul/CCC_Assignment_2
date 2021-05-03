@@ -1,7 +1,7 @@
 - hosts: localhost
   vars:
     - ansible_python_interpreter: /opt/homebrew/bin/python3
-    - sshPrivateKey: "{{lookup('env', 'SSHPrivateKey')}}"
+    - SSHPrivateKey: "{{lookup('env', 'SSHPrivateKey')}}"
     - pem: "ccckey.pem"
   vars_files:
     - group_vars/local.yaml
