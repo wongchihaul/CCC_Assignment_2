@@ -1,3 +1,13 @@
 ---
 ansiple_python_interpreter: /usr/bin/python3
 ansible_user: ubuntu
+couchdb_image: ibmcom/couchdb3:latest
+ansible_ssh_private_key_file: ~/.ssh/ccckey.pem
+couchdb_user: admin
+couchdb_pass: admin
+couchdb_VERSION: "3.0.0"
+couchdb_container_name: "couchdb_"
+couchdb_port: 5984
+couchdb_db_name: "couchdb_db"
+couchdb_cookie: "a192aeb9904e6590849337933b000c99"
+couchdb_uuid: "8179ef4aad5d60afa5e5c4050d000336"
