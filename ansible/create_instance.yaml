@@ -1,0 +1,46 @@
+- hosts: localhost
+  vars:
+    - ansible_python_interpreter: /opt/homebrew/bin/python3
+    - SSHPrivateKey: "{{lookup('env', 'SSHPrivateKey')}}"
+    - pem: "ccckey.pem"
+  vars_files:
+    - host_vars/local.yaml
+    - host_vars/config.yaml
+  gather_facts: true
+  roles:
+    - role: openstack-common
+    - role: openstack-volume
+    - role: openstack-security-group
+    - role: openstack-instance
+
+- hosts: couchdb_server
+  vars:
+    - ansible_python_interpreter: /usr/bin/python3
+    - ansible_become: yes
+  vars_files:
+    - host_vars/local.yaml
+    - host_vars/config.yaml
+  gather_facts: true
+  roles:
+    - role: couchdb-common
+
+- hosts: demo_server
+  vars:
+    - ansible_python_interpreter: /usr/bin/python3
+    - ansible_become: yes
+  vars_files:
+    - host_vars/local.yaml
+    - host_vars/config.yaml
+  gather_facts: true
+  roles:
+    - role: demo-common
+
+- hosts: localhost
+  vars:
+    - ansible_python_interpreter: /opt/homebrew/bin/python3
+  vars_files:
+    - host_vars/local.yaml
+    - host_vars/config.yaml
+  gather_facts: true
+  roles:
+    - role: openstack-volume-snapshot
