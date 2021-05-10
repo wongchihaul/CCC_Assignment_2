@@ -29,15 +29,32 @@ app.get('/about', function (req, res) {
 
 // display couchdb views
 // TODO: display the the minPriceCounter to webpage
-var minPriceViewer = require('./couchdb/couchdb_views/create_views')
-var minPriceCounter = minPriceViewer();
-console.log(minPriceCounter, 'hello');
+async function getData(){
+  var minPriceViewer = require('./couchdb/couchdb_views/create_views')
+  var minPriceCounter = await minPriceViewer().then(res => {
+    console.log('res',res);
+    console.log('在promise中')
+    return res;
+  })
+    .catch(err => {
+      console.log(err);
+    })
+  console.log(minPriceCounter, 'hello');
+  return minPriceCounter;
+}
+
+
 app.get('/couchdb', function (req, res) {
-  res.send('There are ' + minPriceCounter + 'records')
+  getData().then(minPriceCounter => {
+    console.log('minPriceCounter', minPriceCounter);
+    res.send('There are ' + minPriceCounter + 'records')
+  }).catch(err => {
+    console.log(err);
+  });
 })
 
 // initialise couchdb 
-var initCouch = require('./couchdb/init_couch');
+/* var initCouch = require('./couchdb/init_couch');
 initCouch(function(err) {  
   if (err) {
     throw err
@@ -45,7 +62,7 @@ initCouch(function(err) {
   else {
     console.log('Couchdb initialized');
   }
-});
+}); */
 
 
 // catch 404 and forward to error handler

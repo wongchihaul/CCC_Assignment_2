@@ -2,7 +2,7 @@ var couch = require('./couchdb');
 var fs = require('fs');
 var path = require('path');
 
-var test1 = couch.use('test');
+var test1 = couch.use('test2');
 
 // load data into couchdb
 var rawdata = fs.readFileSync(path.resolve('./test.json'));
