@@ -7,6 +7,6 @@
 
 - name: deploy crawler and run
   become: yes
-  shell: docker-compose up --build -d
+  shell: docker-compose --verbose up --build -d
   args:
     chdir: "{{ git_repo_crawler }}"

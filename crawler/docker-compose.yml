@@ -4,3 +4,4 @@ services:
     build: .
     volumes:
       - .:/usr/src
+    # command: tail -F anything

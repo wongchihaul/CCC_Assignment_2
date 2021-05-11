@@ -12,7 +12,7 @@ block = {}
 # for name, coordinates in boundary.items():
 #     block[name] = coor
 
-server = couchdb.Server('http://admin:admin@localhost:5984')
+server = couchdb.Server('http://admin:admin@45.113.232.227:5984')
 try:
     tweet_db = server['tweet']
 except:
