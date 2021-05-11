@@ -4,6 +4,10 @@
 #############################################
 ansiple_python_interpreter: /usr/bin/python3
 ansible_user: ubuntu
+project_directory: /home/ubuntu/COMP90024
+repo_name: CCC_Assignment_2
+git_repo: /home/ubuntu/COMP90024/CCC_Assignment_2
+git_repo_crawler: /home/ubuntu/COMP90024/CCC_Assignment_2/crawler
 couchdb_image: ibmcom/couchdb3:latest
 ansible_ssh_private_key_file: ~/.ssh/ccckey.pem
 couchdb_user: admin
