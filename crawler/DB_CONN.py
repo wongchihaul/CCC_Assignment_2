@@ -2,13 +2,17 @@ import couchdb
 import os
 from analysis import TextClassifier
 import json
+from Map_Suburb import Map_Utils
 
-boundary = {
-    "syd": [149.971885992, -34.33117400499998, 151.63054702400007, -32.99606922499993],
-    "melb": [144.33363404800002, -38.50298801599996, 145.8784120140001, -37.17509899299995],
-}
+# boundary = {
+#     "syd": [149.971885992, -34.33117400499998, 151.63054702400007, -32.99606922499993],
+#     "melb": [144.33363404800002, -38.50298801599996, 145.8784120140001, -37.17509899299995],
+# }
 
-block = {}
+
+Map = Map_Utils()
+geo_dic = Map.get_geo_dic()
+
 # for name, coordinates in boundary.items():
 #     block[name] = coor
 
@@ -26,15 +30,13 @@ def get_location(coordinates):
     [y+p[1] for p in coordinates]
     x /= len(coordinates)
     y /= len(coordinates)
-    for city in boundary:
-        bound_xmin = boundary[city][0]
-        bound_xmax = boundary[city][2]
-        bound_ymin = boundary[city][1]
-        bound_ymax = boundary[city][3]
-        if bound_xmin< x <bound_xmax and bound_ymin< y < bound_ymax:
-            return city
+    for suburb in geo_dic:
+        features = geo_dic[suburb]['features']
+        distance = Map.get_distance(x, y, features['avg_la'], features['avg_lo'])
+        if distance<features['max_dis']:
+            return suburb
     
-    return "au"
+    return "melb"
 
 
 def send_data_to_db(data, db = tweet_db):
