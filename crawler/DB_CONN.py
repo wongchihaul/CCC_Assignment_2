@@ -12,7 +12,8 @@ block = {}
 # for name, coordinates in boundary.items():
 #     block[name] = coor
 
-server = couchdb.Server('http://admin:admin@45.113.232.227:5984')
+# specify ip or use host.docker.internal
+server = couchdb.Server('http://admin:admin@host.docker.internal:5984')
 try:
     tweet_db = server['tweet']
 except:
