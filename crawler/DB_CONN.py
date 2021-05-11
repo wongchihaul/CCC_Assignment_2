@@ -17,7 +17,7 @@ geo_dic = Map.get_geo_dic()
 
 
 # specify ip or use host.docker.internal
-server = couchdb.Server('http://admin:admin@host.docker.internal:5984')
+server = couchdb.Server('http://admin:admin@45.113.232.227:5984')
 try:
     tweet_db = server['tweet']
 except:
