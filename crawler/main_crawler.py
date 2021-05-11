@@ -87,7 +87,7 @@ def stream_live(config):
     auth = tw.OAuthHandler(consumer_key=account["consumer_key"], consumer_secret=account["consumer_secret"])
     auth.set_access_token(account["access_token"], account["access_token_secret"])
     stream = tw.Stream(auth, listener, tweet_mode='extended')
-    stream.filter(languages = ["en"], is_async=True, locations= locations )
+    stream.filter(languages = ["en"],track=['melb','mel','melbourne'], is_async=True, locations= [112.28, -44.36, 155.23, -10.37] )
 
 if __name__ == "__main__":
     cfgs = getAccess()
