@@ -13,18 +13,29 @@
       COUCHDB_PASSWORD: "{{ couchdb_pass }}"
       COUCHDB_SECRET: "{{ couchdb_cookie }}"
       NODENAME: "{{ ansible_host }}"
-# - name: set uuid to all nodes
-#   become: yes
-#   uri:
-#     url: http://localhost:{{ couchdb_port }}/_node/_local/_config/couchdb/uuid
-#     method: PUT
-#     status_code: 200, 201
-#     user: "{{ couchdb_user }}"
-#     password: "{{ couchdb_pass }}"
-#     force_basic_auth: yes
-#     return_content: yes
 
-#     body_format: raw
-#     headers:
-#       Content-Type: "text/plain"
-#     body: "{{ couchdb_uuid }}"
+- name: set uuid to all nodes
+  become: yes
+  uri:
+    url: http://localhost:{{ couchdb_port }}/_node/_local/_config/couchdb/uuid
+    method: PUT
+    status_code: 200, 201
+    user: "{{ couchdb_user }}"
+    password: "{{ couchdb_pass }}"
+    force_basic_auth: yes
+    return_content: yes
+    body_format: raw
+    body: '"{{ couchdb_uuid }}"'
+
+- name: set bind ip address
+  become: yes
+  uri:
+    url: http://localhost:{{ couchdb_port }}/_node/_local/_config/chttpd/bind_address
+    method: PUT
+    status_code: 200
+    user: "{{ couchdb_user }}"
+    password: "{{ couchdb_pass }}"
+    force_basic_auth: yes
+    return_content: yes
+    body_format: raw
+    body: '"0.0.0.0"'

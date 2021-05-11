@@ -75,5 +75,5 @@ if __name__ == '__main__':
     auth.set_access_token(account["access_token"], account["access_token_secret"])
 
     stream = tw.Stream(auth, listener, tweeet_mode='extended')
-    stream.filter(languages = ["en"], track=search_words, is_async=True, locations=[
+    stream.filter(languages = ["en"], is_async=True, locations=[
                   112.28, -44.36, 155.23, -10.37])
