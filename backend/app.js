@@ -22,6 +22,27 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 
+async function getData(){
+  var propertiesViewer = require('./couchdb/properties_viewer')
+  var viewRes = await propertiesViewer().then(res => {
+    console.log('res', res);
+    return res;
+  })
+    .catch(err => {
+      console.log(err);
+    })
+  return viewRes;
+}
+
+app.get('/couchdb', function (req, res) {
+  getData().then(viewRes => {
+    console.log('Avg is', viewRes);
+    res.send('Avg is ' + viewRes)
+  }).catch(err => {
+    console.log(err);
+  });
+})
+
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   next(createError(404));

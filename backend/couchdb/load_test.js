@@ -13,4 +13,4 @@ testAurin.features.forEach(element => {
       throw err;
   });
 });
-console.log(testAurin.features.length + 'entries have been inserted');
+console.log(testAurin.features.length + ' entries have been inserted');
