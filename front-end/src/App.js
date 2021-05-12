@@ -7,7 +7,7 @@ import Map from "components/global/map";
 function App() {
   return (
     <div className="App">
-      <div>
+      <div className="m-header">
         <Header />
       </div>{" "}
       <Router>
