@@ -29,7 +29,7 @@ node-fetch
 npm install node-fetch
 ```
 
-## Intialisation
+## Initialisation
 
 ### Make sure you are in the /backend directory
 
