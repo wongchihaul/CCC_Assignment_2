@@ -6,6 +6,7 @@ This is the backend of the application which provides API for the frontend and u
 
 ### Application required: 
 Apache CouchDB
+NodeJS
 
 ### Package required:
 
