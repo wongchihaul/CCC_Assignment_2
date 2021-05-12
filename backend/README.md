@@ -51,7 +51,7 @@ node view_for_properties
 4. Run the app 
 DEBUG=myapp:* npm start (MacOS)
 
-5. Go to [couchdb page](localhost:3000/couchdb) in the browser and see the query result in **terminal**
+5. Go to [couchdb page](http://localhost:3000/couchdb) in the browser and see the query result in **terminal**
 
 ### Note
 The step 3 may trigger error showing 'document update conflict', and this can be solved by providing 
