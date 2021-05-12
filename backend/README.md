@@ -44,11 +44,15 @@ node load_test
 3. Insert view to couchdb
 
 ```bash
-cd views
+cd ../views
 node view_for_properties
 ```
 
 4. Run the app 
 DEBUG=myapp:* npm start (MacOS)
 
-5. Go to localhost:3000/couchdb in the browser and see the query result
+5. Go to [couchdb page](localhost:3000/couchdb) in the browser and see the query result in **terminal**
+
+### Note
+The step 3 may trigger error showing 'document update conflict', and this can be solved by providing 
+correct rev number view_for_properties.js in when inserting views
