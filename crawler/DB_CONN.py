@@ -69,6 +69,11 @@ def send_data_to_db(data, db = tweet_db):
         save_tweet['subjectivity'] = res[1]['subjectivity']
         save_tweet['text'] = text
         save_tweet['lexicon_score'] = res[2]
+        save_tweet['created_at'] = tweet['created_at']
+        user = {}
+        user['user'] = tweet['user']['name']
+        user['statuses_count'] = tweet['user']['statuses_count']
+        save_tweet['user'] = user
         if save_tweet is not None:
             try:
                 db.save(save_tweet)
