@@ -17,7 +17,6 @@ class StreamListener(tw.StreamListener):
         self.city = city
         self.date_since = strftime("%Y-%m-%d_%H:%M:%S", gmtime())
         self.file_name = city+"_data.json"
-        self.target_file = io.open(self.file_name, 'a', encoding='utf-8')
 
     def on_data(self, data):
         try:

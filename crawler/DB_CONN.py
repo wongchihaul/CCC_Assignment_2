@@ -3,6 +3,7 @@ import os
 from analysis import TextClassifier
 import json
 from Map_Suburb import Map_Utils
+import datetime
 
 boundary = {
     # "syd": [149.971885992, -34.33117400499998, 151.63054702400007, -32.99606922499993],
@@ -69,7 +70,7 @@ def send_data_to_db(data, db = tweet_db):
         save_tweet['subjectivity'] = res[1]['subjectivity']
         save_tweet['text'] = text
         save_tweet['lexicon_score'] = res[2]
-        save_tweet['created_at'] = tweet['created_at']
+        save_tweet['created_at'] = datetime.datetime.strptime(tweet['created_at'], '%a %b %d %H:%M:%S %z %Y')
         user = {}
         user['user'] = tweet['user']['name']
         user['statuses_count'] = tweet['user']['statuses_count']
