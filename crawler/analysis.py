@@ -46,7 +46,7 @@ class TextClassifier():
                 try:
                     lexicon_score += self.words_marks_pair[word]
                     # print(word, words_marks_pair[word])
-                    if word in words_marks_pair:
+                    if word in self.words_marks_pair:
                         for k in range(i, i+word_len+1):
                             del_list.append(k)
                 except:
