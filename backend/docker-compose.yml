@@ -1,7 +1,9 @@
 version: "3"
 services:
-  crawler:
+  backend:
     build: .
+    ports:
+      - "3100:3000"
     volumes:
       - .:/usr/src
     # command: tail -F anything
