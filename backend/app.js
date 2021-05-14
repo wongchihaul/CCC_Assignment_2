@@ -37,7 +37,7 @@ async function getData(){
 app.get('/couchdb', function (req, res) {
   getData().then(viewRes => {
     console.log('Avg is', viewRes);
-    res.send('Avg is ' + viewRes)
+    res.send(viewRes)
   }).catch(err => {
     console.log(err);
   });

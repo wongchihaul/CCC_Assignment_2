@@ -1,0 +1,52 @@
+---
+# Update and upgrade apt package
+- name: Update and upgrade apt package
+  apt:
+    update_cache: yes
+    upgrade: "yes"
+# sudo apt-get update && sudo apt-get upgrade -y
+
+- name: Install pip and npm
+  apt:
+    name: ['python3-pip', 'npm']
+    state: latest
+
+- name: Install docker dependencies packages
+  apt:
+    name: ['apt-transport-https', 'ca-certificates', 'curl', 'gnupg', 'lsb-release']
+    state: latest
+
+- name: Add an apt signing key for Docker
+  apt_key:
+    url: https://download.docker.com/linux/ubuntu/gpg
+    state: present
+
+- name: Add apt repository for stable version
+  apt_repository:
+    repo: deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable
+    state: present
+
+- name: Install Docker
+  apt: 
+    update_cache: yes 
+    name: ['docker-ce', 'docker-ce-cli', 'containerd.io']
+    state: latest
+
+- name: Create comp90024 Directory
+  file: 
+    path: "{{homeDir}}/comp90024"
+    state: directory
+
+- name: Git clone repo
+  git:
+    repo: "https://github.com/AURIN/comp90024.git"
+    dest: "{{homeDir}}/comp90024"
+  register: git_finished
+
+- name: Running NPM install
+  npm: 
+    path: "{{homeDir}}/comp90024"
+  register: npm_finished
+  when: git_finished.changed
+
+

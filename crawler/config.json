@@ -1,0 +1,119 @@
+{
+    "hao": {
+        "account": {
+            "consumer_key": "Im6jGQ3HAlPSjaj7ExET9Owcs",
+            "consumer_secret": "ND5Bxr1mKd9MCFIrTxDZ6vCm2TxZ9fplBqQkzHYrRARyu4BTZd",
+            "access_token": "3245048376-OpodmJG5JhrUSYPATVtvWrz0Djz4vH7KEr9HnSm",
+            "access_token_secret": "523K5ORjyB5kwJnsRWeEZgZyPk2K82WwgwkCI2RU1AvkZ"
+        },
+        "search_words": [
+            "vaccine",
+            "side effect",
+            "covid test",
+            "Pfizer",
+            "Oxford vaccine",
+            "Unemployed",
+            "homeless",
+            "rent",
+            "immigration",
+            "work",
+            "apartment",
+            "salary",
+            "sport",
+            "game",
+            "look for a job",
+            "lose job",
+            "afford",
+            "coronavirus",
+            "corona",
+            "isolation"
+        ],
+        "locations": {
+            "city": "syd",
+            "coordinators": [
+                130,
+                -10,
+                140,
+                -37
+            ]
+        }
+    },
+    "tanya": {
+        "account": {
+            "consumer_key": "XF6n4ojd9Ii7ZebOEyscMF6uX",
+            "consumer_secret": "5AkvZWi208JvI4UCy85nkz3lkxhUfqpzJ8ZmTGxF66gsyPVSCz",
+            "access_token": "1385115325356679168-oR0OEr8wlr6pt9AK5V1N4D1KiN2UDL",
+            "access_token_secret": "VBHSz3VgyOzJcjQq7edG1T505lZbWymSe8tmcJjWtPS03"
+        },
+        "search_words": [
+            "vaccine",
+            "side effect",
+            "covid test",
+            "Pfizer",
+            "Oxford vaccine",
+            "Unemployed",
+            "homeless",
+            "rent",
+            "immigration",
+            "work",
+            "apartment",
+            "salary",
+            "sport",
+            "game",
+            "look for a job",
+            "lose job",
+            "afford",
+            "coronavirus",
+            "corona",
+            "isolation"
+        ],
+        "locations": {
+            "city": "melb",
+            "coordinators": [
+                113,
+                -12.28,
+                129,
+                -35.46
+            ]
+        }
+    },
+    "zhihao": {
+        "account": {
+            "consumer_key": "wenQLjdhXh33m9HpsEdGSKZ03",
+            "consumer_secret": "KBBNX3yFLoCpy2rEH7Lz9TJySlWBbOcmdHIwTeARO75UhOKcjg",
+            "access_token": "1385113044137635842-f5XYLghEsp4ocI5QUZrRdC9BPY412f",
+            "access_token_secret": "pSNW4NtnggB6oz32eNvc9GLbFX6s6LloiBQOKwn8Gktk3"
+        },
+        "search_words": [
+            "vaccine",
+            "side effect",
+            "covid test",
+            "Pfizer",
+            "Oxford vaccine",
+            "Unemployed",
+            "homeless",
+            "rent",
+            "immigration",
+            "work",
+            "apartment",
+            "salary",
+            "sport",
+            "game",
+            "look for a job",
+            "lose job",
+            "afford",
+            "coronavirus",
+            "corona",
+            "isolation"
+        ],
+        "locations": {
+            "city": "au",
+            "coordinators": [
+                140,
+                -10,
+                153,
+                -39
+            ]
+        }
+    }
+}
