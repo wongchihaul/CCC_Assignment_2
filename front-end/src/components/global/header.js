@@ -49,7 +49,7 @@ function Header() {
           <Link
             variant="button"
             color="textPrimary"
-            href="#"
+            href="/"
             className={classes.link}
           >
             Home
@@ -57,7 +57,7 @@ function Header() {
           <Link
             variant="button"
             color="textPrimary"
-            href="#"
+            href="/map"
             className={classes.link}
           >
             Map
@@ -65,7 +65,7 @@ function Header() {
           <Link
             variant="button"
             color="textPrimary"
-            href="#"
+            href="/statistics"
             className={classes.link}
           >
             Statistics
@@ -73,7 +73,7 @@ function Header() {
           <Link
             variant="button"
             color="textPrimary"
-            href="#"
+            href="monitoring"
             className={classes.link}
           >
             Server Monitoring
