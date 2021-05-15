@@ -1,0 +1,109 @@
+{
+    "organisation": "AU_Govt_DHA",
+    "name": "lga_settlement_data_2020",
+    "title": "DHA - Settlement Reports - Permanent Settlers by Migration Stream (LGA) July 2019-June 2020",
+    "legal": {
+        "copyrightYear": "2021",
+        "attributionYear": "2021",
+        "attribution": "{datasource.organisationTitle}, ({dataset.attributionYear}): {dataset.title}; accessed from AURIN on {dateOfAccess}.",
+        "clickthrough": false,
+        "licenceType": "Creative Commons Attribution 3.0 Australia (CC BY 3.0 AU)",
+        "copyrightNotice": "&copy; {datasource.organisationTitle} {dataset.copyrightYear}",
+        "suggestedCitation": "{datasource.organisationTitle}, ({dataset.attributionYear}): {dataset.title}; accessed from AURIN on {dateOfAccess}."
+    },
+    "referenceSystemIdentifier": "urn:x-ogc:def:crs:EPSG:4283",
+    "geoLevel": "lga",
+    "key": "lga_code11",
+    "keyRegex": null,
+    "availability": "true",
+    "geomField": "geom",
+    "keyword": "44,4406,440607",
+    "theme": "",
+    "temporalExtent": {
+        "beginDate": "2019-07-01T00:00:00",
+        "endDate": "2020-06-30T00:00:00",
+        "selectTime": false
+    },
+    "type": "dataset",
+    "_id": "dataset-AU_Govt_DHA-lga_settlement_data_2020-lga",
+    "bbox": [
+        112.92,
+        -43.74,
+        159.11,
+        -9.14
+    ],
+    "abstract": "This dataset presents the number of permanent settlers in Australia by migrations streams; humanitarian, family and skilled. The data covers migrating settlers with a Date of Settlement between 01/07/2019 and 30/06/2020. The location data is aggregated based on the Local Government Area (LGA) boundaries of the 2011 Australian Standard Geographic Classification (ASGC).<br/><br/>\n\nThe data in this dataset are sourced from the Settlement Database (SDB). Settlement Date uses a combination of either arrival date or grant date depending on where the settler was when their current SDB visa was granted. If a settler was offshore when their current SDB visa was granted then arrival date is used. If a settler was onshore when their current SDB visa was granted then visa grant date is used. SDB data is compiled from a number of sources including Department of Home Affairs, other Commonwealth agencies and service providers.<br/><br/>\n\nFor more information please visit <a href=\"https://data.gov.au/data/dataset/8d1b90a9-a4d7-4b10-ad6a-8273722c8628\" target=\"_blank\">Data.gov.au</a>.<br/><br/>\n AURIN has spatially enabled the original data with the 2011 LGA boundaries of the <a href=\"https://www.abs.gov.au/AUSSTATS/abs@.nsf/Lookup/1259.0.30.001Main+Features1July%202011?OpenDocument\">ABS Australian Standard Geographical Classification (ASGC)</a>. Where the recorded number of settlers is not provided (\"n.p.\" in the original table) the data has been set to null, and if the number is less than 5 (\"<5\" in the original table) for confidentiality, it has been set to 4.",
+    "selectedAttributes": [
+        {
+            "name": "lga_code11",
+            "type": "String",
+            "title": "LGA Code",
+            "description": "LGA Code (ASGC 2011).",
+            "isDimension": false
+        },
+        {
+            "name": "family",
+            "type": "Integer",
+            "title": "Settlers Granted a Family Sponsored Visa",
+            "description": "Settlers Granted a Family Sponsored Visa.",
+            "isDimension": false
+        },
+        {
+            "name": "humanitarian",
+            "type": "Integer",
+            "title": "Settlers Granted a Humanitarian Visa",
+            "description": "Settlers Granted a Humanitarian Visa.",
+            "isDimension": false
+        },
+        {
+            "name": "lga_name11",
+            "type": "String",
+            "title": "LGA Name",
+            "description": "LGA Name (ASGC 2011).",
+            "isDimension": false
+        },
+        {
+            "name": "skilled",
+            "type": "Integer",
+            "title": "Settlers Granted a Skilled Worker Visa",
+            "description": "Settlers Granted a Skilled Worker Visa.",
+            "isDimension": false
+        },
+        {
+            "name": "state",
+            "type": "String",
+            "title": "State Name",
+            "description": "State Name.",
+            "isDimension": false
+        },
+        {
+            "name": "state_code",
+            "type": "String",
+            "title": "State Code",
+            "description": "State Code.",
+            "isDimension": false
+        }
+    ],
+    "filter": {
+        "filterType": "tabular",
+        "feature": {
+            "key": "lga_code11",
+            "geoLevel": "lga",
+            "geoField": "ignored",
+            "year": "2006",
+            "featureBbox": [
+                96.81676569599999,
+                -43.740509603,
+                159.109219008,
+                -9.142175977
+            ],
+            "featureType": "country",
+            "featureInstance": "au",
+            "featureName": "Australia",
+            "referenceSystemIdentifier": "urn:x-ogc:def:crs:EPSG:4283",
+            "prefix": "",
+            "keyTransform": null
+        },
+        "states": []
+    }
+}

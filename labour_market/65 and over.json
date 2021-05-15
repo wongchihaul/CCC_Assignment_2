@@ -1,0 +1,81 @@
+{
+    "type": "FeatureCollection",
+    "bbox": [
+        0.0,
+        0.0,
+        -1.0,
+        -1.0
+    ],
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "fid": 6,
+                "gccsa_name_2016": "Greater Sydney",
+                "state_code_2016": "1",
+                "state_name_2016": "New South Wales",
+                "age_grp": "65 and over",
+                "pop": "771300",
+                "gccsa_code_2016": "1GSYD",
+                "pop_distribution": "17.6"
+            },
+            "id": "dese_gcc_pop_by_age_grp_dec_2020.6"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fid": 12,
+                "gccsa_name_2016": "Greater Melbourne",
+                "state_code_2016": "2",
+                "state_name_2016": "Victoria",
+                "age_grp": "65 and over",
+                "pop": "733000",
+                "gccsa_code_2016": "2GMEL",
+                "pop_distribution": "17.3"
+            },
+            "id": "dese_gcc_pop_by_age_grp_dec_2020.12"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fid": 18,
+                "gccsa_name_2016": "Greater Brisbane",
+                "state_code_2016": "3",
+                "state_name_2016": "Queensland",
+                "age_grp": "65 and over",
+                "pop": "359100",
+                "gccsa_code_2016": "3GBRI",
+                "pop_distribution": "17.5"
+            },
+            "id": "dese_gcc_pop_by_age_grp_dec_2020.18"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fid": 24,
+                "gccsa_name_2016": "Greater Adelaide",
+                "state_code_2016": "4",
+                "state_name_2016": "South Australia",
+                "age_grp": "65 and over",
+                "pop": "246300",
+                "gccsa_code_2016": "4GADE",
+                "pop_distribution": "21.8"
+            },
+            "id": "dese_gcc_pop_by_age_grp_dec_2020.24"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fid": 30,
+                "gccsa_name_2016": "Greater Perth",
+                "state_code_2016": "5",
+                "state_name_2016": "Western Australia",
+                "age_grp": "65 and over",
+                "pop": "319400",
+                "gccsa_code_2016": "5GPER",
+                "pop_distribution": "18.7"
+            },
+            "id": "dese_gcc_pop_by_age_grp_dec_2020.30"
+        }
+    ]
+}

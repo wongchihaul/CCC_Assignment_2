@@ -1,0 +1,5952 @@
+{
+    "type": "FeatureCollection",
+    "bbox": [
+        0.0,
+        0.0,
+        -1.0,
+        -1.0
+    ],
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Parramatta (C)",
+                "humanitarian": 130,
+                "state_code": "1",
+                "skilled": 3204,
+                "lga_code11": "16250",
+                "family": 1407,
+                "state": "New South Wales"
+            },
+            "id": "lga_settlement_data_2020.2"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Blacktown (C)",
+                "humanitarian": 209,
+                "state_code": "1",
+                "skilled": 2222,
+                "lga_code11": "10750",
+                "family": 1635,
+                "state": "New South Wales"
+            },
+            "id": "lga_settlement_data_2020.3"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Fairfield (C)",
+                "humanitarian": 2005,
+                "state_code": "1",
+                "skilled": 327,
+                "lga_code11": "12850",
+                "family": 1425,
+                "state": "New South Wales"
+            },
+            "id": "lga_settlement_data_2020.4"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Auburn (C)",
+                "humanitarian": 101,
+                "state_code": "1",
+                "skilled": 2073,
+                "lga_code11": "10200",
+                "family": 1123,
+                "state": "New South Wales"
+            },
+            "id": "lga_settlement_data_2020.5"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Canterbury (C)",
+                "humanitarian": 94,
+                "state_code": "1",
+                "skilled": 1786,
+                "lga_code11": "11550",
+                "family": 1064,
+                "state": "New South Wales"
+            },
+            "id": "lga_settlement_data_2020.6"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Ryde (C)",
+                "humanitarian": 36,
+                "state_code": "1",
+                "skilled": 1916,
+                "lga_code11": "16700",
+                "family": 931,
+                "state": "New South Wales"
+            },
+            "id": "lga_settlement_data_2020.7"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Rockdale (C)",
+                "humanitarian": 18,
+                "state_code": "1",
+                "skilled": 1979,
+                "lga_code11": "16650",
+                "family": 800,
+                "state": "New South Wales"
+            },
+            "id": "lga_settlement_data_2020.8"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Holroyd (C)",
+                "humanitarian": 150,
+                "state_code": "1",
+                "skilled": 1748,
+                "lga_code11": "13950",
+                "family": 832,
+                "state": "New South Wales"
+            },
+            "id": "lga_settlement_data_2020.9"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Randwick (C)",
+                "humanitarian": 18,
+                "state_code": "1",
+                "skilled": 1852,
+                "lga_code11": "16550",
+                "family": 755,
+                "state": "New South Wales"
+            },
+            "id": "lga_settlement_data_2020.10"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Hurstville (C)",
+                "humanitarian": 14,
+                "state_code": "1",
+                "skilled": 1839,
+                "lga_code11": "14150",
+                "family": 730,
+                "state": "New South Wales"
+            },
+            "id": "lga_settlement_data_2020.11"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Liverpool (C)",
+                "humanitarian": 862,
+                "state_code": "1",
+                "skilled": 538,
+                "lga_code11": "14900",
+                "family": 1149,
+                "state": "New South Wales"
+            },
+            "id": "lga_settlement_data_2020.12"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Bankstown (C)",
+                "humanitarian": 112,
+                "state_code": "1",
+                "skilled": 746,
+                "lga_code11": "10350",
+                "family": 1290,
+                "state": "New South Wales"
+            },
+            "id": "lga_settlement_data_2020.13"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Hornsby (A)",
+                "humanitarian": 16,
+                "state_code": "1",
+                "skilled": 1343,
+                "lga_code11": "14000",
+                "family": 671,
+                "state": "New South Wales"
+            },
+            "id": "lga_settlement_data_2020.14"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Strathfield (A)",
+                "humanitarian": 7,
+                "state_code": "1",
+                "skilled": 1574,
+                "lga_code11": "17100",
+                "family": 345,
+                "state": "New South Wales"
+            },
+            "id": "lga_settlement_data_2020.15"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "North Sydney (A)",
+                "humanitarian": 4,
+                "state_code": "1",
+                "skilled": 885,
+                "lga_code11": "15950",
+                "family": 579,
+                "state": "New South Wales"
+            },
+            "id": "lga_settlement_data_2020.17"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Warringah (A)",
+                "humanitarian": 92,
+                "state_code": "1",
+                "skilled": 819,
+                "lga_code11": "18000",
+                "family": 525,
+                "state": "New South Wales"
+            },
+            "id": "lga_settlement_data_2020.18"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Botany Bay (C)",
+                "humanitarian": 4,
+                "state_code": "1",
+                "skilled": 984,
+                "lga_code11": "11100",
+                "family": 396,
+                "state": "New South Wales"
+            },
+            "id": "lga_settlement_data_2020.19"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Canada Bay (A)",
+                "humanitarian": 7,
+                "state_code": "1",
+                "skilled": 770,
+                "lga_code11": "11520",
+                "family": 460,
+                "state": "New South Wales"
+            },
+            "id": "lga_settlement_data_2020.20"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Campbelltown (C)",
+                "humanitarian": 55,
+                "state_code": "1",
+                "skilled": 535,
+                "lga_code11": "11500",
+                "family": 636,
+                "state": "New South Wales"
+            },
+            "id": "lga_settlement_data_2020.21"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Campbelltown (C)",
+                "humanitarian": 55,
+                "state_code": "4",
+                "skilled": 535,
+                "lga_code11": "40910",
+                "family": 636,
+                "state": "New South Wales"
+            },
+            "id": "lga_settlement_data_2020.22"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Wollongong (C)",
+                "humanitarian": 197,
+                "state_code": "1",
+                "skilled": 626,
+                "lga_code11": "18450",
+                "family": 377,
+                "state": "New South Wales"
+            },
+            "id": "lga_settlement_data_2020.23"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Marrickville (A)",
+                "humanitarian": 19,
+                "state_code": "1",
+                "skilled": 589,
+                "lga_code11": "15200",
+                "family": 501,
+                "state": "New South Wales"
+            },
+            "id": "lga_settlement_data_2020.24"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Waverley (A)",
+                "humanitarian": 4,
+                "state_code": "1",
+                "skilled": 736,
+                "lga_code11": "18050",
+                "family": 357,
+                "state": "New South Wales"
+            },
+            "id": "lga_settlement_data_2020.25"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Ku-ring-gai (A)",
+                "humanitarian": 5,
+                "state_code": "1",
+                "skilled": 657,
+                "lga_code11": "14500",
+                "family": 409,
+                "state": "New South Wales"
+            },
+            "id": "lga_settlement_data_2020.26"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Newcastle (C)",
+                "humanitarian": 146,
+                "state_code": "1",
+                "skilled": 537,
+                "lga_code11": "15900",
+                "family": 356,
+                "state": "New South Wales"
+            },
+            "id": "lga_settlement_data_2020.27"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Willoughby (C)",
+                "humanitarian": 4,
+                "state_code": "1",
+                "skilled": 701,
+                "lga_code11": "18250",
+                "family": 314,
+                "state": "New South Wales"
+            },
+            "id": "lga_settlement_data_2020.28"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Penrith (C)",
+                "humanitarian": 13,
+                "state_code": "1",
+                "skilled": 409,
+                "lga_code11": "16350",
+                "family": 573,
+                "state": "New South Wales"
+            },
+            "id": "lga_settlement_data_2020.29"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Sutherland Shire (A)",
+                "humanitarian": 7,
+                "state_code": "1",
+                "skilled": 350,
+                "lga_code11": "17150",
+                "family": 530,
+                "state": "New South Wales"
+            },
+            "id": "lga_settlement_data_2020.30"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Burwood (A)",
+                "humanitarian": 4,
+                "state_code": "1",
+                "skilled": 623,
+                "lga_code11": "11300",
+                "family": 261,
+                "state": "New South Wales"
+            },
+            "id": "lga_settlement_data_2020.31"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Ashfield (A)",
+                "humanitarian": 4,
+                "state_code": "1",
+                "skilled": 652,
+                "lga_code11": "10150",
+                "family": 228,
+                "state": "New South Wales"
+            },
+            "id": "lga_settlement_data_2020.32"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Manly (A)",
+                "humanitarian": 4,
+                "state_code": "1",
+                "skilled": 456,
+                "lga_code11": "15150",
+                "family": 245,
+                "state": "New South Wales"
+            },
+            "id": "lga_settlement_data_2020.33"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Woollahra (A)",
+                "humanitarian": 0,
+                "state_code": "1",
+                "skilled": 393,
+                "lga_code11": "18500",
+                "family": 267,
+                "state": "New South Wales"
+            },
+            "id": "lga_settlement_data_2020.34"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Wagga Wagga (C)",
+                "humanitarian": 293,
+                "state_code": "1",
+                "skilled": 267,
+                "lga_code11": "17750",
+                "family": 77,
+                "state": "New South Wales"
+            },
+            "id": "lga_settlement_data_2020.35"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Gosford (C)",
+                "humanitarian": 4,
+                "state_code": "1",
+                "skilled": 276,
+                "lga_code11": "13100",
+                "family": 356,
+                "state": "New South Wales"
+            },
+            "id": "lga_settlement_data_2020.36"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Coffs Harbour (C)",
+                "humanitarian": 216,
+                "state_code": "1",
+                "skilled": 193,
+                "lga_code11": "11800",
+                "family": 172,
+                "state": "New South Wales"
+            },
+            "id": "lga_settlement_data_2020.37"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Kogarah (C)",
+                "humanitarian": 4,
+                "state_code": "1",
+                "skilled": 398,
+                "lga_code11": "14450",
+                "family": 171,
+                "state": "New South Wales"
+            },
+            "id": "lga_settlement_data_2020.38"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Armidale Dumaresq (A)",
+                "humanitarian": 281,
+                "state_code": "1",
+                "skilled": 221,
+                "lga_code11": "10110",
+                "family": 32,
+                "state": "New South Wales"
+            },
+            "id": "lga_settlement_data_2020.39"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Lane Cove (A)",
+                "humanitarian": 4,
+                "state_code": "1",
+                "skilled": 312,
+                "lga_code11": "14700",
+                "family": 173,
+                "state": "New South Wales"
+            },
+            "id": "lga_settlement_data_2020.40"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Leichhardt (A)",
+                "humanitarian": 8,
+                "state_code": "1",
+                "skilled": 246,
+                "lga_code11": "14800",
+                "family": 220,
+                "state": "New South Wales"
+            },
+            "id": "lga_settlement_data_2020.41"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Dubbo (C)",
+                "humanitarian": 0,
+                "state_code": "1",
+                "skilled": 374,
+                "lga_code11": "12600",
+                "family": 64,
+                "state": "New South Wales"
+            },
+            "id": "lga_settlement_data_2020.42"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Camden (A)",
+                "humanitarian": 11,
+                "state_code": "1",
+                "skilled": 182,
+                "lga_code11": "11450",
+                "family": 221,
+                "state": "New South Wales"
+            },
+            "id": "lga_settlement_data_2020.43"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Lake Macquarie (C)",
+                "humanitarian": 7,
+                "state_code": "1",
+                "skilled": 144,
+                "lga_code11": "14650",
+                "family": 231,
+                "state": "New South Wales"
+            },
+            "id": "lga_settlement_data_2020.44"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Queanbeyan (C)",
+                "humanitarian": 8,
+                "state_code": "1",
+                "skilled": 267,
+                "lga_code11": "16470",
+                "family": 90,
+                "state": "New South Wales"
+            },
+            "id": "lga_settlement_data_2020.45"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Pittwater (A)",
+                "humanitarian": 0,
+                "state_code": "1",
+                "skilled": 171,
+                "lga_code11": "16370",
+                "family": 193,
+                "state": "New South Wales"
+            },
+            "id": "lga_settlement_data_2020.46"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Byron (A)",
+                "humanitarian": 0,
+                "state_code": "1",
+                "skilled": 136,
+                "lga_code11": "11350",
+                "family": 223,
+                "state": "New South Wales"
+            },
+            "id": "lga_settlement_data_2020.47"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Tamworth Regional (A)",
+                "humanitarian": 5,
+                "state_code": "1",
+                "skilled": 289,
+                "lga_code11": "17310",
+                "family": 55,
+                "state": "New South Wales"
+            },
+            "id": "lga_settlement_data_2020.48"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Wyong (A)",
+                "humanitarian": 6,
+                "state_code": "1",
+                "skilled": 127,
+                "lga_code11": "18550",
+                "family": 208,
+                "state": "New South Wales"
+            },
+            "id": "lga_settlement_data_2020.49"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Albury (C)",
+                "humanitarian": 55,
+                "state_code": "1",
+                "skilled": 186,
+                "lga_code11": "10050",
+                "family": 87,
+                "state": "New South Wales"
+            },
+            "id": "lga_settlement_data_2020.50"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Tweed (A)",
+                "humanitarian": 4,
+                "state_code": "1",
+                "skilled": 110,
+                "lga_code11": "17550",
+                "family": 186,
+                "state": "New South Wales"
+            },
+            "id": "lga_settlement_data_2020.51"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Mosman (A)",
+                "humanitarian": 4,
+                "state_code": "1",
+                "skilled": 185,
+                "lga_code11": "15350",
+                "family": 112,
+                "state": "New South Wales"
+            },
+            "id": "lga_settlement_data_2020.52"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Wingecarribee (A)",
+                "humanitarian": 0,
+                "state_code": "1",
+                "skilled": 235,
+                "lga_code11": "18350",
+                "family": 58,
+                "state": "New South Wales"
+            },
+            "id": "lga_settlement_data_2020.53"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Shoalhaven (C)",
+                "humanitarian": 12,
+                "state_code": "1",
+                "skilled": 174,
+                "lga_code11": "16950",
+                "family": 104,
+                "state": "New South Wales"
+            },
+            "id": "lga_settlement_data_2020.54"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Griffith (C)",
+                "humanitarian": 4,
+                "state_code": "1",
+                "skilled": 186,
+                "lga_code11": "13450",
+                "family": 73,
+                "state": "New South Wales"
+            },
+            "id": "lga_settlement_data_2020.55"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Orange (C)",
+                "humanitarian": 4,
+                "state_code": "1",
+                "skilled": 153,
+                "lga_code11": "16150",
+                "family": 57,
+                "state": "New South Wales"
+            },
+            "id": "lga_settlement_data_2020.56"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Blue Mountains (C)",
+                "humanitarian": 23,
+                "state_code": "1",
+                "skilled": 64,
+                "lga_code11": "10900",
+                "family": 109,
+                "state": "New South Wales"
+            },
+            "id": "lga_settlement_data_2020.57"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Maitland (C)",
+                "humanitarian": 4,
+                "state_code": "1",
+                "skilled": 79,
+                "lga_code11": "15050",
+                "family": 98,
+                "state": "New South Wales"
+            },
+            "id": "lga_settlement_data_2020.59"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Shellharbour (C)",
+                "humanitarian": 9,
+                "state_code": "1",
+                "skilled": 49,
+                "lga_code11": "16900",
+                "family": 98,
+                "state": "New South Wales"
+            },
+            "id": "lga_settlement_data_2020.60"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Bathurst Regional (A)",
+                "humanitarian": 0,
+                "state_code": "1",
+                "skilled": 98,
+                "lga_code11": "10470",
+                "family": 36,
+                "state": "New South Wales"
+            },
+            "id": "lga_settlement_data_2020.61"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Lismore (C)",
+                "humanitarian": 0,
+                "state_code": "1",
+                "skilled": 54,
+                "lga_code11": "14850",
+                "family": 78,
+                "state": "New South Wales"
+            },
+            "id": "lga_settlement_data_2020.62"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Port Stephens (A)",
+                "humanitarian": 4,
+                "state_code": "1",
+                "skilled": 30,
+                "lga_code11": "16400",
+                "family": 86,
+                "state": "New South Wales"
+            },
+            "id": "lga_settlement_data_2020.63"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Ballina (A)",
+                "humanitarian": 0,
+                "state_code": "1",
+                "skilled": 36,
+                "lga_code11": "10250",
+                "family": 76,
+                "state": "New South Wales"
+            },
+            "id": "lga_settlement_data_2020.64"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Hawkesbury (C)",
+                "humanitarian": 0,
+                "state_code": "1",
+                "skilled": 30,
+                "lga_code11": "13800",
+                "family": 70,
+                "state": "New South Wales"
+            },
+            "id": "lga_settlement_data_2020.65"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Goulburn Mulwaree (A)",
+                "humanitarian": 4,
+                "state_code": "1",
+                "skilled": 67,
+                "lga_code11": "13310",
+                "family": 30,
+                "state": "New South Wales"
+            },
+            "id": "lga_settlement_data_2020.66"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Eurobodalla (A)",
+                "humanitarian": 0,
+                "state_code": "1",
+                "skilled": 44,
+                "lga_code11": "12750",
+                "family": 52,
+                "state": "New South Wales"
+            },
+            "id": "lga_settlement_data_2020.67"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Leeton (A)",
+                "humanitarian": 0,
+                "state_code": "1",
+                "skilled": 55,
+                "lga_code11": "14750",
+                "family": 18,
+                "state": "New South Wales"
+            },
+            "id": "lga_settlement_data_2020.69"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Clarence Valley (A)",
+                "humanitarian": 0,
+                "state_code": "1",
+                "skilled": 25,
+                "lga_code11": "11730",
+                "family": 45,
+                "state": "New South Wales"
+            },
+            "id": "lga_settlement_data_2020.70"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Mid-Western Regional (A)",
+                "humanitarian": 0,
+                "state_code": "1",
+                "skilled": 38,
+                "lga_code11": "15270",
+                "family": 28,
+                "state": "New South Wales"
+            },
+            "id": "lga_settlement_data_2020.71"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Cessnock (C)",
+                "humanitarian": 0,
+                "state_code": "1",
+                "skilled": 18,
+                "lga_code11": "11720",
+                "family": 45,
+                "state": "New South Wales"
+            },
+            "id": "lga_settlement_data_2020.72"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Kempsey (A)",
+                "humanitarian": 0,
+                "state_code": "1",
+                "skilled": 21,
+                "lga_code11": "14350",
+                "family": 38,
+                "state": "New South Wales"
+            },
+            "id": "lga_settlement_data_2020.73"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Bega Valley (A)",
+                "humanitarian": 0,
+                "state_code": "1",
+                "skilled": 26,
+                "lga_code11": "10550",
+                "family": 33,
+                "state": "New South Wales"
+            },
+            "id": "lga_settlement_data_2020.74"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Upper Hunter Shire (A)",
+                "humanitarian": 0,
+                "state_code": "1",
+                "skilled": 31,
+                "lga_code11": "17620",
+                "family": 27,
+                "state": "New South Wales"
+            },
+            "id": "lga_settlement_data_2020.75"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Parkes (A)",
+                "humanitarian": 0,
+                "state_code": "1",
+                "skilled": 43,
+                "lga_code11": "16200",
+                "family": 11,
+                "state": "New South Wales"
+            },
+            "id": "lga_settlement_data_2020.76"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Kiama (A)",
+                "humanitarian": 4,
+                "state_code": "1",
+                "skilled": 20,
+                "lga_code11": "14400",
+                "family": 32,
+                "state": "New South Wales"
+            },
+            "id": "lga_settlement_data_2020.78"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Lithgow (C)",
+                "humanitarian": 0,
+                "state_code": "1",
+                "skilled": 32,
+                "lga_code11": "14870",
+                "family": 16,
+                "state": "New South Wales"
+            },
+            "id": "lga_settlement_data_2020.79"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Singleton (A)",
+                "humanitarian": 0,
+                "state_code": "1",
+                "skilled": 22,
+                "lga_code11": "17000",
+                "family": 24,
+                "state": "New South Wales"
+            },
+            "id": "lga_settlement_data_2020.80"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Wollondilly (A)",
+                "humanitarian": 0,
+                "state_code": "1",
+                "skilled": 6,
+                "lga_code11": "18400",
+                "family": 37,
+                "state": "New South Wales"
+            },
+            "id": "lga_settlement_data_2020.81"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Muswellbrook (A)",
+                "humanitarian": 0,
+                "state_code": "1",
+                "skilled": 23,
+                "lga_code11": "15650",
+                "family": 14,
+                "state": "New South Wales"
+            },
+            "id": "lga_settlement_data_2020.82"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Inverell (A)",
+                "humanitarian": 0,
+                "state_code": "1",
+                "skilled": 21,
+                "lga_code11": "14200",
+                "family": 15,
+                "state": "New South Wales"
+            },
+            "id": "lga_settlement_data_2020.83"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Young (A)",
+                "humanitarian": 0,
+                "state_code": "1",
+                "skilled": 29,
+                "lga_code11": "18750",
+                "family": 7,
+                "state": "New South Wales"
+            },
+            "id": "lga_settlement_data_2020.84"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Yass Valley (A)",
+                "humanitarian": 0,
+                "state_code": "1",
+                "skilled": 31,
+                "lga_code11": "18710",
+                "family": 5,
+                "state": "New South Wales"
+            },
+            "id": "lga_settlement_data_2020.85"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Broken Hill (C)",
+                "humanitarian": 0,
+                "state_code": "1",
+                "skilled": 23,
+                "lga_code11": "11250",
+                "family": 12,
+                "state": "New South Wales"
+            },
+            "id": "lga_settlement_data_2020.86"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Richmond Valley (A)",
+                "humanitarian": 0,
+                "state_code": "1",
+                "skilled": 8,
+                "lga_code11": "16610",
+                "family": 27,
+                "state": "New South Wales"
+            },
+            "id": "lga_settlement_data_2020.87"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Moree Plains (A)",
+                "humanitarian": 0,
+                "state_code": "1",
+                "skilled": 27,
+                "lga_code11": "15300",
+                "family": 8,
+                "state": "New South Wales"
+            },
+            "id": "lga_settlement_data_2020.88"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Narrabri (A)",
+                "humanitarian": 0,
+                "state_code": "1",
+                "skilled": 29,
+                "lga_code11": "15750",
+                "family": 6,
+                "state": "New South Wales"
+            },
+            "id": "lga_settlement_data_2020.89"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Nambucca (A)",
+                "humanitarian": 0,
+                "state_code": "1",
+                "skilled": 15,
+                "lga_code11": "15700",
+                "family": 19,
+                "state": "New South Wales"
+            },
+            "id": "lga_settlement_data_2020.90"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Hunters Hill (A)",
+                "humanitarian": 0,
+                "state_code": "1",
+                "skilled": 12,
+                "lga_code11": "14100",
+                "family": 20,
+                "state": "New South Wales"
+            },
+            "id": "lga_settlement_data_2020.91"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Palerang (A)",
+                "humanitarian": 0,
+                "state_code": "1",
+                "skilled": 15,
+                "lga_code11": "16180",
+                "family": 14,
+                "state": "New South Wales"
+            },
+            "id": "lga_settlement_data_2020.92"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Lachlan (A)",
+                "humanitarian": 0,
+                "state_code": "1",
+                "skilled": 20,
+                "lga_code11": "14600",
+                "family": 9,
+                "state": "New South Wales"
+            },
+            "id": "lga_settlement_data_2020.93"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Walgett (A)",
+                "humanitarian": 0,
+                "state_code": "1",
+                "skilled": 25,
+                "lga_code11": "17900",
+                "family": 4,
+                "state": "New South Wales"
+            },
+            "id": "lga_settlement_data_2020.94"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Murray (A)",
+                "humanitarian": 0,
+                "state_code": "1",
+                "skilled": 19,
+                "lga_code11": "15500",
+                "family": 9,
+                "state": "New South Wales"
+            },
+            "id": "lga_settlement_data_2020.95"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Tumut Shire (A)",
+                "humanitarian": 0,
+                "state_code": "1",
+                "skilled": 20,
+                "lga_code11": "17500",
+                "family": 7,
+                "state": "New South Wales"
+            },
+            "id": "lga_settlement_data_2020.96"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Warrumbungle Shire (A)",
+                "humanitarian": 0,
+                "state_code": "1",
+                "skilled": 20,
+                "lga_code11": "18020",
+                "family": 7,
+                "state": "New South Wales"
+            },
+            "id": "lga_settlement_data_2020.97"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Glen Innes Severn (A)",
+                "humanitarian": 0,
+                "state_code": "1",
+                "skilled": 24,
+                "lga_code11": "13010",
+                "family": 4,
+                "state": "New South Wales"
+            },
+            "id": "lga_settlement_data_2020.98"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Cobar (A)",
+                "humanitarian": 0,
+                "state_code": "1",
+                "skilled": 17,
+                "lga_code11": "11750",
+                "family": 9,
+                "state": "New South Wales"
+            },
+            "id": "lga_settlement_data_2020.99"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Wentworth (A)",
+                "humanitarian": 0,
+                "state_code": "1",
+                "skilled": 5,
+                "lga_code11": "18200",
+                "family": 19,
+                "state": "New South Wales"
+            },
+            "id": "lga_settlement_data_2020.100"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Gunnedah (A)",
+                "humanitarian": 0,
+                "state_code": "1",
+                "skilled": 14,
+                "lga_code11": "13550",
+                "family": 8,
+                "state": "New South Wales"
+            },
+            "id": "lga_settlement_data_2020.101"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Bogan (A)",
+                "humanitarian": 0,
+                "state_code": "1",
+                "skilled": 15,
+                "lga_code11": "10950",
+                "family": 6,
+                "state": "New South Wales"
+            },
+            "id": "lga_settlement_data_2020.102"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Cowra (A)",
+                "humanitarian": 0,
+                "state_code": "1",
+                "skilled": 12,
+                "lga_code11": "12350",
+                "family": 8,
+                "state": "New South Wales"
+            },
+            "id": "lga_settlement_data_2020.103"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Kyogle (A)",
+                "humanitarian": 0,
+                "state_code": "1",
+                "skilled": 4,
+                "lga_code11": "14550",
+                "family": 16,
+                "state": "New South Wales"
+            },
+            "id": "lga_settlement_data_2020.104"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Bland (A)",
+                "humanitarian": 0,
+                "state_code": "1",
+                "skilled": 9,
+                "lga_code11": "10800",
+                "family": 9,
+                "state": "New South Wales"
+            },
+            "id": "lga_settlement_data_2020.105"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Bourke (A)",
+                "humanitarian": 0,
+                "state_code": "1",
+                "skilled": 16,
+                "lga_code11": "11150",
+                "family": 4,
+                "state": "New South Wales"
+            },
+            "id": "lga_settlement_data_2020.106"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Warren (A)",
+                "humanitarian": 4,
+                "state_code": "1",
+                "skilled": 14,
+                "lga_code11": "17950",
+                "family": 4,
+                "state": "New South Wales"
+            },
+            "id": "lga_settlement_data_2020.107"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Snowy River (A)",
+                "humanitarian": 0,
+                "state_code": "1",
+                "skilled": 4,
+                "lga_code11": "17050",
+                "family": 13,
+                "state": "New South Wales"
+            },
+            "id": "lga_settlement_data_2020.108"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Brewarrina (A)",
+                "humanitarian": 0,
+                "state_code": "1",
+                "skilled": 13,
+                "lga_code11": "11200",
+                "family": 4,
+                "state": "New South Wales"
+            },
+            "id": "lga_settlement_data_2020.109"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Deniliquin (A)",
+                "humanitarian": 0,
+                "state_code": "1",
+                "skilled": 4,
+                "lga_code11": "12500",
+                "family": 11,
+                "state": "New South Wales"
+            },
+            "id": "lga_settlement_data_2020.110"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Carrathool (A)",
+                "humanitarian": 0,
+                "state_code": "1",
+                "skilled": 9,
+                "lga_code11": "11600",
+                "family": 6,
+                "state": "New South Wales"
+            },
+            "id": "lga_settlement_data_2020.111"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Bellingen (A)",
+                "humanitarian": 0,
+                "state_code": "1",
+                "skilled": 4,
+                "lga_code11": "10600",
+                "family": 13,
+                "state": "New South Wales"
+            },
+            "id": "lga_settlement_data_2020.112"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Weddin (A)",
+                "humanitarian": 0,
+                "state_code": "1",
+                "skilled": 12,
+                "lga_code11": "18100",
+                "family": 4,
+                "state": "New South Wales"
+            },
+            "id": "lga_settlement_data_2020.113"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Corowa Shire (A)",
+                "humanitarian": 0,
+                "state_code": "1",
+                "skilled": 4,
+                "lga_code11": "12300",
+                "family": 11,
+                "state": "New South Wales"
+            },
+            "id": "lga_settlement_data_2020.114"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Berrigan (A)",
+                "humanitarian": 0,
+                "state_code": "1",
+                "skilled": 9,
+                "lga_code11": "10650",
+                "family": 4,
+                "state": "New South Wales"
+            },
+            "id": "lga_settlement_data_2020.115"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Narromine (A)",
+                "humanitarian": 0,
+                "state_code": "1",
+                "skilled": 9,
+                "lga_code11": "15850",
+                "family": 4,
+                "state": "New South Wales"
+            },
+            "id": "lga_settlement_data_2020.116"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Liverpool Plains (A)",
+                "humanitarian": 0,
+                "state_code": "1",
+                "skilled": 10,
+                "lga_code11": "14920",
+                "family": 4,
+                "state": "New South Wales"
+            },
+            "id": "lga_settlement_data_2020.117"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Wakool (A)",
+                "humanitarian": 0,
+                "state_code": "1",
+                "skilled": 10,
+                "lga_code11": "17800",
+                "family": 4,
+                "state": "New South Wales"
+            },
+            "id": "lga_settlement_data_2020.118"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Coonamble (A)",
+                "humanitarian": 0,
+                "state_code": "1",
+                "skilled": 5,
+                "lga_code11": "12150",
+                "family": 6,
+                "state": "New South Wales"
+            },
+            "id": "lga_settlement_data_2020.120"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Wellington (A)",
+                "humanitarian": 0,
+                "state_code": "1",
+                "skilled": 8,
+                "lga_code11": "18150",
+                "family": 4,
+                "state": "New South Wales"
+            },
+            "id": "lga_settlement_data_2020.121"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Forbes (A)",
+                "humanitarian": 0,
+                "state_code": "1",
+                "skilled": 5,
+                "lga_code11": "12900",
+                "family": 6,
+                "state": "New South Wales"
+            },
+            "id": "lga_settlement_data_2020.122"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Junee (A)",
+                "humanitarian": 0,
+                "state_code": "1",
+                "skilled": 7,
+                "lga_code11": "14300",
+                "family": 4,
+                "state": "New South Wales"
+            },
+            "id": "lga_settlement_data_2020.123"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Balranald (A)",
+                "humanitarian": 0,
+                "state_code": "1",
+                "skilled": 8,
+                "lga_code11": "10300",
+                "family": 4,
+                "state": "New South Wales"
+            },
+            "id": "lga_settlement_data_2020.124"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Oberon (A)",
+                "humanitarian": 0,
+                "state_code": "1",
+                "skilled": 4,
+                "lga_code11": "16100",
+                "family": 6,
+                "state": "New South Wales"
+            },
+            "id": "lga_settlement_data_2020.125"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Blayney (A)",
+                "humanitarian": 0,
+                "state_code": "1",
+                "skilled": 4,
+                "lga_code11": "10850",
+                "family": 7,
+                "state": "New South Wales"
+            },
+            "id": "lga_settlement_data_2020.126"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Cooma-Monaro (A)",
+                "humanitarian": 0,
+                "state_code": "1",
+                "skilled": 4,
+                "lga_code11": "12050",
+                "family": 6,
+                "state": "New South Wales"
+            },
+            "id": "lga_settlement_data_2020.127"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Cootamundra (A)",
+                "humanitarian": 0,
+                "state_code": "1",
+                "skilled": 4,
+                "lga_code11": "12200",
+                "family": 4,
+                "state": "New South Wales"
+            },
+            "id": "lga_settlement_data_2020.128"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Tenterfield (A)",
+                "humanitarian": 0,
+                "state_code": "1",
+                "skilled": 4,
+                "lga_code11": "17400",
+                "family": 7,
+                "state": "New South Wales"
+            },
+            "id": "lga_settlement_data_2020.129"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Narrandera (A)",
+                "humanitarian": 0,
+                "state_code": "1",
+                "skilled": 4,
+                "lga_code11": "15800",
+                "family": 4,
+                "state": "New South Wales"
+            },
+            "id": "lga_settlement_data_2020.130"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Cabonne (A)",
+                "humanitarian": 0,
+                "state_code": "1",
+                "skilled": 4,
+                "lga_code11": "11400",
+                "family": 5,
+                "state": "New South Wales"
+            },
+            "id": "lga_settlement_data_2020.131"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Guyra (A)",
+                "humanitarian": 0,
+                "state_code": "1",
+                "skilled": 4,
+                "lga_code11": "13650",
+                "family": 5,
+                "state": "New South Wales"
+            },
+            "id": "lga_settlement_data_2020.132"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Temora (A)",
+                "humanitarian": 0,
+                "state_code": "1",
+                "skilled": 4,
+                "lga_code11": "17350",
+                "family": 4,
+                "state": "New South Wales"
+            },
+            "id": "lga_settlement_data_2020.133"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Harden (A)",
+                "humanitarian": 0,
+                "state_code": "1",
+                "skilled": 6,
+                "lga_code11": "13700",
+                "family": 4,
+                "state": "New South Wales"
+            },
+            "id": "lga_settlement_data_2020.134"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Gwydir (A)",
+                "humanitarian": 0,
+                "state_code": "1",
+                "skilled": 5,
+                "lga_code11": "13660",
+                "family": 4,
+                "state": "New South Wales"
+            },
+            "id": "lga_settlement_data_2020.135"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Jerilderie (A)",
+                "humanitarian": 0,
+                "state_code": "1",
+                "skilled": 4,
+                "lga_code11": "14250",
+                "family": 4,
+                "state": "New South Wales"
+            },
+            "id": "lga_settlement_data_2020.136"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Gloucester (A)",
+                "humanitarian": 0,
+                "state_code": "1",
+                "skilled": 4,
+                "lga_code11": "13050",
+                "family": 4,
+                "state": "New South Wales"
+            },
+            "id": "lga_settlement_data_2020.137"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Hay (A)",
+                "humanitarian": 0,
+                "state_code": "1",
+                "skilled": 4,
+                "lga_code11": "13850",
+                "family": 4,
+                "state": "New South Wales"
+            },
+            "id": "lga_settlement_data_2020.138"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Murrumbidgee (A)",
+                "humanitarian": 0,
+                "state_code": "1",
+                "skilled": 4,
+                "lga_code11": "15550",
+                "family": 4,
+                "state": "New South Wales"
+            },
+            "id": "lga_settlement_data_2020.139"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Uralla (A)",
+                "humanitarian": 0,
+                "state_code": "1",
+                "skilled": 4,
+                "lga_code11": "17650",
+                "family": 4,
+                "state": "New South Wales"
+            },
+            "id": "lga_settlement_data_2020.140"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Tumbarumba (A)",
+                "humanitarian": 0,
+                "state_code": "1",
+                "skilled": 0,
+                "lga_code11": "17450",
+                "family": 4,
+                "state": "New South Wales"
+            },
+            "id": "lga_settlement_data_2020.141"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Bombala (A)",
+                "humanitarian": 0,
+                "state_code": "1",
+                "skilled": 0,
+                "lga_code11": "11000",
+                "family": 4,
+                "state": "New South Wales"
+            },
+            "id": "lga_settlement_data_2020.142"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Central Darling (A)",
+                "humanitarian": 0,
+                "state_code": "1",
+                "skilled": 4,
+                "lga_code11": "11700",
+                "family": 4,
+                "state": "New South Wales"
+            },
+            "id": "lga_settlement_data_2020.143"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Lockhart (A)",
+                "humanitarian": 0,
+                "state_code": "1",
+                "skilled": 0,
+                "lga_code11": "14950",
+                "family": 4,
+                "state": "New South Wales"
+            },
+            "id": "lga_settlement_data_2020.144"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Upper Lachlan Shire (A)",
+                "humanitarian": 0,
+                "state_code": "1",
+                "skilled": 4,
+                "lga_code11": "17640",
+                "family": 4,
+                "state": "New South Wales"
+            },
+            "id": "lga_settlement_data_2020.145"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Gundagai (A)",
+                "humanitarian": 0,
+                "state_code": "1",
+                "skilled": 4,
+                "lga_code11": "13500",
+                "family": 4,
+                "state": "New South Wales"
+            },
+            "id": "lga_settlement_data_2020.146"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Unincorporated NSW",
+                "humanitarian": 0,
+                "state_code": "1",
+                "skilled": 4,
+                "lga_code11": "19399",
+                "family": 4,
+                "state": "New South Wales"
+            },
+            "id": "lga_settlement_data_2020.147"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Dungog (A)",
+                "humanitarian": 0,
+                "state_code": "1",
+                "skilled": 4,
+                "lga_code11": "12700",
+                "family": 0,
+                "state": "New South Wales"
+            },
+            "id": "lga_settlement_data_2020.148"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Boorowa (A)",
+                "humanitarian": 0,
+                "state_code": "1",
+                "skilled": 4,
+                "lga_code11": "11050",
+                "family": 0,
+                "state": "New South Wales"
+            },
+            "id": "lga_settlement_data_2020.149"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Walcha (A)",
+                "humanitarian": 0,
+                "state_code": "1",
+                "skilled": 0,
+                "lga_code11": "17850",
+                "family": 4,
+                "state": "New South Wales"
+            },
+            "id": "lga_settlement_data_2020.150"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Gilgandra (A)",
+                "humanitarian": 0,
+                "state_code": "1",
+                "skilled": 0,
+                "lga_code11": "12950",
+                "family": 4,
+                "state": "New South Wales"
+            },
+            "id": "lga_settlement_data_2020.151"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Palmerston (C)",
+                "humanitarian": 0,
+                "state_code": "7",
+                "skilled": 285,
+                "lga_code11": "72800",
+                "family": 155,
+                "state": "Northern Territory"
+            },
+            "id": "lga_settlement_data_2020.153"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Alice Springs (T)",
+                "humanitarian": null,
+                "state_code": "7",
+                "skilled": 247,
+                "lga_code11": "70200",
+                "family": 84,
+                "state": "Northern Territory"
+            },
+            "id": "lga_settlement_data_2020.154"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Katherine (T)",
+                "humanitarian": 0,
+                "state_code": "7",
+                "skilled": 56,
+                "lga_code11": "72200",
+                "family": 34,
+                "state": "Northern Territory"
+            },
+            "id": "lga_settlement_data_2020.155"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Litchfield (M)",
+                "humanitarian": 0,
+                "state_code": "7",
+                "skilled": 20,
+                "lga_code11": "72300",
+                "family": 35,
+                "state": "Northern Territory"
+            },
+            "id": "lga_settlement_data_2020.156"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Unincorporated NT",
+                "humanitarian": 0,
+                "state_code": "7",
+                "skilled": 28,
+                "lga_code11": "79399",
+                "family": 23,
+                "state": "Northern Territory"
+            },
+            "id": "lga_settlement_data_2020.158"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Coomalie (S)",
+                "humanitarian": 0,
+                "state_code": "7",
+                "skilled": null,
+                "lga_code11": "70700",
+                "family": null,
+                "state": "Northern Territory"
+            },
+            "id": "lga_settlement_data_2020.163"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Ipswich (C)",
+                "humanitarian": 22,
+                "state_code": "3",
+                "skilled": 295,
+                "lga_code11": "33960",
+                "family": 479,
+                "state": "Queensland"
+            },
+            "id": "lga_settlement_data_2020.174"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Redland (C)",
+                "humanitarian": 4,
+                "state_code": "3",
+                "skilled": 168,
+                "lga_code11": "36250",
+                "family": 269,
+                "state": "Queensland"
+            },
+            "id": "lga_settlement_data_2020.176"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Mount Isa (C)",
+                "humanitarian": 0,
+                "state_code": "3",
+                "skilled": 109,
+                "lga_code11": "35300",
+                "family": 55,
+                "state": "Queensland"
+            },
+            "id": "lga_settlement_data_2020.184"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Burdekin (S)",
+                "humanitarian": 0,
+                "state_code": "3",
+                "skilled": 36,
+                "lga_code11": "31900",
+                "family": 27,
+                "state": "Queensland"
+            },
+            "id": "lga_settlement_data_2020.195"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Hinchinbrook (S)",
+                "humanitarian": 0,
+                "state_code": "3",
+                "skilled": 11,
+                "lga_code11": "33800",
+                "family": 10,
+                "state": "Queensland"
+            },
+            "id": "lga_settlement_data_2020.199"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Torres (S)",
+                "humanitarian": 0,
+                "state_code": "3",
+                "skilled": 16,
+                "lga_code11": "36950",
+                "family": 4,
+                "state": "Queensland"
+            },
+            "id": "lga_settlement_data_2020.200"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Cook (S)",
+                "humanitarian": 0,
+                "state_code": "3",
+                "skilled": 5,
+                "lga_code11": "32500",
+                "family": 8,
+                "state": "Queensland"
+            },
+            "id": "lga_settlement_data_2020.202"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Murweh (S)",
+                "humanitarian": 0,
+                "state_code": "3",
+                "skilled": 4,
+                "lga_code11": "35600",
+                "family": 9,
+                "state": "Queensland"
+            },
+            "id": "lga_settlement_data_2020.204"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Weipa (T)",
+                "humanitarian": 0,
+                "state_code": "3",
+                "skilled": 4,
+                "lga_code11": "37300",
+                "family": 6,
+                "state": "Queensland"
+            },
+            "id": "lga_settlement_data_2020.205"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Balonne (S)",
+                "humanitarian": 0,
+                "state_code": "3",
+                "skilled": 4,
+                "lga_code11": "30300",
+                "family": 5,
+                "state": "Queensland"
+            },
+            "id": "lga_settlement_data_2020.206"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Cloncurry (S)",
+                "humanitarian": 0,
+                "state_code": "3",
+                "skilled": 4,
+                "lga_code11": "32450",
+                "family": 4,
+                "state": "Queensland"
+            },
+            "id": "lga_settlement_data_2020.208"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Carpentaria (S)",
+                "humanitarian": 0,
+                "state_code": "3",
+                "skilled": 6,
+                "lga_code11": "32250",
+                "family": 4,
+                "state": "Queensland"
+            },
+            "id": "lga_settlement_data_2020.209"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Quilpie (S)",
+                "humanitarian": 0,
+                "state_code": "3",
+                "skilled": 4,
+                "lga_code11": "36150",
+                "family": 4,
+                "state": "Queensland"
+            },
+            "id": "lga_settlement_data_2020.210"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Flinders (S)",
+                "humanitarian": 0,
+                "state_code": "3",
+                "skilled": 0,
+                "lga_code11": "33200",
+                "family": 4,
+                "state": "Queensland"
+            },
+            "id": "lga_settlement_data_2020.211"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Boulia (S)",
+                "humanitarian": 0,
+                "state_code": "3",
+                "skilled": 0,
+                "lga_code11": "30900",
+                "family": 4,
+                "state": "Queensland"
+            },
+            "id": "lga_settlement_data_2020.213"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Woorabinda (S)",
+                "humanitarian": 0,
+                "state_code": "3",
+                "skilled": 4,
+                "lga_code11": "37550",
+                "family": 4,
+                "state": "Queensland"
+            },
+            "id": "lga_settlement_data_2020.214"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Winton (S)",
+                "humanitarian": 0,
+                "state_code": "3",
+                "skilled": 0,
+                "lga_code11": "37400",
+                "family": 4,
+                "state": "Queensland"
+            },
+            "id": "lga_settlement_data_2020.216"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Paroo (S)",
+                "humanitarian": 0,
+                "state_code": "3",
+                "skilled": 4,
+                "lga_code11": "35800",
+                "family": 4,
+                "state": "Queensland"
+            },
+            "id": "lga_settlement_data_2020.217"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Doomadgee (S)",
+                "humanitarian": 0,
+                "state_code": "3",
+                "skilled": 0,
+                "lga_code11": "32770",
+                "family": 4,
+                "state": "Queensland"
+            },
+            "id": "lga_settlement_data_2020.218"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "McKinlay (S)",
+                "humanitarian": 0,
+                "state_code": "3",
+                "skilled": 0,
+                "lga_code11": "34800",
+                "family": 4,
+                "state": "Queensland"
+            },
+            "id": "lga_settlement_data_2020.219"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Salisbury (C)",
+                "humanitarian": 381,
+                "state_code": "4",
+                "skilled": 669,
+                "lga_code11": "47140",
+                "family": 731,
+                "state": "South Australia"
+            },
+            "id": "lga_settlement_data_2020.220"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "West Torrens (C)",
+                "humanitarian": 54,
+                "state_code": "4",
+                "skilled": 1239,
+                "lga_code11": "48410",
+                "family": 201,
+                "state": "South Australia"
+            },
+            "id": "lga_settlement_data_2020.221"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Charles Sturt (C)",
+                "humanitarian": 77,
+                "state_code": "4",
+                "skilled": 940,
+                "lga_code11": "41060",
+                "family": 338,
+                "state": "South Australia"
+            },
+            "id": "lga_settlement_data_2020.222"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Marion (C)",
+                "humanitarian": 47,
+                "state_code": "4",
+                "skilled": 674,
+                "lga_code11": "44060",
+                "family": 199,
+                "state": "South Australia"
+            },
+            "id": "lga_settlement_data_2020.223"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Adelaide (C)",
+                "humanitarian": 5,
+                "state_code": "4",
+                "skilled": 760,
+                "lga_code11": "40070",
+                "family": 105,
+                "state": "South Australia"
+            },
+            "id": "lga_settlement_data_2020.224"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Campbelltown (C)",
+                "humanitarian": 22,
+                "state_code": "1",
+                "skilled": 623,
+                "lga_code11": "11500",
+                "family": 166,
+                "state": "South Australia"
+            },
+            "id": "lga_settlement_data_2020.225"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Campbelltown (C)",
+                "humanitarian": 22,
+                "state_code": "4",
+                "skilled": 623,
+                "lga_code11": "40910",
+                "family": 166,
+                "state": "South Australia"
+            },
+            "id": "lga_settlement_data_2020.226"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Mitcham (C)",
+                "humanitarian": 26,
+                "state_code": "4",
+                "skilled": 547,
+                "lga_code11": "44340",
+                "family": 144,
+                "state": "South Australia"
+            },
+            "id": "lga_settlement_data_2020.227"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Norwood Payneham St Peters (C)",
+                "humanitarian": 13,
+                "state_code": "4",
+                "skilled": 517,
+                "lga_code11": "45290",
+                "family": 103,
+                "state": "South Australia"
+            },
+            "id": "lga_settlement_data_2020.228"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Playford (C)",
+                "humanitarian": 196,
+                "state_code": "4",
+                "skilled": 87,
+                "lga_code11": "45680",
+                "family": 271,
+                "state": "South Australia"
+            },
+            "id": "lga_settlement_data_2020.229"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Unley (C)",
+                "humanitarian": 6,
+                "state_code": "4",
+                "skilled": 447,
+                "lga_code11": "47980",
+                "family": 75,
+                "state": "South Australia"
+            },
+            "id": "lga_settlement_data_2020.230"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Onkaparinga (C)",
+                "humanitarian": 22,
+                "state_code": "4",
+                "skilled": 232,
+                "lga_code11": "45340",
+                "family": 242,
+                "state": "South Australia"
+            },
+            "id": "lga_settlement_data_2020.231"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Burnside (C)",
+                "humanitarian": 17,
+                "state_code": "4",
+                "skilled": 390,
+                "lga_code11": "40700",
+                "family": 82,
+                "state": "South Australia"
+            },
+            "id": "lga_settlement_data_2020.232"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Tea Tree Gully (C)",
+                "humanitarian": 11,
+                "state_code": "4",
+                "skilled": 277,
+                "lga_code11": "47700",
+                "family": 158,
+                "state": "South Australia"
+            },
+            "id": "lga_settlement_data_2020.233"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Prospect (C)",
+                "humanitarian": 6,
+                "state_code": "4",
+                "skilled": 311,
+                "lga_code11": "46510",
+                "family": 58,
+                "state": "South Australia"
+            },
+            "id": "lga_settlement_data_2020.234"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Holdfast Bay (C)",
+                "humanitarian": 17,
+                "state_code": "4",
+                "skilled": 218,
+                "lga_code11": "42600",
+                "family": 107,
+                "state": "South Australia"
+            },
+            "id": "lga_settlement_data_2020.235"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Walkerville (M)",
+                "humanitarian": 4,
+                "state_code": "4",
+                "skilled": 111,
+                "lga_code11": "48260",
+                "family": 22,
+                "state": "South Australia"
+            },
+            "id": "lga_settlement_data_2020.236"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Murray Bridge (RC)",
+                "humanitarian": 5,
+                "state_code": "4",
+                "skilled": 78,
+                "lga_code11": "45040",
+                "family": 37,
+                "state": "South Australia"
+            },
+            "id": "lga_settlement_data_2020.237"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Naracoorte and Lucindale (DC)",
+                "humanitarian": 5,
+                "state_code": "4",
+                "skilled": 80,
+                "lga_code11": "45090",
+                "family": 20,
+                "state": "South Australia"
+            },
+            "id": "lga_settlement_data_2020.238"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Mount Gambier (C)",
+                "humanitarian": 46,
+                "state_code": "4",
+                "skilled": 28,
+                "lga_code11": "44620",
+                "family": 27,
+                "state": "South Australia"
+            },
+            "id": "lga_settlement_data_2020.239"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Mount Barker (DC)",
+                "humanitarian": 4,
+                "state_code": "4",
+                "skilled": 28,
+                "lga_code11": "44550",
+                "family": 58,
+                "state": "South Australia"
+            },
+            "id": "lga_settlement_data_2020.240"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Adelaide Hills (DC)",
+                "humanitarian": 0,
+                "state_code": "4",
+                "skilled": 37,
+                "lga_code11": "40120",
+                "family": 47,
+                "state": "South Australia"
+            },
+            "id": "lga_settlement_data_2020.241"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Whyalla (C)",
+                "humanitarian": 0,
+                "state_code": "4",
+                "skilled": 48,
+                "lga_code11": "48540",
+                "family": 19,
+                "state": "South Australia"
+            },
+            "id": "lga_settlement_data_2020.242"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Renmark Paringa (DC)",
+                "humanitarian": 0,
+                "state_code": "4",
+                "skilled": 42,
+                "lga_code11": "46670",
+                "family": 15,
+                "state": "South Australia"
+            },
+            "id": "lga_settlement_data_2020.243"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Berri and Barmera (DC)",
+                "humanitarian": 0,
+                "state_code": "4",
+                "skilled": 34,
+                "lga_code11": "40520",
+                "family": 16,
+                "state": "South Australia"
+            },
+            "id": "lga_settlement_data_2020.244"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Tatiara (DC)",
+                "humanitarian": 4,
+                "state_code": "4",
+                "skilled": 26,
+                "lga_code11": "47630",
+                "family": 14,
+                "state": "South Australia"
+            },
+            "id": "lga_settlement_data_2020.245"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Port Lincoln (C)",
+                "humanitarian": 0,
+                "state_code": "4",
+                "skilled": 21,
+                "lga_code11": "46300",
+                "family": 18,
+                "state": "South Australia"
+            },
+            "id": "lga_settlement_data_2020.246"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Gawler (T)",
+                "humanitarian": 0,
+                "state_code": "4",
+                "skilled": 20,
+                "lga_code11": "42030",
+                "family": 17,
+                "state": "South Australia"
+            },
+            "id": "lga_settlement_data_2020.247"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Alexandrina (DC)",
+                "humanitarian": 0,
+                "state_code": "4",
+                "skilled": 11,
+                "lga_code11": "40220",
+                "family": 25,
+                "state": "South Australia"
+            },
+            "id": "lga_settlement_data_2020.248"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Port Augusta (C)",
+                "humanitarian": 0,
+                "state_code": "4",
+                "skilled": 23,
+                "lga_code11": "46090",
+                "family": 11,
+                "state": "South Australia"
+            },
+            "id": "lga_settlement_data_2020.249"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Victor Harbor (C)",
+                "humanitarian": 0,
+                "state_code": "4",
+                "skilled": 16,
+                "lga_code11": "48050",
+                "family": 17,
+                "state": "South Australia"
+            },
+            "id": "lga_settlement_data_2020.250"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Loxton Waikerie (DC)",
+                "humanitarian": 4,
+                "state_code": "4",
+                "skilled": 16,
+                "lga_code11": "43790",
+                "family": 12,
+                "state": "South Australia"
+            },
+            "id": "lga_settlement_data_2020.251"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Southern Mallee (DC)",
+                "humanitarian": 0,
+                "state_code": "4",
+                "skilled": 28,
+                "lga_code11": "47290",
+                "family": 4,
+                "state": "South Australia"
+            },
+            "id": "lga_settlement_data_2020.252"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Barossa (DC)",
+                "humanitarian": 0,
+                "state_code": "4",
+                "skilled": 8,
+                "lga_code11": "40310",
+                "family": 20,
+                "state": "South Australia"
+            },
+            "id": "lga_settlement_data_2020.253"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Roxby Downs (M)",
+                "humanitarian": 0,
+                "state_code": "4",
+                "skilled": 12,
+                "lga_code11": "46970",
+                "family": 15,
+                "state": "South Australia"
+            },
+            "id": "lga_settlement_data_2020.254"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Port Pirie City and Dists (M)",
+                "humanitarian": 0,
+                "state_code": "4",
+                "skilled": 19,
+                "lga_code11": "46450",
+                "family": 7,
+                "state": "South Australia"
+            },
+            "id": "lga_settlement_data_2020.255"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Wakefield (DC)",
+                "humanitarian": 0,
+                "state_code": "4",
+                "skilled": 16,
+                "lga_code11": "48130",
+                "family": 5,
+                "state": "South Australia"
+            },
+            "id": "lga_settlement_data_2020.256"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Wattle Range (DC)",
+                "humanitarian": 0,
+                "state_code": "4",
+                "skilled": 5,
+                "lga_code11": "48340",
+                "family": 15,
+                "state": "South Australia"
+            },
+            "id": "lga_settlement_data_2020.257"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Clare and Gilbert Valleys (DC)",
+                "humanitarian": 0,
+                "state_code": "4",
+                "skilled": 9,
+                "lga_code11": "41140",
+                "family": 10,
+                "state": "South Australia"
+            },
+            "id": "lga_settlement_data_2020.258"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Grant (DC)",
+                "humanitarian": 0,
+                "state_code": "4",
+                "skilled": 11,
+                "lga_code11": "42250",
+                "family": 8,
+                "state": "South Australia"
+            },
+            "id": "lga_settlement_data_2020.259"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Yorke Peninsula (DC)",
+                "humanitarian": 0,
+                "state_code": "4",
+                "skilled": 5,
+                "lga_code11": "48830",
+                "family": 13,
+                "state": "South Australia"
+            },
+            "id": "lga_settlement_data_2020.260"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Kangaroo Island (DC)",
+                "humanitarian": 0,
+                "state_code": "4",
+                "skilled": 9,
+                "lga_code11": "42750",
+                "family": 7,
+                "state": "South Australia"
+            },
+            "id": "lga_settlement_data_2020.261"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "The Coorong (DC)",
+                "humanitarian": 0,
+                "state_code": "4",
+                "skilled": 12,
+                "lga_code11": "47800",
+                "family": 4,
+                "state": "South Australia"
+            },
+            "id": "lga_settlement_data_2020.262"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Coober Pedy (DC)",
+                "humanitarian": 0,
+                "state_code": "4",
+                "skilled": 15,
+                "lga_code11": "41330",
+                "family": 4,
+                "state": "South Australia"
+            },
+            "id": "lga_settlement_data_2020.263"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Mallala (DC)",
+                "humanitarian": 0,
+                "state_code": "4",
+                "skilled": 4,
+                "lga_code11": "43920",
+                "family": 11,
+                "state": "South Australia"
+            },
+            "id": "lga_settlement_data_2020.264"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Copper Coast (DC)",
+                "humanitarian": 0,
+                "state_code": "4",
+                "skilled": 5,
+                "lga_code11": "41560",
+                "family": 6,
+                "state": "South Australia"
+            },
+            "id": "lga_settlement_data_2020.265"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Mid Murray (DC)",
+                "humanitarian": 0,
+                "state_code": "4",
+                "skilled": 4,
+                "lga_code11": "44210",
+                "family": 7,
+                "state": "South Australia"
+            },
+            "id": "lga_settlement_data_2020.266"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Ceduna (DC)",
+                "humanitarian": 0,
+                "state_code": "4",
+                "skilled": 7,
+                "lga_code11": "41010",
+                "family": 4,
+                "state": "South Australia"
+            },
+            "id": "lga_settlement_data_2020.267"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Yankalilla (DC)",
+                "humanitarian": 0,
+                "state_code": "4",
+                "skilled": 6,
+                "lga_code11": "48750",
+                "family": 4,
+                "state": "South Australia"
+            },
+            "id": "lga_settlement_data_2020.268"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Barunga West (DC)",
+                "humanitarian": 0,
+                "state_code": "4",
+                "skilled": 8,
+                "lga_code11": "40430",
+                "family": 4,
+                "state": "South Australia"
+            },
+            "id": "lga_settlement_data_2020.269"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Mount Remarkable (DC)",
+                "humanitarian": 0,
+                "state_code": "4",
+                "skilled": 4,
+                "lga_code11": "44830",
+                "family": 4,
+                "state": "South Australia"
+            },
+            "id": "lga_settlement_data_2020.270"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Lower Eyre Peninsula (DC)",
+                "humanitarian": 0,
+                "state_code": "4",
+                "skilled": 4,
+                "lga_code11": "43710",
+                "family": 6,
+                "state": "South Australia"
+            },
+            "id": "lga_settlement_data_2020.271"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Kimba (DC)",
+                "humanitarian": 0,
+                "state_code": "4",
+                "skilled": 6,
+                "lga_code11": "43220",
+                "family": 4,
+                "state": "South Australia"
+            },
+            "id": "lga_settlement_data_2020.272"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Northern Areas (DC)",
+                "humanitarian": 4,
+                "state_code": "4",
+                "skilled": 4,
+                "lga_code11": "45120",
+                "family": 4,
+                "state": "South Australia"
+            },
+            "id": "lga_settlement_data_2020.273"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Elliston (DC)",
+                "humanitarian": 0,
+                "state_code": "4",
+                "skilled": 4,
+                "lga_code11": "41750",
+                "family": 4,
+                "state": "South Australia"
+            },
+            "id": "lga_settlement_data_2020.274"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Light (RegC)",
+                "humanitarian": 0,
+                "state_code": "4",
+                "skilled": 4,
+                "lga_code11": "43650",
+                "family": 4,
+                "state": "South Australia"
+            },
+            "id": "lga_settlement_data_2020.275"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Streaky Bay (DC)",
+                "humanitarian": 0,
+                "state_code": "4",
+                "skilled": 4,
+                "lga_code11": "47490",
+                "family": 5,
+                "state": "South Australia"
+            },
+            "id": "lga_settlement_data_2020.276"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Franklin Harbour (DC)",
+                "humanitarian": 0,
+                "state_code": "4",
+                "skilled": 4,
+                "lga_code11": "41960",
+                "family": 4,
+                "state": "South Australia"
+            },
+            "id": "lga_settlement_data_2020.277"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Robe (DC)",
+                "humanitarian": 0,
+                "state_code": "4",
+                "skilled": 4,
+                "lga_code11": "46860",
+                "family": 4,
+                "state": "South Australia"
+            },
+            "id": "lga_settlement_data_2020.278"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Goyder (DC)",
+                "humanitarian": 0,
+                "state_code": "4",
+                "skilled": 4,
+                "lga_code11": "42110",
+                "family": 0,
+                "state": "South Australia"
+            },
+            "id": "lga_settlement_data_2020.279"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Peterborough (DC)",
+                "humanitarian": 0,
+                "state_code": "4",
+                "skilled": 0,
+                "lga_code11": "45540",
+                "family": 4,
+                "state": "South Australia"
+            },
+            "id": "lga_settlement_data_2020.280"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Orroroo\/Carrieton (DC)",
+                "humanitarian": 0,
+                "state_code": "4",
+                "skilled": 4,
+                "lga_code11": "45400",
+                "family": 4,
+                "state": "South Australia"
+            },
+            "id": "lga_settlement_data_2020.281"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Tumby Bay (DC)",
+                "humanitarian": 0,
+                "state_code": "4",
+                "skilled": 0,
+                "lga_code11": "47910",
+                "family": 4,
+                "state": "South Australia"
+            },
+            "id": "lga_settlement_data_2020.282"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Flinders Ranges (DC)",
+                "humanitarian": 0,
+                "state_code": "4",
+                "skilled": 0,
+                "lga_code11": "41830",
+                "family": 4,
+                "state": "South Australia"
+            },
+            "id": "lga_settlement_data_2020.283"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Karoonda East Murray (DC)",
+                "humanitarian": 0,
+                "state_code": "4",
+                "skilled": 0,
+                "lga_code11": "43080",
+                "family": 4,
+                "state": "South Australia"
+            },
+            "id": "lga_settlement_data_2020.284"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Kingston (DC)",
+                "humanitarian": 0,
+                "state_code": "4",
+                "skilled": 0,
+                "lga_code11": "43360",
+                "family": 4,
+                "state": "South Australia"
+            },
+            "id": "lga_settlement_data_2020.285"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Cleve (DC)",
+                "humanitarian": 0,
+                "state_code": "4",
+                "skilled": 0,
+                "lga_code11": "41190",
+                "family": 4,
+                "state": "South Australia"
+            },
+            "id": "lga_settlement_data_2020.286"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Anangu Pitjantjatjara (AC)",
+                "humanitarian": 0,
+                "state_code": "4",
+                "skilled": 4,
+                "lga_code11": "40250",
+                "family": 0,
+                "state": "South Australia"
+            },
+            "id": "lga_settlement_data_2020.287"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Glenorchy (C)",
+                "humanitarian": 62,
+                "state_code": "6",
+                "skilled": 1266,
+                "lga_code11": "62610",
+                "family": 56,
+                "state": "Tasmania"
+            },
+            "id": "lga_settlement_data_2020.289"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Launceston (C)",
+                "humanitarian": 242,
+                "state_code": "6",
+                "skilled": 714,
+                "lga_code11": "64010",
+                "family": 98,
+                "state": "Tasmania"
+            },
+            "id": "lga_settlement_data_2020.290"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Clarence (C)",
+                "humanitarian": 17,
+                "state_code": "6",
+                "skilled": 663,
+                "lga_code11": "61410",
+                "family": 73,
+                "state": "Tasmania"
+            },
+            "id": "lga_settlement_data_2020.291"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Kingborough (M)",
+                "humanitarian": null,
+                "state_code": "6",
+                "skilled": 433,
+                "lga_code11": "63610",
+                "family": 62,
+                "state": "Tasmania"
+            },
+            "id": "lga_settlement_data_2020.292"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Devonport (C)",
+                "humanitarian": 0,
+                "state_code": "6",
+                "skilled": 73,
+                "lga_code11": "61610",
+                "family": 29,
+                "state": "Tasmania"
+            },
+            "id": "lga_settlement_data_2020.293"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Burnie (C)",
+                "humanitarian": 0,
+                "state_code": "6",
+                "skilled": 69,
+                "lga_code11": "60610",
+                "family": 25,
+                "state": "Tasmania"
+            },
+            "id": "lga_settlement_data_2020.294"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Brighton (M)",
+                "humanitarian": 0,
+                "state_code": "6",
+                "skilled": 75,
+                "lga_code11": "60410",
+                "family": 17,
+                "state": "Tasmania"
+            },
+            "id": "lga_settlement_data_2020.295"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Sorell (M)",
+                "humanitarian": null,
+                "state_code": "6",
+                "skilled": 57,
+                "lga_code11": "64810",
+                "family": 17,
+                "state": "Tasmania"
+            },
+            "id": "lga_settlement_data_2020.296"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Circular Head (M)",
+                "humanitarian": null,
+                "state_code": "6",
+                "skilled": 54,
+                "lga_code11": "61210",
+                "family": 6,
+                "state": "Tasmania"
+            },
+            "id": "lga_settlement_data_2020.297"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Huon Valley (M)",
+                "humanitarian": 0,
+                "state_code": "6",
+                "skilled": 26,
+                "lga_code11": "63010",
+                "family": 31,
+                "state": "Tasmania"
+            },
+            "id": "lga_settlement_data_2020.298"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Break O'Day (M)",
+                "humanitarian": 0,
+                "state_code": "6",
+                "skilled": 28,
+                "lga_code11": "60210",
+                "family": 20,
+                "state": "Tasmania"
+            },
+            "id": "lga_settlement_data_2020.299"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Central Coast (M)",
+                "humanitarian": 0,
+                "state_code": "6",
+                "skilled": 24,
+                "lga_code11": "60810",
+                "family": 20,
+                "state": "Tasmania"
+            },
+            "id": "lga_settlement_data_2020.300"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Derwent Valley (M)",
+                "humanitarian": 0,
+                "state_code": "6",
+                "skilled": 28,
+                "lga_code11": "61510",
+                "family": 9,
+                "state": "Tasmania"
+            },
+            "id": "lga_settlement_data_2020.301"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Meander Valley (M)",
+                "humanitarian": 0,
+                "state_code": "6",
+                "skilled": 20,
+                "lga_code11": "64210",
+                "family": 14,
+                "state": "Tasmania"
+            },
+            "id": "lga_settlement_data_2020.302"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "West Tamar (M)",
+                "humanitarian": 0,
+                "state_code": "6",
+                "skilled": 21,
+                "lga_code11": "65810",
+                "family": 12,
+                "state": "Tasmania"
+            },
+            "id": "lga_settlement_data_2020.303"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Latrobe (M)",
+                "humanitarian": 0,
+                "state_code": "6",
+                "skilled": 13,
+                "lga_code11": "63810",
+                "family": 13,
+                "state": "Tasmania"
+            },
+            "id": "lga_settlement_data_2020.304"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Kentish (M)",
+                "humanitarian": 0,
+                "state_code": "6",
+                "skilled": 17,
+                "lga_code11": "63210",
+                "family": 7,
+                "state": "Tasmania"
+            },
+            "id": "lga_settlement_data_2020.305"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "West Coast (M)",
+                "humanitarian": 0,
+                "state_code": "6",
+                "skilled": 17,
+                "lga_code11": "65610",
+                "family": 4,
+                "state": "Tasmania"
+            },
+            "id": "lga_settlement_data_2020.306"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Waratah\/Wynyard (M)",
+                "humanitarian": 0,
+                "state_code": "6",
+                "skilled": 9,
+                "lga_code11": "65410",
+                "family": 8,
+                "state": "Tasmania"
+            },
+            "id": "lga_settlement_data_2020.307"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Northern Midlands (M)",
+                "humanitarian": 0,
+                "state_code": "6",
+                "skilled": 6,
+                "lga_code11": "64610",
+                "family": 10,
+                "state": "Tasmania"
+            },
+            "id": "lga_settlement_data_2020.308"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Dorset (M)",
+                "humanitarian": 0,
+                "state_code": "6",
+                "skilled": 9,
+                "lga_code11": "61810",
+                "family": 5,
+                "state": "Tasmania"
+            },
+            "id": "lga_settlement_data_2020.309"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "George Town (M)",
+                "humanitarian": 0,
+                "state_code": "6",
+                "skilled": 11,
+                "lga_code11": "62210",
+                "family": 4,
+                "state": "Tasmania"
+            },
+            "id": "lga_settlement_data_2020.310"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Glamorgan\/Spring Bay (M)",
+                "humanitarian": 0,
+                "state_code": "6",
+                "skilled": 10,
+                "lga_code11": "62410",
+                "family": 4,
+                "state": "Tasmania"
+            },
+            "id": "lga_settlement_data_2020.311"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Tasman (M)",
+                "humanitarian": 0,
+                "state_code": "6",
+                "skilled": null,
+                "lga_code11": "65210",
+                "family": 10,
+                "state": "Tasmania"
+            },
+            "id": "lga_settlement_data_2020.312"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "King Island (M)",
+                "humanitarian": 0,
+                "state_code": "6",
+                "skilled": null,
+                "lga_code11": "63410",
+                "family": 4,
+                "state": "Tasmania"
+            },
+            "id": "lga_settlement_data_2020.313"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Southern Midlands (M)",
+                "humanitarian": 0,
+                "state_code": "6",
+                "skilled": 0,
+                "lga_code11": "65010",
+                "family": 5,
+                "state": "Tasmania"
+            },
+            "id": "lga_settlement_data_2020.314"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Flinders (M)",
+                "humanitarian": 0,
+                "state_code": "6",
+                "skilled": 0,
+                "lga_code11": "62010",
+                "family": 4,
+                "state": "Tasmania"
+            },
+            "id": "lga_settlement_data_2020.315"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Wyndham (C)",
+                "humanitarian": 336,
+                "state_code": "2",
+                "skilled": 3246,
+                "lga_code11": "27260",
+                "family": 1629,
+                "state": "Victoria"
+            },
+            "id": "lga_settlement_data_2020.317"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Casey (C)",
+                "humanitarian": 344,
+                "state_code": "2",
+                "skilled": 1751,
+                "lga_code11": "21610",
+                "family": 2100,
+                "state": "Victoria"
+            },
+            "id": "lga_settlement_data_2020.318"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Greater Dandenong (C)",
+                "humanitarian": 235,
+                "state_code": "2",
+                "skilled": 2337,
+                "lga_code11": "22670",
+                "family": 1520,
+                "state": "Victoria"
+            },
+            "id": "lga_settlement_data_2020.319"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Monash (C)",
+                "humanitarian": 12,
+                "state_code": "2",
+                "skilled": 3052,
+                "lga_code11": "24970",
+                "family": 722,
+                "state": "Victoria"
+            },
+            "id": "lga_settlement_data_2020.320"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Hume (C)",
+                "humanitarian": 1233,
+                "state_code": "2",
+                "skilled": 1370,
+                "lga_code11": "23270",
+                "family": 958,
+                "state": "Victoria"
+            },
+            "id": "lga_settlement_data_2020.321"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Whittlesea (C)",
+                "humanitarian": 190,
+                "state_code": "2",
+                "skilled": 2087,
+                "lga_code11": "27070",
+                "family": 1017,
+                "state": "Victoria"
+            },
+            "id": "lga_settlement_data_2020.322"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Whitehorse (C)",
+                "humanitarian": 24,
+                "state_code": "2",
+                "skilled": 2294,
+                "lga_code11": "26980",
+                "family": 754,
+                "state": "Victoria"
+            },
+            "id": "lga_settlement_data_2020.323"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Moreland (C)",
+                "humanitarian": 43,
+                "state_code": "2",
+                "skilled": 2072,
+                "lga_code11": "25250",
+                "family": 863,
+                "state": "Victoria"
+            },
+            "id": "lga_settlement_data_2020.324"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Brimbank (C)",
+                "humanitarian": 342,
+                "state_code": "2",
+                "skilled": 1383,
+                "lga_code11": "21180",
+                "family": 990,
+                "state": "Victoria"
+            },
+            "id": "lga_settlement_data_2020.325"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Glen Eira (C)",
+                "humanitarian": 4,
+                "state_code": "2",
+                "skilled": 1780,
+                "lga_code11": "22310",
+                "family": 577,
+                "state": "Victoria"
+            },
+            "id": "lga_settlement_data_2020.326"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Boroondara (C)",
+                "humanitarian": 22,
+                "state_code": "2",
+                "skilled": 1562,
+                "lga_code11": "21110",
+                "family": 582,
+                "state": "Victoria"
+            },
+            "id": "lga_settlement_data_2020.327"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Melton (S)",
+                "humanitarian": 289,
+                "state_code": "2",
+                "skilled": 945,
+                "lga_code11": "24650",
+                "family": 855,
+                "state": "Victoria"
+            },
+            "id": "lga_settlement_data_2020.328"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Darebin (C)",
+                "humanitarian": 49,
+                "state_code": "2",
+                "skilled": 1334,
+                "lga_code11": "21890",
+                "family": 681,
+                "state": "Victoria"
+            },
+            "id": "lga_settlement_data_2020.329"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Port Phillip (C)",
+                "humanitarian": 16,
+                "state_code": "2",
+                "skilled": 1210,
+                "lga_code11": "25900",
+                "family": 732,
+                "state": "Victoria"
+            },
+            "id": "lga_settlement_data_2020.330"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Greater Geelong (C)",
+                "humanitarian": 162,
+                "state_code": "2",
+                "skilled": 1335,
+                "lga_code11": "22750",
+                "family": 460,
+                "state": "Victoria"
+            },
+            "id": "lga_settlement_data_2020.331"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Stonnington (C)",
+                "humanitarian": 14,
+                "state_code": "2",
+                "skilled": 1298,
+                "lga_code11": "26350",
+                "family": 517,
+                "state": "Victoria"
+            },
+            "id": "lga_settlement_data_2020.332"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Maribyrnong (C)",
+                "humanitarian": 136,
+                "state_code": "2",
+                "skilled": 978,
+                "lga_code11": "24330",
+                "family": 498,
+                "state": "Victoria"
+            },
+            "id": "lga_settlement_data_2020.333"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Kingston (C)",
+                "humanitarian": 5,
+                "state_code": "2",
+                "skilled": 884,
+                "lga_code11": "23430",
+                "family": 513,
+                "state": "Victoria"
+            },
+            "id": "lga_settlement_data_2020.334"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Moonee Valley (C)",
+                "humanitarian": 36,
+                "state_code": "2",
+                "skilled": 834,
+                "lga_code11": "25060",
+                "family": 501,
+                "state": "Victoria"
+            },
+            "id": "lga_settlement_data_2020.335"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Yarra (C)",
+                "humanitarian": 31,
+                "state_code": "2",
+                "skilled": 703,
+                "lga_code11": "27350",
+                "family": 556,
+                "state": "Victoria"
+            },
+            "id": "lga_settlement_data_2020.336"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Manningham (C)",
+                "humanitarian": 17,
+                "state_code": "2",
+                "skilled": 767,
+                "lga_code11": "24210",
+                "family": 443,
+                "state": "Victoria"
+            },
+            "id": "lga_settlement_data_2020.337"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Knox (C)",
+                "humanitarian": 48,
+                "state_code": "2",
+                "skilled": 603,
+                "lga_code11": "23670",
+                "family": 531,
+                "state": "Victoria"
+            },
+            "id": "lga_settlement_data_2020.338"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Hobsons Bay (C)",
+                "humanitarian": 39,
+                "state_code": "2",
+                "skilled": 521,
+                "lga_code11": "23110",
+                "family": 325,
+                "state": "Victoria"
+            },
+            "id": "lga_settlement_data_2020.339"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Banyule (C)",
+                "humanitarian": 5,
+                "state_code": "2",
+                "skilled": 459,
+                "lga_code11": "20660",
+                "family": 363,
+                "state": "Victoria"
+            },
+            "id": "lga_settlement_data_2020.340"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Maroondah (C)",
+                "humanitarian": 141,
+                "state_code": "2",
+                "skilled": 325,
+                "lga_code11": "24410",
+                "family": 329,
+                "state": "Victoria"
+            },
+            "id": "lga_settlement_data_2020.341"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Cardinia (S)",
+                "humanitarian": 21,
+                "state_code": "2",
+                "skilled": 317,
+                "lga_code11": "21450",
+                "family": 298,
+                "state": "Victoria"
+            },
+            "id": "lga_settlement_data_2020.342"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Bayside (C)",
+                "humanitarian": 0,
+                "state_code": "2",
+                "skilled": 387,
+                "lga_code11": "20910",
+                "family": 231,
+                "state": "Victoria"
+            },
+            "id": "lga_settlement_data_2020.343"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Greater Shepparton (C)",
+                "humanitarian": 142,
+                "state_code": "2",
+                "skilled": 239,
+                "lga_code11": "22830",
+                "family": 196,
+                "state": "Victoria"
+            },
+            "id": "lga_settlement_data_2020.344"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Frankston (C)",
+                "humanitarian": 8,
+                "state_code": "2",
+                "skilled": 248,
+                "lga_code11": "22170",
+                "family": 261,
+                "state": "Victoria"
+            },
+            "id": "lga_settlement_data_2020.345"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Ballarat (C)",
+                "humanitarian": 4,
+                "state_code": "2",
+                "skilled": 274,
+                "lga_code11": "20570",
+                "family": 136,
+                "state": "Victoria"
+            },
+            "id": "lga_settlement_data_2020.346"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Greater Bendigo (C)",
+                "humanitarian": 37,
+                "state_code": "2",
+                "skilled": 223,
+                "lga_code11": "22620",
+                "family": 139,
+                "state": "Victoria"
+            },
+            "id": "lga_settlement_data_2020.347"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Mildura (RC)",
+                "humanitarian": 68,
+                "state_code": "2",
+                "skilled": 175,
+                "lga_code11": "24780",
+                "family": 117,
+                "state": "Victoria"
+            },
+            "id": "lga_settlement_data_2020.348"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Mornington Peninsula (S)",
+                "humanitarian": 0,
+                "state_code": "2",
+                "skilled": 124,
+                "lga_code11": "25340",
+                "family": 225,
+                "state": "Victoria"
+            },
+            "id": "lga_settlement_data_2020.349"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Yarra Ranges (S)",
+                "humanitarian": 34,
+                "state_code": "2",
+                "skilled": 91,
+                "lga_code11": "27450",
+                "family": 201,
+                "state": "Victoria"
+            },
+            "id": "lga_settlement_data_2020.350"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Wodonga (RC)",
+                "humanitarian": 118,
+                "state_code": "2",
+                "skilled": 62,
+                "lga_code11": "27170",
+                "family": 67,
+                "state": "Victoria"
+            },
+            "id": "lga_settlement_data_2020.351"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Latrobe (C)",
+                "humanitarian": 0,
+                "state_code": "2",
+                "skilled": 88,
+                "lga_code11": "23810",
+                "family": 87,
+                "state": "Victoria"
+            },
+            "id": "lga_settlement_data_2020.352"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Mitchell (S)",
+                "humanitarian": 0,
+                "state_code": "2",
+                "skilled": 84,
+                "lga_code11": "24850",
+                "family": 86,
+                "state": "Victoria"
+            },
+            "id": "lga_settlement_data_2020.353"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Warrnambool (C)",
+                "humanitarian": 0,
+                "state_code": "2",
+                "skilled": 81,
+                "lga_code11": "26730",
+                "family": 61,
+                "state": "Victoria"
+            },
+            "id": "lga_settlement_data_2020.354"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Nillumbik (S)",
+                "humanitarian": 4,
+                "state_code": "2",
+                "skilled": 42,
+                "lga_code11": "25710",
+                "family": 72,
+                "state": "Victoria"
+            },
+            "id": "lga_settlement_data_2020.355"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Wellington (S)",
+                "humanitarian": 4,
+                "state_code": "2",
+                "skilled": 66,
+                "lga_code11": "26810",
+                "family": 42,
+                "state": "Victoria"
+            },
+            "id": "lga_settlement_data_2020.356"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Swan Hill (RC)",
+                "humanitarian": 4,
+                "state_code": "2",
+                "skilled": 69,
+                "lga_code11": "26610",
+                "family": 38,
+                "state": "Victoria"
+            },
+            "id": "lga_settlement_data_2020.357"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Surf Coast (S)",
+                "humanitarian": 0,
+                "state_code": "2",
+                "skilled": 48,
+                "lga_code11": "26490",
+                "family": 56,
+                "state": "Victoria"
+            },
+            "id": "lga_settlement_data_2020.358"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "East Gippsland (S)",
+                "humanitarian": 7,
+                "state_code": "2",
+                "skilled": 51,
+                "lga_code11": "22110",
+                "family": 44,
+                "state": "Victoria"
+            },
+            "id": "lga_settlement_data_2020.359"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Campaspe (S)",
+                "humanitarian": 0,
+                "state_code": "2",
+                "skilled": 61,
+                "lga_code11": "21370",
+                "family": 38,
+                "state": "Victoria"
+            },
+            "id": "lga_settlement_data_2020.360"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Macedon Ranges (S)",
+                "humanitarian": 0,
+                "state_code": "2",
+                "skilled": 33,
+                "lga_code11": "24130",
+                "family": 53,
+                "state": "Victoria"
+            },
+            "id": "lga_settlement_data_2020.361"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Moorabool (S)",
+                "humanitarian": 0,
+                "state_code": "2",
+                "skilled": 50,
+                "lga_code11": "25150",
+                "family": 34,
+                "state": "Victoria"
+            },
+            "id": "lga_settlement_data_2020.362"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Bass Coast (S)",
+                "humanitarian": 0,
+                "state_code": "2",
+                "skilled": 28,
+                "lga_code11": "20740",
+                "family": 53,
+                "state": "Victoria"
+            },
+            "id": "lga_settlement_data_2020.363"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Baw Baw (S)",
+                "humanitarian": 0,
+                "state_code": "2",
+                "skilled": 31,
+                "lga_code11": "20830",
+                "family": 47,
+                "state": "Victoria"
+            },
+            "id": "lga_settlement_data_2020.364"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Horsham (RC)",
+                "humanitarian": 4,
+                "state_code": "2",
+                "skilled": 62,
+                "lga_code11": "23190",
+                "family": 11,
+                "state": "Victoria"
+            },
+            "id": "lga_settlement_data_2020.365"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Wangaratta (RC)",
+                "humanitarian": 0,
+                "state_code": "2",
+                "skilled": 57,
+                "lga_code11": "26700",
+                "family": 18,
+                "state": "Victoria"
+            },
+            "id": "lga_settlement_data_2020.366"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Colac-Otway (S)",
+                "humanitarian": 4,
+                "state_code": "2",
+                "skilled": 41,
+                "lga_code11": "21750",
+                "family": 29,
+                "state": "Victoria"
+            },
+            "id": "lga_settlement_data_2020.367"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Moira (S)",
+                "humanitarian": 4,
+                "state_code": "2",
+                "skilled": 38,
+                "lga_code11": "24900",
+                "family": 28,
+                "state": "Victoria"
+            },
+            "id": "lga_settlement_data_2020.368"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "South Gippsland (S)",
+                "humanitarian": 0,
+                "state_code": "2",
+                "skilled": 24,
+                "lga_code11": "26170",
+                "family": 38,
+                "state": "Victoria"
+            },
+            "id": "lga_settlement_data_2020.369"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Southern Grampians (S)",
+                "humanitarian": 0,
+                "state_code": "2",
+                "skilled": 36,
+                "lga_code11": "26260",
+                "family": 17,
+                "state": "Victoria"
+            },
+            "id": "lga_settlement_data_2020.370"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Glenelg (S)",
+                "humanitarian": 0,
+                "state_code": "2",
+                "skilled": 26,
+                "lga_code11": "22410",
+                "family": 23,
+                "state": "Victoria"
+            },
+            "id": "lga_settlement_data_2020.371"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Moyne (S)",
+                "humanitarian": 0,
+                "state_code": "2",
+                "skilled": 23,
+                "lga_code11": "25490",
+                "family": 21,
+                "state": "Victoria"
+            },
+            "id": "lga_settlement_data_2020.372"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Northern Grampians (S)",
+                "humanitarian": 0,
+                "state_code": "2",
+                "skilled": 32,
+                "lga_code11": "25810",
+                "family": 10,
+                "state": "Victoria"
+            },
+            "id": "lga_settlement_data_2020.373"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Hepburn (S)",
+                "humanitarian": 0,
+                "state_code": "2",
+                "skilled": 9,
+                "lga_code11": "22910",
+                "family": 26,
+                "state": "Victoria"
+            },
+            "id": "lga_settlement_data_2020.374"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Central Goldfields (S)",
+                "humanitarian": 0,
+                "state_code": "2",
+                "skilled": 22,
+                "lga_code11": "21670",
+                "family": 12,
+                "state": "Victoria"
+            },
+            "id": "lga_settlement_data_2020.375"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Mansfield (S)",
+                "humanitarian": 0,
+                "state_code": "2",
+                "skilled": 18,
+                "lga_code11": "24250",
+                "family": 16,
+                "state": "Victoria"
+            },
+            "id": "lga_settlement_data_2020.376"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Golden Plains (S)",
+                "humanitarian": 0,
+                "state_code": "2",
+                "skilled": 6,
+                "lga_code11": "22490",
+                "family": 27,
+                "state": "Victoria"
+            },
+            "id": "lga_settlement_data_2020.377"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Benalla (RC)",
+                "humanitarian": 0,
+                "state_code": "2",
+                "skilled": 16,
+                "lga_code11": "21010",
+                "family": 16,
+                "state": "Victoria"
+            },
+            "id": "lga_settlement_data_2020.378"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Yarriambiack (S)",
+                "humanitarian": 0,
+                "state_code": "2",
+                "skilled": 26,
+                "lga_code11": "27630",
+                "family": 5,
+                "state": "Victoria"
+            },
+            "id": "lga_settlement_data_2020.379"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Mount Alexander (S)",
+                "humanitarian": 0,
+                "state_code": "2",
+                "skilled": 15,
+                "lga_code11": "25430",
+                "family": 16,
+                "state": "Victoria"
+            },
+            "id": "lga_settlement_data_2020.380"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Murrindindi (S)",
+                "humanitarian": 0,
+                "state_code": "2",
+                "skilled": 13,
+                "lga_code11": "25620",
+                "family": 17,
+                "state": "Victoria"
+            },
+            "id": "lga_settlement_data_2020.381"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Alpine (S)",
+                "humanitarian": 4,
+                "state_code": "2",
+                "skilled": 14,
+                "lga_code11": "20110",
+                "family": 15,
+                "state": "Victoria"
+            },
+            "id": "lga_settlement_data_2020.382"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Ararat (RC)",
+                "humanitarian": 0,
+                "state_code": "2",
+                "skilled": 14,
+                "lga_code11": "20260",
+                "family": 14,
+                "state": "Victoria"
+            },
+            "id": "lga_settlement_data_2020.383"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Strathbogie (S)",
+                "humanitarian": 0,
+                "state_code": "2",
+                "skilled": 16,
+                "lga_code11": "26430",
+                "family": 11,
+                "state": "Victoria"
+            },
+            "id": "lga_settlement_data_2020.384"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Buloke (S)",
+                "humanitarian": 0,
+                "state_code": "2",
+                "skilled": 16,
+                "lga_code11": "21270",
+                "family": 6,
+                "state": "Victoria"
+            },
+            "id": "lga_settlement_data_2020.385"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Corangamite (S)",
+                "humanitarian": 0,
+                "state_code": "2",
+                "skilled": 6,
+                "lga_code11": "21830",
+                "family": 15,
+                "state": "Victoria"
+            },
+            "id": "lga_settlement_data_2020.386"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Indigo (S)",
+                "humanitarian": 0,
+                "state_code": "2",
+                "skilled": 10,
+                "lga_code11": "23350",
+                "family": 11,
+                "state": "Victoria"
+            },
+            "id": "lga_settlement_data_2020.387"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Hindmarsh (S)",
+                "humanitarian": 0,
+                "state_code": "2",
+                "skilled": 14,
+                "lga_code11": "22980",
+                "family": 6,
+                "state": "Victoria"
+            },
+            "id": "lga_settlement_data_2020.388"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Gannawarra (S)",
+                "humanitarian": 0,
+                "state_code": "2",
+                "skilled": 16,
+                "lga_code11": "22250",
+                "family": 4,
+                "state": "Victoria"
+            },
+            "id": "lga_settlement_data_2020.389"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "West Wimmera (S)",
+                "humanitarian": 0,
+                "state_code": "2",
+                "skilled": 12,
+                "lga_code11": "26890",
+                "family": 4,
+                "state": "Victoria"
+            },
+            "id": "lga_settlement_data_2020.390"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Towong (S)",
+                "humanitarian": 0,
+                "state_code": "2",
+                "skilled": 9,
+                "lga_code11": "26670",
+                "family": 4,
+                "state": "Victoria"
+            },
+            "id": "lga_settlement_data_2020.391"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Loddon (S)",
+                "humanitarian": 0,
+                "state_code": "2",
+                "skilled": 6,
+                "lga_code11": "23940",
+                "family": 4,
+                "state": "Victoria"
+            },
+            "id": "lga_settlement_data_2020.392"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Queenscliffe (B)",
+                "humanitarian": 0,
+                "state_code": "2",
+                "skilled": 6,
+                "lga_code11": "26080",
+                "family": 4,
+                "state": "Victoria"
+            },
+            "id": "lga_settlement_data_2020.393"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Pyrenees (S)",
+                "humanitarian": 0,
+                "state_code": "2",
+                "skilled": 0,
+                "lga_code11": "25990",
+                "family": 6,
+                "state": "Victoria"
+            },
+            "id": "lga_settlement_data_2020.394"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Unincorporated Vic",
+                "humanitarian": 0,
+                "state_code": "2",
+                "skilled": 0,
+                "lga_code11": "29399",
+                "family": 4,
+                "state": "Victoria"
+            },
+            "id": "lga_settlement_data_2020.395"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Canning (C)",
+                "humanitarian": 202,
+                "state_code": "5",
+                "skilled": 1810,
+                "lga_code11": "51330",
+                "family": 874,
+                "state": "Western Australia"
+            },
+            "id": "lga_settlement_data_2020.397"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Wanneroo (C)",
+                "humanitarian": 26,
+                "state_code": "5",
+                "skilled": 518,
+                "lga_code11": "58760",
+                "family": 825,
+                "state": "Western Australia"
+            },
+            "id": "lga_settlement_data_2020.398"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Cockburn (C)",
+                "humanitarian": 12,
+                "state_code": "5",
+                "skilled": 439,
+                "lga_code11": "51820",
+                "family": 514,
+                "state": "Western Australia"
+            },
+            "id": "lga_settlement_data_2020.400"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Swan (C)",
+                "humanitarian": 10,
+                "state_code": "5",
+                "skilled": 326,
+                "lga_code11": "58050",
+                "family": 626,
+                "state": "Western Australia"
+            },
+            "id": "lga_settlement_data_2020.401"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Belmont (C)",
+                "humanitarian": 42,
+                "state_code": "5",
+                "skilled": 494,
+                "lga_code11": "50490",
+                "family": 307,
+                "state": "Western Australia"
+            },
+            "id": "lga_settlement_data_2020.402"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Joondalup (C)",
+                "humanitarian": 13,
+                "state_code": "5",
+                "skilled": 396,
+                "lga_code11": "54170",
+                "family": 411,
+                "state": "Western Australia"
+            },
+            "id": "lga_settlement_data_2020.403"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Gosnells (C)",
+                "humanitarian": 46,
+                "state_code": "5",
+                "skilled": 283,
+                "lga_code11": "53780",
+                "family": 486,
+                "state": "Western Australia"
+            },
+            "id": "lga_settlement_data_2020.404"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Bayswater (C)",
+                "humanitarian": 20,
+                "state_code": "5",
+                "skilled": 386,
+                "lga_code11": "50420",
+                "family": 318,
+                "state": "Western Australia"
+            },
+            "id": "lga_settlement_data_2020.405"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Vincent (T)",
+                "humanitarian": 9,
+                "state_code": "5",
+                "skilled": 482,
+                "lga_code11": "58570",
+                "family": 219,
+                "state": "Western Australia"
+            },
+            "id": "lga_settlement_data_2020.406"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Armadale (C)",
+                "humanitarian": 15,
+                "state_code": "5",
+                "skilled": 295,
+                "lga_code11": "50210",
+                "family": 347,
+                "state": "Western Australia"
+            },
+            "id": "lga_settlement_data_2020.407"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Victoria Park (T)",
+                "humanitarian": 6,
+                "state_code": "5",
+                "skilled": 428,
+                "lga_code11": "58510",
+                "family": 214,
+                "state": "Western Australia"
+            },
+            "id": "lga_settlement_data_2020.408"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Rockingham (C)",
+                "humanitarian": 8,
+                "state_code": "5",
+                "skilled": 230,
+                "lga_code11": "57490",
+                "family": 329,
+                "state": "Western Australia"
+            },
+            "id": "lga_settlement_data_2020.409"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Melville (C)",
+                "humanitarian": 6,
+                "state_code": "5",
+                "skilled": 303,
+                "lga_code11": "55320",
+                "family": 258,
+                "state": "Western Australia"
+            },
+            "id": "lga_settlement_data_2020.410"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "South Perth (C)",
+                "humanitarian": 14,
+                "state_code": "5",
+                "skilled": 307,
+                "lga_code11": "57840",
+                "family": 201,
+                "state": "Western Australia"
+            },
+            "id": "lga_settlement_data_2020.411"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Perth (C)",
+                "humanitarian": 8,
+                "state_code": "5",
+                "skilled": 308,
+                "lga_code11": "57080",
+                "family": 176,
+                "state": "Western Australia"
+            },
+            "id": "lga_settlement_data_2020.412"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Mandurah (C)",
+                "humanitarian": 0,
+                "state_code": "5",
+                "skilled": 254,
+                "lga_code11": "55110",
+                "family": 219,
+                "state": "Western Australia"
+            },
+            "id": "lga_settlement_data_2020.413"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Cambridge (T)",
+                "humanitarian": 0,
+                "state_code": "5",
+                "skilled": 253,
+                "lga_code11": "51310",
+                "family": 85,
+                "state": "Western Australia"
+            },
+            "id": "lga_settlement_data_2020.414"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Kwinana (T)",
+                "humanitarian": 0,
+                "state_code": "5",
+                "skilled": 140,
+                "lga_code11": "54830",
+                "family": 167,
+                "state": "Western Australia"
+            },
+            "id": "lga_settlement_data_2020.415"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Kalgoorlie\/Boulder (C)",
+                "humanitarian": 5,
+                "state_code": "5",
+                "skilled": 150,
+                "lga_code11": "54280",
+                "family": 115,
+                "state": "Western Australia"
+            },
+            "id": "lga_settlement_data_2020.416"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Bunbury (C)",
+                "humanitarian": 7,
+                "state_code": "5",
+                "skilled": 144,
+                "lga_code11": "51190",
+                "family": 107,
+                "state": "Western Australia"
+            },
+            "id": "lga_settlement_data_2020.417"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Subiaco (C)",
+                "humanitarian": 0,
+                "state_code": "5",
+                "skilled": 128,
+                "lga_code11": "57980",
+                "family": 68,
+                "state": "Western Australia"
+            },
+            "id": "lga_settlement_data_2020.418"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Nedlands (C)",
+                "humanitarian": 0,
+                "state_code": "5",
+                "skilled": 158,
+                "lga_code11": "56580",
+                "family": 32,
+                "state": "Western Australia"
+            },
+            "id": "lga_settlement_data_2020.419"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Kalamunda (S)",
+                "humanitarian": 6,
+                "state_code": "5",
+                "skilled": 42,
+                "lga_code11": "54200",
+                "family": 136,
+                "state": "Western Australia"
+            },
+            "id": "lga_settlement_data_2020.420"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Roebourne (S)",
+                "humanitarian": 0,
+                "state_code": "5",
+                "skilled": 80,
+                "lga_code11": "57560",
+                "family": 88,
+                "state": "Western Australia"
+            },
+            "id": "lga_settlement_data_2020.421"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Busselton (S)",
+                "humanitarian": 0,
+                "state_code": "5",
+                "skilled": 72,
+                "lga_code11": "51260",
+                "family": 94,
+                "state": "Western Australia"
+            },
+            "id": "lga_settlement_data_2020.422"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Harvey (S)",
+                "humanitarian": null,
+                "state_code": "5",
+                "skilled": 124,
+                "lga_code11": "53990",
+                "family": 40,
+                "state": "Western Australia"
+            },
+            "id": "lga_settlement_data_2020.423"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Fremantle (C)",
+                "humanitarian": 0,
+                "state_code": "5",
+                "skilled": 55,
+                "lga_code11": "53430",
+                "family": 101,
+                "state": "Western Australia"
+            },
+            "id": "lga_settlement_data_2020.424"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Serpentine-Jarrahdale (S)",
+                "humanitarian": null,
+                "state_code": "5",
+                "skilled": 71,
+                "lga_code11": "57700",
+                "family": 60,
+                "state": "Western Australia"
+            },
+            "id": "lga_settlement_data_2020.425"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Bassendean (T)",
+                "humanitarian": null,
+                "state_code": "5",
+                "skilled": 39,
+                "lga_code11": "50350",
+                "family": 85,
+                "state": "Western Australia"
+            },
+            "id": "lga_settlement_data_2020.427"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Augusta-Margaret River (S)",
+                "humanitarian": 0,
+                "state_code": "5",
+                "skilled": 49,
+                "lga_code11": "50280",
+                "family": 75,
+                "state": "Western Australia"
+            },
+            "id": "lga_settlement_data_2020.428"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Broome (S)",
+                "humanitarian": 0,
+                "state_code": "5",
+                "skilled": 78,
+                "lga_code11": "50980",
+                "family": 37,
+                "state": "Western Australia"
+            },
+            "id": "lga_settlement_data_2020.429"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Albany (C)",
+                "humanitarian": 0,
+                "state_code": "5",
+                "skilled": 46,
+                "lga_code11": "50080",
+                "family": 67,
+                "state": "Western Australia"
+            },
+            "id": "lga_settlement_data_2020.430"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Port Hedland (T)",
+                "humanitarian": 0,
+                "state_code": "5",
+                "skilled": 33,
+                "lga_code11": "57280",
+                "family": 64,
+                "state": "Western Australia"
+            },
+            "id": "lga_settlement_data_2020.431"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Claremont (T)",
+                "humanitarian": 0,
+                "state_code": "5",
+                "skilled": 61,
+                "lga_code11": "51750",
+                "family": 33,
+                "state": "Western Australia"
+            },
+            "id": "lga_settlement_data_2020.432"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Mosman Park (T)",
+                "humanitarian": 0,
+                "state_code": "5",
+                "skilled": 61,
+                "lga_code11": "55740",
+                "family": 26,
+                "state": "Western Australia"
+            },
+            "id": "lga_settlement_data_2020.433"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Esperance (S)",
+                "humanitarian": 0,
+                "state_code": "5",
+                "skilled": 44,
+                "lga_code11": "53290",
+                "family": 32,
+                "state": "Western Australia"
+            },
+            "id": "lga_settlement_data_2020.434"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Mundaring (S)",
+                "humanitarian": 0,
+                "state_code": "5",
+                "skilled": 24,
+                "lga_code11": "56090",
+                "family": 29,
+                "state": "Western Australia"
+            },
+            "id": "lga_settlement_data_2020.435"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Cottesloe (T)",
+                "humanitarian": 0,
+                "state_code": "5",
+                "skilled": 12,
+                "lga_code11": "52170",
+                "family": 33,
+                "state": "Western Australia"
+            },
+            "id": "lga_settlement_data_2020.436"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Dardanup (S)",
+                "humanitarian": 0,
+                "state_code": "5",
+                "skilled": 20,
+                "lga_code11": "52660",
+                "family": 20,
+                "state": "Western Australia"
+            },
+            "id": "lga_settlement_data_2020.438"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Plantagenet (S)",
+                "humanitarian": 5,
+                "state_code": "5",
+                "skilled": 10,
+                "lga_code11": "57210",
+                "family": 24,
+                "state": "Western Australia"
+            },
+            "id": "lga_settlement_data_2020.441"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Ashburton (S)",
+                "humanitarian": 0,
+                "state_code": "5",
+                "skilled": 12,
+                "lga_code11": "50250",
+                "family": 23,
+                "state": "Western Australia"
+            },
+            "id": "lga_settlement_data_2020.442"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "East Pilbara (S)",
+                "humanitarian": 0,
+                "state_code": "5",
+                "skilled": 11,
+                "lga_code11": "53220",
+                "family": 23,
+                "state": "Western Australia"
+            },
+            "id": "lga_settlement_data_2020.443"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Dalwallinu (S)",
+                "humanitarian": 0,
+                "state_code": "5",
+                "skilled": 26,
+                "lga_code11": "52520",
+                "family": 6,
+                "state": "Western Australia"
+            },
+            "id": "lga_settlement_data_2020.444"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Murray (S)",
+                "humanitarian": 0,
+                "state_code": "5",
+                "skilled": 14,
+                "lga_code11": "56230",
+                "family": 17,
+                "state": "Western Australia"
+            },
+            "id": "lga_settlement_data_2020.445"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Dandaragan (S)",
+                "humanitarian": 0,
+                "state_code": "5",
+                "skilled": 20,
+                "lga_code11": "52590",
+                "family": 9,
+                "state": "Western Australia"
+            },
+            "id": "lga_settlement_data_2020.446"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Gingin (S)",
+                "humanitarian": 0,
+                "state_code": "5",
+                "skilled": 20,
+                "lga_code11": "53570",
+                "family": 8,
+                "state": "Western Australia"
+            },
+            "id": "lga_settlement_data_2020.447"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Carnarvon (S)",
+                "humanitarian": 0,
+                "state_code": "5",
+                "skilled": 16,
+                "lga_code11": "51540",
+                "family": 11,
+                "state": "Western Australia"
+            },
+            "id": "lga_settlement_data_2020.448"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Manjimup (S)",
+                "humanitarian": 0,
+                "state_code": "5",
+                "skilled": 12,
+                "lga_code11": "55180",
+                "family": 15,
+                "state": "Western Australia"
+            },
+            "id": "lga_settlement_data_2020.449"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Donnybrook-Balingup (S)",
+                "humanitarian": 0,
+                "state_code": "5",
+                "skilled": 8,
+                "lga_code11": "52870",
+                "family": 13,
+                "state": "Western Australia"
+            },
+            "id": "lga_settlement_data_2020.450"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "East Fremantle (T)",
+                "humanitarian": 0,
+                "state_code": "5",
+                "skilled": 12,
+                "lga_code11": "53150",
+                "family": 7,
+                "state": "Western Australia"
+            },
+            "id": "lga_settlement_data_2020.451"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Derby-West Kimberley (S)",
+                "humanitarian": 0,
+                "state_code": "5",
+                "skilled": 16,
+                "lga_code11": "52800",
+                "family": 4,
+                "state": "Western Australia"
+            },
+            "id": "lga_settlement_data_2020.452"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Merredin (S)",
+                "humanitarian": 0,
+                "state_code": "5",
+                "skilled": 12,
+                "lga_code11": "55460",
+                "family": 7,
+                "state": "Western Australia"
+            },
+            "id": "lga_settlement_data_2020.453"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Lake Grace (S)",
+                "humanitarian": 0,
+                "state_code": "5",
+                "skilled": 12,
+                "lga_code11": "54900",
+                "family": 6,
+                "state": "Western Australia"
+            },
+            "id": "lga_settlement_data_2020.454"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Exmouth (S)",
+                "humanitarian": 0,
+                "state_code": "5",
+                "skilled": 9,
+                "lga_code11": "53360",
+                "family": 7,
+                "state": "Western Australia"
+            },
+            "id": "lga_settlement_data_2020.455"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Katanning (S)",
+                "humanitarian": 0,
+                "state_code": "5",
+                "skilled": 5,
+                "lga_code11": "54340",
+                "family": 10,
+                "state": "Western Australia"
+            },
+            "id": "lga_settlement_data_2020.456"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Cranbrook (S)",
+                "humanitarian": 0,
+                "state_code": "5",
+                "skilled": 12,
+                "lga_code11": "52240",
+                "family": 4,
+                "state": "Western Australia"
+            },
+            "id": "lga_settlement_data_2020.457"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Denmark (S)",
+                "humanitarian": 0,
+                "state_code": "5",
+                "skilled": 4,
+                "lga_code11": "52730",
+                "family": 11,
+                "state": "Western Australia"
+            },
+            "id": "lga_settlement_data_2020.458"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Ravensthorpe (S)",
+                "humanitarian": 0,
+                "state_code": "5",
+                "skilled": 4,
+                "lga_code11": "57420",
+                "family": 10,
+                "state": "Western Australia"
+            },
+            "id": "lga_settlement_data_2020.459"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Cunderdin (S)",
+                "humanitarian": 0,
+                "state_code": "5",
+                "skilled": 7,
+                "lga_code11": "52450",
+                "family": 4,
+                "state": "Western Australia"
+            },
+            "id": "lga_settlement_data_2020.461"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Waroona (S)",
+                "humanitarian": 0,
+                "state_code": "5",
+                "skilled": 4,
+                "lga_code11": "58820",
+                "family": 9,
+                "state": "Western Australia"
+            },
+            "id": "lga_settlement_data_2020.462"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Kojonup (S)",
+                "humanitarian": 0,
+                "state_code": "5",
+                "skilled": 8,
+                "lga_code11": "54550",
+                "family": 4,
+                "state": "Western Australia"
+            },
+            "id": "lga_settlement_data_2020.463"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Wagin (S)",
+                "humanitarian": 0,
+                "state_code": "5",
+                "skilled": 4,
+                "lga_code11": "58610",
+                "family": 6,
+                "state": "Western Australia"
+            },
+            "id": "lga_settlement_data_2020.464"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Shark Bay (S)",
+                "humanitarian": 0,
+                "state_code": "5",
+                "skilled": 5,
+                "lga_code11": "57770",
+                "family": 4,
+                "state": "Western Australia"
+            },
+            "id": "lga_settlement_data_2020.465"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Northampton (S)",
+                "humanitarian": 0,
+                "state_code": "5",
+                "skilled": 4,
+                "lga_code11": "56790",
+                "family": 6,
+                "state": "Western Australia"
+            },
+            "id": "lga_settlement_data_2020.466"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Boddington (S)",
+                "humanitarian": 0,
+                "state_code": "5",
+                "skilled": 5,
+                "lga_code11": "50630",
+                "family": 4,
+                "state": "Western Australia"
+            },
+            "id": "lga_settlement_data_2020.467"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Narembeen (S)",
+                "humanitarian": 0,
+                "state_code": "5",
+                "skilled": 4,
+                "lga_code11": "56370",
+                "family": 4,
+                "state": "Western Australia"
+            },
+            "id": "lga_settlement_data_2020.468"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Gnowangerup (S)",
+                "humanitarian": 0,
+                "state_code": "5",
+                "skilled": 5,
+                "lga_code11": "53640",
+                "family": 4,
+                "state": "Western Australia"
+            },
+            "id": "lga_settlement_data_2020.469"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Moora (S)",
+                "humanitarian": 0,
+                "state_code": "5",
+                "skilled": 6,
+                "lga_code11": "55600",
+                "family": 4,
+                "state": "Western Australia"
+            },
+            "id": "lga_settlement_data_2020.470"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Toodyay (S)",
+                "humanitarian": 0,
+                "state_code": "5",
+                "skilled": 4,
+                "lga_code11": "58330",
+                "family": 7,
+                "state": "Western Australia"
+            },
+            "id": "lga_settlement_data_2020.471"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Collie (S)",
+                "humanitarian": 0,
+                "state_code": "5",
+                "skilled": 4,
+                "lga_code11": "51890",
+                "family": 5,
+                "state": "Western Australia"
+            },
+            "id": "lga_settlement_data_2020.472"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Coolgardie (S)",
+                "humanitarian": 0,
+                "state_code": "5",
+                "skilled": 4,
+                "lga_code11": "51960",
+                "family": 4,
+                "state": "Western Australia"
+            },
+            "id": "lga_settlement_data_2020.473"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Kellerberrin (S)",
+                "humanitarian": 0,
+                "state_code": "5",
+                "skilled": 4,
+                "lga_code11": "54410",
+                "family": 4,
+                "state": "Western Australia"
+            },
+            "id": "lga_settlement_data_2020.475"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Jerramungup (S)",
+                "humanitarian": 0,
+                "state_code": "5",
+                "skilled": 4,
+                "lga_code11": "54130",
+                "family": 4,
+                "state": "Western Australia"
+            },
+            "id": "lga_settlement_data_2020.476"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Corrigin (S)",
+                "humanitarian": 0,
+                "state_code": "5",
+                "skilled": 4,
+                "lga_code11": "52100",
+                "family": 4,
+                "state": "Western Australia"
+            },
+            "id": "lga_settlement_data_2020.477"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Leonora (S)",
+                "humanitarian": 0,
+                "state_code": "5",
+                "skilled": 0,
+                "lga_code11": "55040",
+                "family": 6,
+                "state": "Western Australia"
+            },
+            "id": "lga_settlement_data_2020.478"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Mingenew (S)",
+                "humanitarian": 0,
+                "state_code": "5",
+                "skilled": 4,
+                "lga_code11": "55530",
+                "family": 4,
+                "state": "Western Australia"
+            },
+            "id": "lga_settlement_data_2020.479"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Capel (S)",
+                "humanitarian": 0,
+                "state_code": "5",
+                "skilled": 4,
+                "lga_code11": "51400",
+                "family": 4,
+                "state": "Western Australia"
+            },
+            "id": "lga_settlement_data_2020.480"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Cuballing (S)",
+                "humanitarian": 0,
+                "state_code": "5",
+                "skilled": 4,
+                "lga_code11": "52310",
+                "family": 4,
+                "state": "Western Australia"
+            },
+            "id": "lga_settlement_data_2020.481"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Halls Creek (S)",
+                "humanitarian": 0,
+                "state_code": "5",
+                "skilled": 4,
+                "lga_code11": "53920",
+                "family": 4,
+                "state": "Western Australia"
+            },
+            "id": "lga_settlement_data_2020.482"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Boyup Brook (S)",
+                "humanitarian": 0,
+                "state_code": "5",
+                "skilled": 0,
+                "lga_code11": "50770",
+                "family": 4,
+                "state": "Western Australia"
+            },
+            "id": "lga_settlement_data_2020.483"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Beverley (S)",
+                "humanitarian": 0,
+                "state_code": "5",
+                "skilled": 4,
+                "lga_code11": "50560",
+                "family": 4,
+                "state": "Western Australia"
+            },
+            "id": "lga_settlement_data_2020.484"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Kulin (S)",
+                "humanitarian": 0,
+                "state_code": "5",
+                "skilled": 4,
+                "lga_code11": "54760",
+                "family": 4,
+                "state": "Western Australia"
+            },
+            "id": "lga_settlement_data_2020.485"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Irwin (S)",
+                "humanitarian": 0,
+                "state_code": "5",
+                "skilled": 4,
+                "lga_code11": "54060",
+                "family": 4,
+                "state": "Western Australia"
+            },
+            "id": "lga_settlement_data_2020.486"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Bridgetown-Greenbushes (S)",
+                "humanitarian": 0,
+                "state_code": "5",
+                "skilled": 0,
+                "lga_code11": "50840",
+                "family": 4,
+                "state": "Western Australia"
+            },
+            "id": "lga_settlement_data_2020.487"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Victoria Plains (S)",
+                "humanitarian": 0,
+                "state_code": "5",
+                "skilled": 4,
+                "lga_code11": "58540",
+                "family": 0,
+                "state": "Western Australia"
+            },
+            "id": "lga_settlement_data_2020.488"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Coorow (S)",
+                "humanitarian": 0,
+                "state_code": "5",
+                "skilled": 0,
+                "lga_code11": "52030",
+                "family": 4,
+                "state": "Western Australia"
+            },
+            "id": "lga_settlement_data_2020.489"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Williams (S)",
+                "humanitarian": 0,
+                "state_code": "5",
+                "skilled": 4,
+                "lga_code11": "59170",
+                "family": 4,
+                "state": "Western Australia"
+            },
+            "id": "lga_settlement_data_2020.490"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Goomalling (S)",
+                "humanitarian": 0,
+                "state_code": "5",
+                "skilled": 0,
+                "lga_code11": "53710",
+                "family": 4,
+                "state": "Western Australia"
+            },
+            "id": "lga_settlement_data_2020.491"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Kondinin (S)",
+                "humanitarian": 0,
+                "state_code": "5",
+                "skilled": 0,
+                "lga_code11": "54620",
+                "family": 4,
+                "state": "Western Australia"
+            },
+            "id": "lga_settlement_data_2020.492"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Quairading (S)",
+                "humanitarian": 0,
+                "state_code": "5",
+                "skilled": 0,
+                "lga_code11": "57350",
+                "family": 4,
+                "state": "Western Australia"
+            },
+            "id": "lga_settlement_data_2020.493"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Perenjori (S)",
+                "humanitarian": 0,
+                "state_code": "5",
+                "skilled": 0,
+                "lga_code11": "57000",
+                "family": 4,
+                "state": "Western Australia"
+            },
+            "id": "lga_settlement_data_2020.494"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Mount Marshall (S)",
+                "humanitarian": 0,
+                "state_code": "5",
+                "skilled": 0,
+                "lga_code11": "55880",
+                "family": 4,
+                "state": "Western Australia"
+            },
+            "id": "lga_settlement_data_2020.495"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Mount Magnet (S)",
+                "humanitarian": 0,
+                "state_code": "5",
+                "skilled": 0,
+                "lga_code11": "55810",
+                "family": 4,
+                "state": "Western Australia"
+            },
+            "id": "lga_settlement_data_2020.496"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Nannup (S)",
+                "humanitarian": 0,
+                "state_code": "5",
+                "skilled": 0,
+                "lga_code11": "56300",
+                "family": 4,
+                "state": "Western Australia"
+            },
+            "id": "lga_settlement_data_2020.497"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Brookton (S)",
+                "humanitarian": 0,
+                "state_code": "5",
+                "skilled": 0,
+                "lga_code11": "50910",
+                "family": 4,
+                "state": "Western Australia"
+            },
+            "id": "lga_settlement_data_2020.498"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "West Arthur (S)",
+                "humanitarian": 0,
+                "state_code": "5",
+                "skilled": 4,
+                "lga_code11": "58890",
+                "family": 0,
+                "state": "Western Australia"
+            },
+            "id": "lga_settlement_data_2020.499"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Mullewa (S)",
+                "humanitarian": 0,
+                "state_code": "5",
+                "skilled": 4,
+                "lga_code11": "56020",
+                "family": 4,
+                "state": "Western Australia"
+            },
+            "id": "lga_settlement_data_2020.500"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Wongan-Ballidu (S)",
+                "humanitarian": 0,
+                "state_code": "5",
+                "skilled": 4,
+                "lga_code11": "59310",
+                "family": 4,
+                "state": "Western Australia"
+            },
+            "id": "lga_settlement_data_2020.501"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Dundas (S)",
+                "humanitarian": 0,
+                "state_code": "5",
+                "skilled": 4,
+                "lga_code11": "53080",
+                "family": 4,
+                "state": "Western Australia"
+            },
+            "id": "lga_settlement_data_2020.502"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Carnamah (S)",
+                "humanitarian": 0,
+                "state_code": "5",
+                "skilled": 4,
+                "lga_code11": "51470",
+                "family": 4,
+                "state": "Western Australia"
+            },
+            "id": "lga_settlement_data_2020.503"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Meekatharra (S)",
+                "humanitarian": 0,
+                "state_code": "5",
+                "skilled": 4,
+                "lga_code11": "55250",
+                "family": 4,
+                "state": "Western Australia"
+            },
+            "id": "lga_settlement_data_2020.504"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Tammin (S)",
+                "humanitarian": 0,
+                "state_code": "5",
+                "skilled": 4,
+                "lga_code11": "58190",
+                "family": 0,
+                "state": "Western Australia"
+            },
+            "id": "lga_settlement_data_2020.505"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Laverton (S)",
+                "humanitarian": 0,
+                "state_code": "5",
+                "skilled": 0,
+                "lga_code11": "54970",
+                "family": 4,
+                "state": "Western Australia"
+            },
+            "id": "lga_settlement_data_2020.507"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Cue (S)",
+                "humanitarian": 0,
+                "state_code": "5",
+                "skilled": 4,
+                "lga_code11": "52380",
+                "family": 0,
+                "state": "Western Australia"
+            },
+            "id": "lga_settlement_data_2020.508"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Mukinbudin (S)",
+                "humanitarian": 0,
+                "state_code": "5",
+                "skilled": 0,
+                "lga_code11": "55950",
+                "family": 4,
+                "state": "Western Australia"
+            },
+            "id": "lga_settlement_data_2020.509"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Pingelly (S)",
+                "humanitarian": 0,
+                "state_code": "5",
+                "skilled": 0,
+                "lga_code11": "57140",
+                "family": 4,
+                "state": "Western Australia"
+            },
+            "id": "lga_settlement_data_2020.510"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Trayning (S)",
+                "humanitarian": 0,
+                "state_code": "5",
+                "skilled": 0,
+                "lga_code11": "58400",
+                "family": 4,
+                "state": "Western Australia"
+            },
+            "id": "lga_settlement_data_2020.511"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Westonia (S)",
+                "humanitarian": 0,
+                "state_code": "5",
+                "skilled": 0,
+                "lga_code11": "59030",
+                "family": 4,
+                "state": "Western Australia"
+            },
+            "id": "lga_settlement_data_2020.513"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Wickepin (S)",
+                "humanitarian": 0,
+                "state_code": "5",
+                "skilled": 0,
+                "lga_code11": "59100",
+                "family": 4,
+                "state": "Western Australia"
+            },
+            "id": "lga_settlement_data_2020.515"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Dumbleyung (S)",
+                "humanitarian": 0,
+                "state_code": "5",
+                "skilled": 0,
+                "lga_code11": "53010",
+                "family": 4,
+                "state": "Western Australia"
+            },
+            "id": "lga_settlement_data_2020.516"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Morawa (S)",
+                "humanitarian": 0,
+                "state_code": "5",
+                "skilled": 0,
+                "lga_code11": "55670",
+                "family": 4,
+                "state": "Western Australia"
+            },
+            "id": "lga_settlement_data_2020.517"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "lga_name11": "Menzies (S)",
+                "humanitarian": 0,
+                "state_code": "5",
+                "skilled": 4,
+                "lga_code11": "55390",
+                "family": 0,
+                "state": "Western Australia"
+            },
+            "id": "lga_settlement_data_2020.518"
+        }
+    ]
+}
