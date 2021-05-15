@@ -3,14 +3,31 @@ import MapGL, {Source, Layer} from 'react-map-gl';
 // import ControlPanel from './control-panel';
 import {dataLayer} from './map-style.js';
 import {updatePercentiles} from './utils';
+import { makeStyles } from "@material-ui/core/styles";
 
 const MAPBOX_TOKEN = 'pk.eyJ1IjoidG9yYXljYWFhIiwiYSI6ImNrZXhmOTk4YzBqb2Mydm1mZzB3cnUxNWQifQ.tCTNSJ5vcc_-pF57gh7PVw'; // Set your mapbox token here
 
-export default function Map() {
+
+const useStyles = makeStyles(() => ({
+  tooltip:{
+    position: "absolute",
+    margin: "8px",
+    padding: "4px",
+    background: "rgba(0, 0, 0, 0.8)",
+    color: "#fff",
+    maxWidth: "300px",
+    fontSize: "10px",
+    zIndex: 9,
+    pointerEvents: "none",
+  }
+ }))
+
+function Map() {
+  const classes = useStyles();
   const [viewport, setViewport] = useState({
-    latitude: -37.801164799999995,
-    longitude: 144.95907839999998,
-    zoom: 3,
+    latitude: -27,
+    longitude: 135,
+    zoom: 4,
     bearing: 0,
     pitch: 0
   });
@@ -35,7 +52,7 @@ export default function Map() {
       srcEvent: {offsetX, offsetY}
     } = event;
     const hoveredFeature = features && features[0];
-
+    console.log(offsetX)
     setHoverInfo(
       hoveredFeature
         ? {
@@ -67,10 +84,10 @@ export default function Map() {
           <Layer {...dataLayer} />
         </Source>
         {hoverInfo && (
-          <div className="tooltip" style={{left: hoverInfo.x, top: hoverInfo.y}}>
-            <div>State: {hoverInfo.feature.properties.name}</div>
-            <div>Median Household Income: {hoverInfo.feature.properties.value}</div>
-            <div>Percentile: {(hoverInfo.feature.properties.percentile / 8) * 100}</div>
+          <div className={classes.tooltip} style={{left: hoverInfo.x, top: hoverInfo.y}}>
+            <div>State: {hoverInfo.feature.properties.STATE_NAME}</div>
+            <div>State Code: {hoverInfo.feature.properties.STATE_CODE}</div>
+            <div>State Code: {JSON.stringify(hoverInfo.x)}</div>
           </div>
         )}
       </MapGL>
@@ -79,3 +96,4 @@ export default function Map() {
     </>
   );
 }
+export default Map;
