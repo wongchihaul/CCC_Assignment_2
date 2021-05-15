@@ -2,8 +2,9 @@ import "./App.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Header from "components/global/header"; // relative path config
 import Home from "components/global/home";
-// import Map from "components/global/map";
-import Map from "components/global/map_1";
+import Map from "components/maps/map";
+import Statistics from "components/global/statistics";
+import Monitoring from "components/global/monitoring";
 
 function App() {
   return (
@@ -19,6 +20,12 @@ function App() {
           </Route>
           <Route exact path="/map">
             <Map />
+          </Route>
+          <Route exact path="/statistics">
+            <Statistics />
+          </Route>
+          <Route exact path="/monitoring">
+            <Monitoring />
           </Route>
         </Switch>
         </div>{" "}
