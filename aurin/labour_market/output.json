@@ -1,0 +1,202 @@
+{
+    "Sydney": {
+        "details": [
+            {
+                "age_grp": "15 to 24",
+                "pop": "689400",
+                "pop_distribution": "15.8"
+            },
+            {
+                "age_grp": "25 to 34",
+                "pop": "895500",
+                "pop_distribution": "20.5"
+            },
+            {
+                "age_grp": "35 to 44",
+                "pop": "780900",
+                "pop_distribution": "17.9"
+            },
+            {
+                "age_grp": "45 to 54",
+                "pop": "662800",
+                "pop_distribution": "15.2"
+            },
+            {
+                "age_grp": "55 to 64",
+                "pop": "574300",
+                "pop_distribution": "13.1"
+            },
+            {
+                "age_grp": "65 and over",
+                "pop": "771300",
+                "pop_distribution": "17.6"
+            }
+        ],
+        "summary": {
+            "total_pop": "3602900",
+            "employ_rate": "73.2",
+            "unemploy_15": "6.2",
+            "unemploy_15_24": "13.1"
+        }
+    },
+    "Melbourne": {
+        "details": [
+            {
+                "age_grp": "15 to 24",
+                "pop": "674500",
+                "pop_distribution": "16"
+            },
+            {
+                "age_grp": "25 to 34",
+                "pop": "890400",
+                "pop_distribution": "21.1"
+            },
+            {
+                "age_grp": "35 to 44",
+                "pop": "748100",
+                "pop_distribution": "17.7"
+            },
+            {
+                "age_grp": "45 to 54",
+                "pop": "641400",
+                "pop_distribution": "15.2"
+            },
+            {
+                "age_grp": "55 to 64",
+                "pop": "538000",
+                "pop_distribution": "12.7"
+            },
+            {
+                "age_grp": "65 and over",
+                "pop": "733000",
+                "pop_distribution": "17.3"
+            }
+        ],
+        "summary": {
+            "total_pop": "3492300",
+            "employ_rate": "71.7",
+            "unemploy_15": "6.9",
+            "unemploy_15_24": "16.1"
+        }
+    },
+    "Brisbane": {
+        "details": [
+            {
+                "age_grp": "15 to 24",
+                "pop": "342500",
+                "pop_distribution": "16.7"
+            },
+            {
+                "age_grp": "25 to 34",
+                "pop": "397300",
+                "pop_distribution": "19.3"
+            },
+            {
+                "age_grp": "35 to 44",
+                "pop": "355100",
+                "pop_distribution": "17.3"
+            },
+            {
+                "age_grp": "45 to 54",
+                "pop": "327200",
+                "pop_distribution": "15.9"
+            },
+            {
+                "age_grp": "55 to 64",
+                "pop": "273000",
+                "pop_distribution": "13.3"
+            },
+            {
+                "age_grp": "65 and over",
+                "pop": "359100",
+                "pop_distribution": "17.5"
+            }
+        ],
+        "summary": {
+            "total_pop": "1695200",
+            "employ_rate": "71.59999999999999",
+            "unemploy_15": "7.3",
+            "unemploy_15_24": "15.6"
+        }
+    },
+    "Adelaide": {
+        "details": [
+            {
+                "age_grp": "15 to 24",
+                "pop": "172700",
+                "pop_distribution": "15.3"
+            },
+            {
+                "age_grp": "25 to 34",
+                "pop": "192500",
+                "pop_distribution": "17"
+            },
+            {
+                "age_grp": "35 to 44",
+                "pop": "178300",
+                "pop_distribution": "15.8"
+            },
+            {
+                "age_grp": "45 to 54",
+                "pop": "173800",
+                "pop_distribution": "15.4"
+            },
+            {
+                "age_grp": "55 to 64",
+                "pop": "165500",
+                "pop_distribution": "14.7"
+            },
+            {
+                "age_grp": "65 and over",
+                "pop": "246300",
+                "pop_distribution": "21.8"
+            }
+        ],
+        "summary": {
+            "total_pop": "882900",
+            "employ_rate": "71.90000000000001",
+            "unemploy_15": "7",
+            "unemploy_15_24": "14.8"
+        }
+    },
+    "Perth": {
+        "details": [
+            {
+                "age_grp": "15 to 24",
+                "pop": "264700",
+                "pop_distribution": "15.5"
+            },
+            {
+                "age_grp": "25 to 34",
+                "pop": "319100",
+                "pop_distribution": "18.6"
+            },
+            {
+                "age_grp": "35 to 44",
+                "pop": "299100",
+                "pop_distribution": "17.5"
+            },
+            {
+                "age_grp": "45 to 54",
+                "pop": "272100",
+                "pop_distribution": "15.9"
+            },
+            {
+                "age_grp": "55 to 64",
+                "pop": "237000",
+                "pop_distribution": "13.8"
+            },
+            {
+                "age_grp": "65 and over",
+                "pop": "319400",
+                "pop_distribution": "18.7"
+            }
+        ],
+        "summary": {
+            "total_pop": "1392000",
+            "employ_rate": "73.59999999999999",
+            "unemploy_15": "7",
+            "unemploy_15_24": "14.7"
+        }
+    }
+}
