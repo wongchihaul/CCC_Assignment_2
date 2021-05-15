@@ -1,6 +1,0 @@
----
-- name: git pull
-  shell: git pull
-  become: yes
-  args:
-    chdir: "{{ git_repo }}"

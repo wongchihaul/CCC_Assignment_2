@@ -1,3 +1,0 @@
-#!/bin/bash
-
-VENV="./env/"

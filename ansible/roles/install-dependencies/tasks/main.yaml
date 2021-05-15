@@ -1,5 +1,0 @@
-- name: install dependencies
-  become: yes
-  apt:
-    name: ["docker-compose"]
-    state: latest
