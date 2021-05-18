@@ -1,3 +1,4 @@
+
 export function PopupCharts(props) {
   const { info } = props;
   const STATE_NAME = info.feature.properties.STATE_NAME;

@@ -1,5 +1,5 @@
 import {useState, useEffect, useCallback, useMemo} from 'react';
-import MapGL, {Source, Layer, Popup,} from 'react-map-gl';
+import MapGL, {Source, Layer, Popup, FullscreenControl, ScaleControl, NavigationControl } from 'react-map-gl';
 // import ControlPanel from './control-panel';
 import {dataLayer} from './map-style.js';
 import {updatePercentiles} from './utils';
@@ -8,6 +8,21 @@ import { makeStyles } from "@material-ui/core/styles";
 
 const MAPBOX_TOKEN = 'pk.eyJ1IjoidG9yYXljYWFhIiwiYSI6ImNrZXhmOTk4YzBqb2Mydm1mZzB3cnUxNWQifQ.tCTNSJ5vcc_-pF57gh7PVw'; // Set your mapbox token here
 
+const fullscreenControlStyle = {
+  top: 0,
+  left: 0,
+  padding: '10px'
+};
+const scaleControlStyle = {
+  bottom: 0,
+  left: 0,
+  padding: '10px'
+};
+const navStyle = {
+  top: 36,
+  left: 0,
+  padding: '10px'
+};
 
 const useStyles = makeStyles(() => ({
   tooltip:{
@@ -120,7 +135,9 @@ function Map() {
            <PopupCharts info={popupInfo}></PopupCharts>
           </Popup>
         )}
-        
+        <FullscreenControl style={fullscreenControlStyle} />
+        <NavigationControl style={navStyle} />
+        <ScaleControl style={scaleControlStyle} />
       </MapGL>
 
       {/* <ControlPanel year={year} onChange={value => setYear(value)} /> */}
