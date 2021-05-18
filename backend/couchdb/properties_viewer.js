@@ -17,7 +17,7 @@ module.exports = propertiesViewer;
 async function propertiesViewer() {
   try {
 
-    const data = await fetch('http://admin:admin@localhost:5984/aurin/_design/viewTest/_view/statTest?group=true').then(r => r.json())
+    const data = await fetch('http://admin:admin@45.113.233.7:5984/twitter_user/_design/viewTwitterUserTest/_view/sum_twitter?group=true').then(r => r.json())
     console.log(data.name);
     return data;
   } catch (error) {
