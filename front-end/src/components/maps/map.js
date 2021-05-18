@@ -1,8 +1,9 @@
 import {useState, useEffect, useCallback, useMemo} from 'react';
-import MapGL, {Source, Layer} from 'react-map-gl';
+import MapGL, {Source, Layer, Popup,} from 'react-map-gl';
 // import ControlPanel from './control-panel';
 import {dataLayer} from './map-style.js';
 import {updatePercentiles} from './utils';
+import {PopupCharts} from './charts/popup-charts';
 import { makeStyles } from "@material-ui/core/styles";
 
 const MAPBOX_TOKEN = 'pk.eyJ1IjoidG9yYXljYWFhIiwiYSI6ImNrZXhmOTk4YzBqb2Mydm1mZzB3cnUxNWQifQ.tCTNSJ5vcc_-pF57gh7PVw'; // Set your mapbox token here
@@ -34,6 +35,7 @@ function Map() {
   const [year, setYear] = useState(1);
   const [allData, setAllData] = useState(null);
   const [hoverInfo, setHoverInfo] = useState(null);
+  const [popupInfo, setPopupInfo] = useState(null);
 
   useEffect(() => {
     /* global fetch */
@@ -52,7 +54,6 @@ function Map() {
       srcEvent: {offsetX, offsetY}
     } = event;
     const hoveredFeature = features && features[0];
-    console.log(offsetX)
     setHoverInfo(
       hoveredFeature
         ? {
@@ -79,17 +80,47 @@ function Map() {
         mapboxApiAccessToken={MAPBOX_TOKEN}
         interactiveLayerIds={['data']}
         onHover={onHover}
+        onClick={(event)=>{
+            const {
+              features,
+              lngLat: [longitude, latitude],
+            } = event;
+            const clickedFeature = features && features[0];   
+            setPopupInfo(
+              clickedFeature? 
+              {
+                    feature: clickedFeature,
+                    longitude: longitude,
+                    latitude: latitude
+                  }
+                : null
+            );   
+        }}
       >
-        <Source type="geojson" data={data}>
+        <Source type="geojson" data={data} >
           <Layer {...dataLayer} />
         </Source>
-        {hoverInfo && (
+        {hoverInfo && !popupInfo && (
           <div className={classes.tooltip} style={{left: hoverInfo.x, top: hoverInfo.y}}>
             <div>State: {hoverInfo.feature.properties.STATE_NAME}</div>
             <div>State Code: {hoverInfo.feature.properties.STATE_CODE}</div>
             <div>State Code: {JSON.stringify(hoverInfo.x)}</div>
           </div>
         )}
+
+        {popupInfo && (
+          <Popup
+            tipSize={6}
+            anchor="top"
+            longitude={popupInfo.longitude}
+            latitude={popupInfo.latitude}
+            closeOnClick={true}
+            onClose={setPopupInfo}
+          >
+           <PopupCharts info={popupInfo}></PopupCharts>
+          </Popup>
+        )}
+        
       </MapGL>
 
       {/* <ControlPanel year={year} onChange={value => setYear(value)} /> */}
