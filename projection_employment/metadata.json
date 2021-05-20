@@ -1,0 +1,386 @@
+{
+  "organisation": "AU_Govt_DJSB",
+  "name": "djsb_employment_projections_by_industry_gccsa_2017",
+  "title": "DJSB Labour Market Data - Employment Projection by Industry GCCSA 2017",
+  "legal": {
+    "attribution": "{datasource.organisationTitle}, ({dataset.attributionYear}): {dataset.title}; accessed from AURIN on {dateOfAccess}.",
+    "attributionYear": "2018",
+    "clickthrough": false,
+    "copyrightNotice": "&copy; {datasource.organisationTitle} {dataset.copyrightYear}",
+    "copyrightYear": "2018",
+    "licenceType": "Creative Commons Attribution 4.0 International (CC BY 4.0)"
+  },
+  "referenceSystemIdentifier": "urn:x-ogc:def:crs:EPSG:4283",
+  "geoLevel": "gccsa",
+  "key": "gcc_code11",
+  "keyRegex": null,
+  "availability": "true",
+  "geomField": "wkb_geometry",
+  "keyword": "business,paticipation,abs,services,employment,unemployment,labour market,market,jobs,economy",
+  "theme": null,
+  "temporalExtent": {
+    "beginDate": "2017-01-01T00:00:00",
+    "endDate": "2022-05-31T00:00:00",
+    "selectTime": false
+  },
+  "type": "dataset",
+  "_id": "dataset-AU_Govt_DJSB-djsb_employment_projections_by_industry_gccsa_2017-gccsa",
+  "bbox": [96.81, -43.75, 159.11, -9.14],
+  "abstract": "This dataset presents the change in employment  through a projection of employment by industries for the Greater Capital City Statistical Area (GCCSA) regions projected from 2017 to May 2022. The boundaries for this dataset follow the 2011 edition of the Australian Statistical Geography Standard (ASGS).<br/><br/>\n\nThe Australian Government Department of Jobs and Small Business publishes a range of labour market data on its <a href=\"http://lmip.gov.au\" target=\"_blank\">Labour Market Information Portal</a>. The data provided includes unemployment rate, employment rate, participation rate, youth unemployment rate, unemployment duration, population by age group and employment by industry and occupation.<br/><br/>\n\n\nPlease note: \n<ul>\n<li>AURIN has spatially enabled the <a href=\"http://lmip.gov.au/default.aspx?LMIP/Downloads/ABSLabourForceRegion\" target=\"_blank\">original data</a>.</li>\n<li>Data Source: ABS Labour Force Survey, four quarter average.</li>\n</ul>\n\n\n\n\n",
+  "selectedAttributes": [
+    {
+      "name": "gcc_code11",
+      "type": "String",
+      "title": "GCCSA Code",
+      "description": "GCCSA Code.",
+      "isDimension": false
+    },
+    {
+      "name": "gcc_name11",
+      "type": "String",
+      "title": "GCCSA Name",
+      "description": "GCCSA Name.",
+      "isDimension": false
+    },
+    {
+      "name": "proj_empy_grth_five_yrs_may_2022_000_accom_food",
+      "type": "Double",
+      "title": "Projected Employment Growth - Five Years To May 2022 (000) Accommodation And Food Services ",
+      "description": "Projected Employment Growth - Five Years To May 2022 (000) Accommodation And Food Services .",
+      "stype": "ratio",
+      "isDimension": false
+    },
+    {
+      "name": "proj_empy_grth_five_yrs_may_2022_000_admt_supp",
+      "type": "Double",
+      "title": "Projected Employment Growth - Five Years To May 2022 (000) Administrative And Support Services ",
+      "description": "Projected Employment Growth - Five Years To May 2022 (000) Administrative And Support Services .",
+      "stype": "ratio",
+      "isDimension": false
+    },
+    {
+      "name": "proj_empy_grth_five_yrs_may_2022_000_agri_frsty_fish",
+      "type": "Double",
+      "title": "Projected Employment Growth - Five Years To May 2022 (000) Agriculture, Forestry And Fishing ",
+      "description": "Projected Employment Growth - Five Years To May 2022 (000) Agriculture, Forestry And Fishing .",
+      "stype": "ratio",
+      "isDimension": false
+    },
+    {
+      "name": "proj_empy_grth_five_yrs_may_2022_000_arts_rec",
+      "type": "Double",
+      "title": "Projected Employment Growth - Five Years To May 2022 (000) Arts And Recreation Services ",
+      "description": "Projected Employment Growth - Five Years To May 2022 (000) Arts And Recreation Services .",
+      "stype": "ratio",
+      "isDimension": false
+    },
+    {
+      "name": "proj_empy_grth_five_yrs_may_2022_000_cons",
+      "type": "Double",
+      "title": "Projected Employment Growth - Five Years To May 2022 (000) Construction ",
+      "description": "Projected Employment Growth - Five Years To May 2022 (000) Construction .",
+      "stype": "ratio",
+      "isDimension": false
+    },
+    {
+      "name": "proj_empy_grth_five_yrs_may_2022_000_edu_training",
+      "type": "Double",
+      "title": "Projected Employment Growth - Five Years To May 2022 (000) Education And Training ",
+      "description": "Projected Employment Growth - Five Years To May 2022 (000) Education And Training .",
+      "stype": "ratio",
+      "isDimension": false
+    },
+    {
+      "name": "proj_empy_grth_five_yrs_may_2022_000_finc_insur",
+      "type": "Double",
+      "title": "Projected Employment Growth - Five Years To May 2022 (000) Financial And Insurance Services ",
+      "description": "Projected Employment Growth - Five Years To May 2022 (000) Financial And Insurance Services .",
+      "stype": "ratio",
+      "isDimension": false
+    },
+    {
+      "name": "proj_empy_grth_five_yrs_may_2022_000_hlth_care_soc_asst",
+      "type": "Double",
+      "title": "Projected Employment Growth - Five Years To May 2022 (000) Health Care And Social Assistance ",
+      "description": "Projected Employment Growth - Five Years To May 2022 (000) Health Care And Social Assistance .",
+      "stype": "ratio",
+      "isDimension": false
+    },
+    {
+      "name": "proj_empy_grth_five_yrs_may_2022_000_info_med_coms",
+      "type": "Double",
+      "title": "Projected Employment Growth - Five Years To May 2022 (000) Information Media And Telecommunications ",
+      "description": "Projected Employment Growth - Five Years To May 2022 (000) Information Media And Telecommunications .",
+      "stype": "ratio",
+      "isDimension": false
+    },
+    {
+      "name": "proj_empy_grth_five_yrs_may_2022_000_manu",
+      "type": "Double",
+      "title": "Projected Employment Growth - Five Years To May 2022 (000) Manufacturing ",
+      "description": "Projected Employment Growth - Five Years To May 2022 (000) Manufacturing .",
+      "stype": "ratio",
+      "isDimension": false
+    },
+    {
+      "name": "proj_empy_grth_five_yrs_may_2022_000_mining",
+      "type": "Double",
+      "title": "Projected Employment Growth - Five Years To May 2022 (000) Mining ",
+      "description": "Projected Employment Growth - Five Years To May 2022 (000) Mining .",
+      "stype": "ratio",
+      "isDimension": false
+    },
+    {
+      "name": "proj_empy_grth_five_yrs_may_2022_000_oth",
+      "type": "Double",
+      "title": "Projected Employment Growth - Five Years To May 2022 (000) Other Services ",
+      "description": "Projected Employment Growth - Five Years To May 2022 (000) Other Services .",
+      "stype": "ratio",
+      "isDimension": false
+    },
+    {
+      "name": "proj_empy_grth_five_yrs_may_2022_000_pro_sci_tech",
+      "type": "Double",
+      "title": "Projected Employment Growth - Five Years To May 2022 (000) Professional, Scientific And Technical Services ",
+      "description": "Projected Employment Growth - Five Years To May 2022 (000) Professional, Scientific And Technical Services .",
+      "stype": "ratio",
+      "isDimension": false
+    },
+    {
+      "name": "proj_empy_grth_five_yrs_may_2022_000_pub_admt_safety",
+      "type": "Double",
+      "title": "Projected Employment Growth - Five Years To May 2022 (000) Public Administration And Safety ",
+      "description": "Projected Employment Growth - Five Years To May 2022 (000) Public Administration And Safety .",
+      "stype": "ratio",
+      "isDimension": false
+    },
+    {
+      "name": "proj_empy_grth_five_yrs_may_2022_000_rent_hiring_rlst",
+      "type": "Double",
+      "title": "Projected Employment Growth - Five Years To May 2022 (000) Rental, Hiring And Real Estate Services ",
+      "description": "Projected Employment Growth - Five Years To May 2022 (000) Rental, Hiring And Real Estate Services .",
+      "stype": "ratio",
+      "isDimension": false
+    },
+    {
+      "name": "proj_empy_grth_five_yrs_may_2022_000_rtl_trade",
+      "type": "Double",
+      "title": "Projected Employment Growth - Five Years To May 2022 (000) Retail Trade ",
+      "description": "Projected Employment Growth - Five Years To May 2022 (000) Retail Trade .",
+      "stype": "ratio",
+      "isDimension": false
+    },
+    {
+      "name": "proj_empy_grth_five_yrs_may_2022_000_tot_industry",
+      "type": "Double",
+      "title": "Projected Employment Growth - Five Years To May 2022 (000) Total (Industry) ",
+      "description": "Projected Employment Growth - Five Years To May 2022 (000) Total (Industry) .",
+      "stype": "ratio",
+      "isDimension": false
+    },
+    {
+      "name": "proj_empy_grth_five_yrs_may_2022_000_trns_pstl_whse",
+      "type": "Double",
+      "title": "Projected Employment Growth - Five Years To May 2022 (000) Transport, Postal And Warehousing ",
+      "description": "Projected Employment Growth - Five Years To May 2022 (000) Transport, Postal And Warehousing .",
+      "stype": "ratio",
+      "isDimension": false
+    },
+    {
+      "name": "proj_empy_grth_five_yrs_may_2022_000_utility",
+      "type": "Double",
+      "title": "Projected Employment Growth - Five Years To May 2022 (000) Electricity, Gas, Water And Waste Services ",
+      "description": "Projected Employment Growth - Five Years To May 2022 (000) Electricity, Gas, Water And Waste Services .",
+      "stype": "ratio",
+      "isDimension": false
+    },
+    {
+      "name": "proj_empy_grth_five_yrs_may_2022_000_whsl_trade",
+      "type": "Double",
+      "title": "Projected Employment Growth - Five Years To May 2022 (000) Wholesale Trade ",
+      "description": "Projected Employment Growth - Five Years To May 2022 (000) Wholesale Trade .",
+      "stype": "ratio",
+      "isDimension": false
+    },
+    {
+      "name": "proj_empy_grth_five_yrs_may_2022_pr100_accom_food",
+      "type": "Double",
+      "title": "Projected Employment Growth - Five Years To May 2022 (%) Accommodation And Food Services ",
+      "description": "Projected Employment Growth - Five Years To May 2022 (%) Accommodation And Food Services .",
+      "stype": "ratio",
+      "isDimension": false
+    },
+    {
+      "name": "proj_empy_grth_five_yrs_may_2022_pr100_admt_supp",
+      "type": "Double",
+      "title": "Projected Employment Growth - Five Years To May 2022 (%) Administrative And Support Services ",
+      "description": "Projected Employment Growth - Five Years To May 2022 (%) Administrative And Support Services .",
+      "stype": "ratio",
+      "isDimension": false
+    },
+    {
+      "name": "proj_empy_grth_five_yrs_may_2022_pr100_agri_frsty_fish",
+      "type": "Double",
+      "title": "Projected Employment Growth - Five Years To May 2022 (%) Agriculture, Forestry And Fishing ",
+      "description": "Projected Employment Growth - Five Years To May 2022 (%) Agriculture, Forestry And Fishing .",
+      "stype": "ratio",
+      "isDimension": false
+    },
+    {
+      "name": "proj_empy_grth_five_yrs_may_2022_pr100_arts_rec",
+      "type": "Double",
+      "title": "Projected Employment Growth - Five Years To May 2022 (%) Arts And Recreation Services ",
+      "description": "Projected Employment Growth - Five Years To May 2022 (%) Arts And Recreation Services .",
+      "stype": "ratio",
+      "isDimension": false
+    },
+    {
+      "name": "proj_empy_grth_five_yrs_may_2022_pr100_cons",
+      "type": "Double",
+      "title": "Projected Employment Growth - Five Years To May 2022 (%) Construction ",
+      "description": "Projected Employment Growth - Five Years To May 2022 (%) Construction .",
+      "stype": "ratio",
+      "isDimension": false
+    },
+    {
+      "name": "proj_empy_grth_five_yrs_may_2022_pr100_edu_training",
+      "type": "Double",
+      "title": "Projected Employment Growth - Five Years To May 2022 (%) Education And Training ",
+      "description": "Projected Employment Growth - Five Years To May 2022 (%) Education And Training .",
+      "stype": "ratio",
+      "isDimension": false
+    },
+    {
+      "name": "proj_empy_grth_five_yrs_may_2022_pr100_finc_insur",
+      "type": "Double",
+      "title": "Projected Employment Growth - Five Years To May 2022 (%) Financial And Insurance Services ",
+      "description": "Projected Employment Growth - Five Years To May 2022 (%) Financial And Insurance Services .",
+      "stype": "ratio",
+      "isDimension": false
+    },
+    {
+      "name": "proj_empy_grth_five_yrs_may_2022_pr100_hlth_care_soc_asst",
+      "type": "Double",
+      "title": "Projected Employment Growth - Five Years To May 2022 (%) Health Care And Social Assistance ",
+      "description": "Projected Employment Growth - Five Years To May 2022 (%) Health Care And Social Assistance .",
+      "stype": "ratio",
+      "isDimension": false
+    },
+    {
+      "name": "proj_empy_grth_five_yrs_may_2022_pr100_info_med_coms",
+      "type": "Double",
+      "title": "Projected Employment Growth - Five Years To May 2022 (%) Information Media And Telecommunications ",
+      "description": "Projected Employment Growth - Five Years To May 2022 (%) Information Media And Telecommunications .",
+      "stype": "ratio",
+      "isDimension": false
+    },
+    {
+      "name": "proj_empy_grth_five_yrs_may_2022_pr100_manu",
+      "type": "Double",
+      "title": "Projected Employment Growth - Five Years To May 2022 (%) Manufacturing ",
+      "description": "Projected Employment Growth - Five Years To May 2022 (%) Manufacturing .",
+      "stype": "ratio",
+      "isDimension": false
+    },
+    {
+      "name": "proj_empy_grth_five_yrs_may_2022_pr100_mining",
+      "type": "Double",
+      "title": "Projected Employment Growth - Five Years To May 2022 (%) Mining ",
+      "description": "Projected Employment Growth - Five Years To May 2022 (%) Mining .",
+      "stype": "ratio",
+      "isDimension": false
+    },
+    {
+      "name": "proj_empy_grth_five_yrs_may_2022_pr100_oth",
+      "type": "Double",
+      "title": "Projected Employment Growth - Five Years To May 2022 (%) Other Services ",
+      "description": "Projected Employment Growth - Five Years To May 2022 (%) Other Services .",
+      "stype": "ratio",
+      "isDimension": false
+    },
+    {
+      "name": "proj_empy_grth_five_yrs_may_2022_pr100_pro_sci_tech",
+      "type": "Double",
+      "title": "Projected Employment Growth - Five Years To May 2022 (%) Professional, Scientific And Technical Services ",
+      "description": "Projected Employment Growth - Five Years To May 2022 (%) Professional, Scientific And Technical Services .",
+      "stype": "ratio",
+      "isDimension": false
+    },
+    {
+      "name": "proj_empy_grth_five_yrs_may_2022_pr100_pub_admt_safety",
+      "type": "Double",
+      "title": "Projected Employment Growth - Five Years To May 2022 (%) Public Administration And Safety ",
+      "description": "Projected Employment Growth - Five Years To May 2022 (%) Public Administration And Safety .",
+      "stype": "ratio",
+      "isDimension": false
+    },
+    {
+      "name": "proj_empy_grth_five_yrs_may_2022_pr100_rent_hiring_rlst",
+      "type": "Double",
+      "title": "Projected Employment Growth - Five Years To May 2022 (%) Rental, Hiring And Real Estate Services ",
+      "description": "Projected Employment Growth - Five Years To May 2022 (%) Rental, Hiring And Real Estate Services .",
+      "stype": "ratio",
+      "isDimension": false
+    },
+    {
+      "name": "proj_empy_grth_five_yrs_may_2022_pr100_rtl_trade",
+      "type": "Double",
+      "title": "Projected Employment Growth - Five Years To May 2022 (%) Retail Trade ",
+      "description": "Projected Employment Growth - Five Years To May 2022 (%) Retail Trade .",
+      "stype": "ratio",
+      "isDimension": false
+    },
+    {
+      "name": "proj_empy_grth_five_yrs_may_2022_pr100_tot_industry",
+      "type": "Double",
+      "title": "Projected Employment Growth - Five Years To May 2022 (%) Total (Industry) ",
+      "description": "Projected Employment Growth - Five Years To May 2022 (%) Total (Industry) .",
+      "stype": "ratio",
+      "isDimension": false
+    },
+    {
+      "name": "proj_empy_grth_five_yrs_may_2022_pr100_trns_pstl_whse",
+      "type": "Double",
+      "title": "Projected Employment Growth - Five Years To May 2022 (%) Transport, Postal And Warehousing ",
+      "description": "Projected Employment Growth - Five Years To May 2022 (%) Transport, Postal And Warehousing .",
+      "stype": "ratio",
+      "isDimension": false
+    },
+    {
+      "name": "proj_empy_grth_five_yrs_may_2022_pr100_utility",
+      "type": "Double",
+      "title": "Projected Employment Growth - Five Years To May 2022 (%) Electricity, Gas, Water And Waste Services ",
+      "description": "Projected Employment Growth - Five Years To May 2022 (%) Electricity, Gas, Water And Waste Services .",
+      "stype": "ratio",
+      "isDimension": false
+    },
+    {
+      "name": "proj_empy_grth_five_yrs_may_2022_pr100_whsl_trade",
+      "type": "Double",
+      "title": "Projected Employment Growth - Five Years To May 2022 (%) Wholesale Trade ",
+      "description": "Projected Employment Growth - Five Years To May 2022 (%) Wholesale Trade .",
+      "stype": "ratio",
+      "isDimension": false
+    },
+    {
+      "name": "ste_code11",
+      "type": "String",
+      "title": "State Code",
+      "description": "State Code.",
+      "isDimension": false
+    },
+    {
+      "name": "ste_name11",
+      "type": "String",
+      "title": "State Name",
+      "description": "State Name.",
+      "isDimension": false
+    }
+  ],
+  "filter": {
+    "filterType": "tabular",
+    "spatial": {
+      "bbox": [96.816765696, -43.740509603, 159.109219008, -9.142175977]
+    }
+  }
+}
