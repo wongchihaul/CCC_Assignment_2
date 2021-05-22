@@ -7,6 +7,7 @@ var logger = require("morgan");
 var indexRouter = require("./routes/index");
 var usersRouter = require("./routes/users");
 var tweetRouter = require("./routes/tweets");
+var aurinRouter = require("./routes/aurin")
 
 var app = express();
 
@@ -23,6 +24,8 @@ app.use(express.static(path.join(__dirname, "public")));
 app.use("/", indexRouter);
 app.use("/users", usersRouter);
 app.use("/tweets", tweetRouter);
+app.use("/aurin", aurinRouter);
+
 
 async function getData() {
   var propertiesViewer = require("./couchdb/properties_viewer");
@@ -37,7 +40,7 @@ async function getData() {
   return viewRes;
 }
 
-app.get("/couchdb", function (req, res) {
+app.get("/couchdb/", function (req, res) {
   getData()
     .then((viewRes) => {
       console.log("Avg is", viewRes);
