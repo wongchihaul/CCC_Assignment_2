@@ -15,6 +15,7 @@ const useStyles = makeStyles((theme) => ({
   },
   appBar: {
     borderBottom: `1px solid ${theme.palette.divider}`,
+    backgroundColor: "rgba(44,18,87,1)",
   },
   toolbar: {
     flexWrap: "wrap",
@@ -24,6 +25,7 @@ const useStyles = makeStyles((theme) => ({
     textAlign: "start",
   },
   link: {
+    color: "white",
     margin: theme.spacing(1, 1.5),
   },
 }));
@@ -33,7 +35,6 @@ function Header() {
   return (
     <AppBar
       position="static"
-      color="default"
       elevation={0}
       className={classes.appBar}
     >
@@ -49,7 +50,6 @@ function Header() {
         <nav>
           <Link
             variant="button"
-            color="textPrimary"
             href="/"
             className={classes.link}
           >
@@ -57,7 +57,6 @@ function Header() {
           </Link>
           <Link
             variant="button"
-            color="textPrimary"
             href="/map"
             className={classes.link}
           >
@@ -65,7 +64,6 @@ function Header() {
           </Link>
           <Link
             variant="button"
-            color="textPrimary"
             href="/statistics"
             className={classes.link}
           >
@@ -73,7 +71,6 @@ function Header() {
           </Link>
           <Link
             variant="button"
-            color="textPrimary"
             href="monitoring"
             className={classes.link}
           >
