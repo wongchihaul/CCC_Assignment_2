@@ -4,7 +4,6 @@ import { Line } from "@ant-design/charts";
 function DemoLine(props) {
   const [data, setData] = useState([]);
   const [showAllData, setShowAllData] = useState([]);
-  let ref;
   useEffect(() => {
     asyncFetch();
   }, [props.state]);
@@ -47,6 +46,7 @@ function DemoLine(props) {
     xField: "Year",
     yField: "Value",
     smooth: "smooth",
+    color: "#324965"
   };
 
   var allStateConfig = {
