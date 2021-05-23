@@ -8,7 +8,7 @@ function DemoLine(){
     asyncFetch();
   }, []);
   const asyncFetch = () => {
-    fetch('/iceApi/tweets/tweet_count/info?scenario=SY')
+    fetch('http://127.0.0.1:3001/tweets/tweet_count/info?scenario=SY')
       .then((response) => response.json())
       .then((json) => {
           setData(json)
