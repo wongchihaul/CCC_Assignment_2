@@ -15,6 +15,8 @@ router.get("/labour/info", (req, res) => {
   if (query_info.state) {
     const state = query_info.state;
     res.json(filterForLabour(state, isSummary));
+  } else {
+    res.json(labour_data);
   }
 
   function filterForLabour(state, isSummary) {
@@ -24,8 +26,14 @@ router.get("/labour/info", (req, res) => {
       return labour_data[state].details
     }
   }
-}
-);
+});
+
+router.get("/migration/info", (req, res) => {
+  var migration_data = require('../../aurin/migration/output.json');
+  const query_info = req.query;
+  res.json(migration_data);
+});
+
 
 
 
