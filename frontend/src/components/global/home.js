@@ -8,6 +8,9 @@ const useStyles = makeStyles((theme) => ({
   },
   memberName: {
     color: "#fff",
+  },
+  memberContainer:{
+    zIndex: 20,
   }
 }));
 function Home() {
@@ -24,19 +27,22 @@ function Home() {
           id="mountain_behind"
         ></img>
         <div id="text">Moon Light</div>
-        {!displayMembers && (
+
+        <div className={classes.memberContainer}>
           <a href="#" id="btn" onClick={() => setDisplayMembers(true)}>
             TEAM MEMBERS
           </a>
-        )}
-        {displayMembers && 
-        <div className={classes.memberName}>
-          <p>Bingrui He</p>
-          <p>Danyang Li</p>
-          <p>Hao Huang</p>
-          <p>Zhihao Huang</p>
-          <p>Zhiyao Li</p>
-        </div>}
+          {displayMembers && (
+            <div className={classes.memberName}>
+              <p>Bingrui He</p>
+              <p>Danyang Li</p>
+              <p>Hao Huang</p>
+              <p>Zhihao Huang</p>
+              <p>Zhiyao Li</p>
+            </div>
+          )}
+        </div>
+
         <img
           src="./images/mountains_front.png"
           alt=""

@@ -44,20 +44,22 @@ section #text{
     right: -350px;
 }
 section #btn{
+    display: block;
+    margin-bottom: 20px;
     text-decoration: none;
     color: #2b1055;
     padding: 8px 30px;
     border-radius: 20px;
     background-color: #fff;
     font-size: 1em;
-    z-index: 10;
+    z-index: 30;
     display: inline-block;
 }
 .sec{
     position: relative;
     padding: 100px;
     background-color: #1c0522;
-    z-index: 200px;
+    /* z-index: 200px; */
 }
 .sec h2{
     font-size: 3.5em;

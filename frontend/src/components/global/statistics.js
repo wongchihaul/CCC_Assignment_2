@@ -1,7 +1,9 @@
+import LineChart from '../charts/lineChart'
+
 function Statistics(){
     return (
         <>
-            statistics
+            <LineChart></LineChart>
         </>
     )
 }
