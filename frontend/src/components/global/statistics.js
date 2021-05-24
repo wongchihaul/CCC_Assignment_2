@@ -8,7 +8,7 @@ function Statistics() {
     <>
       <Container maxWidth="md">
         <StatisticsTweetsNum></StatisticsTweetsNum>
-        <StatisticsTweetsSuburbs></StatisticsTweetsSuburbs>
+        {/* <StatisticsTweetsSuburbs></StatisticsTweetsSuburbs> */}
       </Container>
     </>
   );

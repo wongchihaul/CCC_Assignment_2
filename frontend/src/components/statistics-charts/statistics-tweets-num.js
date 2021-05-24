@@ -11,6 +11,7 @@ import { useState } from "react";
 
 const useStyles = makeStyles((theme) => ({
   chartTitle: {
+    display: "inline-block",
     margin: "20px 0",
     formControl: {
       margin: theme.spacing(1),
@@ -31,7 +32,13 @@ function StatisticsTweetsNum() {
   return (
     <>
         <h3 className={classes.chartTitle}>
-          The trends of tweets number across states between 2018 - 2021
+          The trends of
+        </h3>
+        <h3 className={classes.chartTitle}>
+          in
+        </h3>
+        <h3 className={classes.chartTitle}>
+          between 2018 - 2021
         </h3>
         <FormControl className={classes.formControl} variant="outlined">
           <InputLabel id="demo-simple-select-outlined-label">State</InputLabel>

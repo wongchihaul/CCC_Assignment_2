@@ -12,9 +12,10 @@ import BarChart from "../charts/barChart"
 
 const useStyles = makeStyles((theme) => ({
   chartTitle: {
-    margin: "20px 0",
-    formControl: {
-      margin: theme.spacing(1),
+    display: "inline-block",
+    margin: "25px 10px",
+  formControl: {
+      marginTop: "20px",
       minWidth: 120,
     },
   },
@@ -23,13 +24,16 @@ function StatisticsTweetsSuburbs() {
   const classes = useStyles();
   const [cityList, setCityList] = useState([]);
   const [selectedCity, setSelectedCity] = useState("Melbourne");
+  const [selectedData, setSelectedData] = useState("sentiment_score");
+  const [sentimentData, setSentimentData] = useState();
   const [data, setData] = useState();
 
   useEffect(() => {
-    asyncFetch();
+    asyncFetchData("tweet_count");
+    asyncFetchData("sentiment_score");
   }, []);
-  const asyncFetch = () => {
-    fetch("http://127.0.0.1:3001/tweets/tweet_count/info?scenario=SCY")
+  const asyncFetchData = (type) => {
+    fetch(`http://127.0.0.1:3001/tweets/${type}/info?scenario=SCY`)
       .then((response) => response.json())
       .then((json) => {
           let _cityList = [];
@@ -39,12 +43,18 @@ function StatisticsTweetsSuburbs() {
             }
           }
           setCityList(_cityList);
-          setData(json.rows)  
+          if(type === "sentiment_score"){
+            setSentimentData(json.rows) 
+          }else(
+            setData(json.rows) 
+          )
+          
       })
       .catch((error) => {
         console.log("fetch data failed", error);
       });
   };
+
   const getData = (_data,_city) => {
     let list = []
     for (let _item of _data) {
@@ -63,9 +73,24 @@ function StatisticsTweetsSuburbs() {
   return (
     <>
         <h3 className={classes.chartTitle}>
-          The tweet number of big cities
+          The 
         </h3>
-        <FormControl className={classes.formControl} variant="outlined">
+        <FormControl className={classes.formControl} variant="outlined" style={{marginTop:'10px'}}>
+          <InputLabel id="demo-simple-select-outlined-label">Data</InputLabel>
+          <Select
+            labelId="demo-simple-select-label"
+            id="demo-simple-select"
+            value={selectedData}
+            onChange={(event) => setSelectedData(event.target.value)}
+          >
+            <MenuItem value="tweet_count">number of tweets</MenuItem>
+            <MenuItem value="sentiment_score">sentiment score</MenuItem>
+          </Select>
+        </FormControl>
+        <h3 className={classes.chartTitle}>
+          in
+        </h3>
+        <FormControl className={classes.formControl} variant="outlined" style={{marginTop:'10px'}}>
           <InputLabel id="demo-simple-select-outlined-label">City</InputLabel>
           <Select
             labelId="demo-simple-select-label"
@@ -76,7 +101,9 @@ function StatisticsTweetsSuburbs() {
             {cityList.map((item,index)=>(<MenuItem value={item} key={index}>{item} </MenuItem>))}
           </Select>
         </FormControl>
-        {data && selectedCity && (<BarChart data={getData(data,selectedCity)} xField='suburb' yField='value' color='#7A7182'></BarChart>)}
+        
+        {selectedData === "tweet_count" && selectedCity && (<BarChart data={getData(data,selectedCity)} xField='suburb' yField='value' color='#7A7182'></BarChart>)}
+        {selectedData === "sentiment_score" && selectedCity && (<BarChart data={getData(sentimentData,selectedCity)} xField='suburb' yField='value' color='#9E7043'></BarChart>)}
     </>
   );
 }
