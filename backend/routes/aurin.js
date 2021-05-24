@@ -83,18 +83,15 @@ router.get("/payroll/info", (req, res) => {
 router.get("/projection/info", (req, res) => {
   var projection_data = require('../../aurin/projection_employment/output.json');
   const query_info = req.query;
-  console.log(query_info)
-
   if (query_info.city) {
     const city = query_info.city;
     redundant = projection_data[city];
-    console.log(redundant);
-    Object.keys(redundant).forEach(key => {
-      key = key.substring(10);
-      console.log(key);
-    });
-    console.log(redundant);
-    res.json(redundant);
+    simple = Object.keys(redundant).reduce((newData, key) =>{
+      let newKey = key.substring(53);
+      newData[newKey] = redundant[key];
+      return newData
+    }, {})
+    res.json(simple);
   } else {
     res.json(projection_data);
   }
