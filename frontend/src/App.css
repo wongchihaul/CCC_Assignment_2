@@ -9,7 +9,6 @@
 }
 
 .content{
-  width: 100vw;
   height: 90vh;
 }
 
@@ -22,7 +21,7 @@
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
-  display: flex;
+  display: flow;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -41,6 +40,10 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.home {
+  background: 
 }
 
 

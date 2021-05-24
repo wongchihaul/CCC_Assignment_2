@@ -174,7 +174,7 @@ router.get("/sentiment_score/info", (req, res) => {
             getView(
                 tweetDB,
                 design_name,
-                "SYM_",
+                "SYM_avg",
                 {
                     stale: "ok",
                     reduce: true,
@@ -182,6 +182,9 @@ router.get("/sentiment_score/info", (req, res) => {
                     group_level: "2",
                 },
                 (data) => {
+                    data.rows.forEach((obj) => {
+                        obj.value = obj.value[0]
+                    });
                     console.log(data);
                     res.json(data);
                 }
@@ -193,7 +196,7 @@ router.get("/sentiment_score/info", (req, res) => {
             getView(
                 tweetDB,
                 design_name,
-                "SCSYM_count",
+                "SCSYM_avg",
                 {
                     stale: "ok",
                     reduce: true,
@@ -201,6 +204,9 @@ router.get("/sentiment_score/info", (req, res) => {
                     group_level: "3",
                 },
                 (data) => {
+                    data.rows.forEach((obj) => {
+                        obj.value = obj.value[0]
+                    });
                     console.log(data);
                     res.json(data);
                 }
@@ -212,7 +218,7 @@ router.get("/sentiment_score/info", (req, res) => {
             getView(
                 tweetDB,
                 design_name,
-                "SCSYM_count",
+                "SCSYM_avg",
                 {
                     stale: "ok",
                     reduce: true,
@@ -231,7 +237,7 @@ router.get("/sentiment_score/info", (req, res) => {
             getView(
                 tweetDB,
                 design_name,
-                "SCSYM_count",
+                "SCSYM_avg",
                 {
                     stale: "ok",
                     reduce: true,
@@ -250,7 +256,7 @@ router.get("/sentiment_score/info", (req, res) => {
             getView(
                 tweetDB,
                 design_name,
-                "YMSCS_count",
+                "YMSCS_avg",
                 {
                     stale: "ok",
                     reduce: true,
@@ -269,7 +275,7 @@ router.get("/sentiment_score/info", (req, res) => {
             getView(
                 tweetDB,
                 design_name,
-                "YMSCS_count",
+                "YMSCS_avg",
                 {
                     stale: "ok",
                     reduce: true,
@@ -288,7 +294,7 @@ router.get("/sentiment_score/info", (req, res) => {
             getView(
                 tweetDB,
                 design_name,
-                "YMSCS_count",
+                "YMSCS_avg",
                 {
                     stale: "ok",
                     reduce: true,
