@@ -5,10 +5,10 @@ function DemoLine(props) {
   const [data, setData] = useState([]);
   const [showAllData, setShowAllData] = useState([]);
   useEffect(() => {
-    asyncFetch();
-  }, [props.state]);
-  const asyncFetch = () => {
-    fetch("http://127.0.0.1:3001/tweets/tweet_count/info?scenario=SY")
+    asyncFetch(props.data);
+  }, [props.data]);
+  const asyncFetch = (_data) => {
+    fetch(`http://127.0.0.1:3001/tweets/${_data}/info?scenario=SY`)
       .then((response) => response.json())
       .then((json) => {
         if (props.state !== "All States") {
