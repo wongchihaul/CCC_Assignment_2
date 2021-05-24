@@ -174,7 +174,7 @@ router.get("/sentiment_score/info", (req, res) => {
             getView(
                 tweetDB,
                 design_name,
-                "SYM_",
+                "SYM_count",
                 {
                     stale: "ok",
                     reduce: true,
