@@ -35,6 +35,12 @@ router.get("/labour_summary/info", (req, res) => {
 
   if (query_info.sa4) {
     const sa4 = query_info.sa4;
+
+    // transferToNum = Object.keys(labour_summary_data[sa4]).reduce((newData, key) =>{
+    //   newData[key] = parseFloat(labour_summary_data[sa4][key]);
+    //   return newData
+    // }, {})
+
     res.json(labour_summary_data[sa4]);
   } else {
     res.json(labour_summary_data);
@@ -76,6 +82,49 @@ router.get("/payroll/info", (req, res) => {
     res.json(payroll_data);
   }
 });
+
+
+
+// router for projection employment output
+router.get("/projection/info", (req, res) => {
+  var projection_data = require('../../aurin/projection_employment/output.json');
+  const query_info = req.query;
+  if (query_info.city) {
+    const city = query_info.city;
+    redundant = projection_data[city];
+    simple = Object.keys(redundant).reduce((newData, key) =>{
+      let newKey = key.substring(53);
+      newData[newKey] = redundant[key];
+      return newData
+    }, {})
+
+    industries = {}
+    init = {
+      abs: 0,
+      percentage: 0
+    }
+    for(var key in simple){
+      pos = key.indexOf(" ")
+      if (!Object.keys(industries).includes(key)){
+        newKey = key.substring(pos+1,key.length-1);
+        industries[newKey] = init;
+      }
+
+      if(key.substring(0,pos).includes('0')){
+        industries[key.substring(pos+1,key.length-1)]['abs'] = simple[key]
+      }else{
+        industries[key.substring(pos+1,key.length-1)]['percentage'] = simple[key]
+      }
+
+    }
+    
+    res.json(industries);
+  } else {
+    res.json(projection_data);
+  }
+
+});
+
 
 
 
