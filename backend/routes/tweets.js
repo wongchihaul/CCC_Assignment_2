@@ -174,7 +174,7 @@ router.get("/sentiment_score/info", (req, res) => {
             getView(
                 tweetDB,
                 design_name,
-                "SYM_count",
+                "SYM_avg",
                 {
                     stale: "ok",
                     reduce: true,
@@ -193,7 +193,7 @@ router.get("/sentiment_score/info", (req, res) => {
             getView(
                 tweetDB,
                 design_name,
-                "SCSYM_count",
+                "SCSYM_avg",
                 {
                     stale: "ok",
                     reduce: true,
@@ -212,7 +212,7 @@ router.get("/sentiment_score/info", (req, res) => {
             getView(
                 tweetDB,
                 design_name,
-                "SCSYM_count",
+                "SCSYM_avg",
                 {
                     stale: "ok",
                     reduce: true,
@@ -231,7 +231,7 @@ router.get("/sentiment_score/info", (req, res) => {
             getView(
                 tweetDB,
                 design_name,
-                "SCSYM_count",
+                "SCSYM_avg",
                 {
                     stale: "ok",
                     reduce: true,
@@ -250,7 +250,7 @@ router.get("/sentiment_score/info", (req, res) => {
             getView(
                 tweetDB,
                 design_name,
-                "YMSCS_count",
+                "YMSCS_avg",
                 {
                     stale: "ok",
                     reduce: true,
@@ -269,7 +269,7 @@ router.get("/sentiment_score/info", (req, res) => {
             getView(
                 tweetDB,
                 design_name,
-                "YMSCS_count",
+                "YMSCS_avg",
                 {
                     stale: "ok",
                     reduce: true,
@@ -288,7 +288,7 @@ router.get("/sentiment_score/info", (req, res) => {
             getView(
                 tweetDB,
                 design_name,
-                "YMSCS_count",
+                "YMSCS_avg",
                 {
                     stale: "ok",
                     reduce: true,
