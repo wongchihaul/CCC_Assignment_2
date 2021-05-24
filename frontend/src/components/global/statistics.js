@@ -9,6 +9,7 @@ import Box from "@material-ui/core/Box";
 import Container from "@material-ui/core/Container";
 import StatisticsTweetsNum from "../statistics-charts/statistics-tweets-num";
 import StatisticsTweetsSuburbs from "../statistics-charts/statistics-tweets-suburbs";
+import StatisticsAurinPop from "../statistics-charts/statistics-aurin-population";
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -67,8 +68,8 @@ export default function SimpleTabs() {
           aria-label="simple tabs example"
           centered
         >
-          <Tab label="Twitter" {...a11yProps(0)} />
-          <Tab label="AURIN" {...a11yProps(1)} />
+          <Tab label="AURIN" {...a11yProps(0)} />
+          <Tab label="Twitter" {...a11yProps(1)} />
         </Tabs>
       </AppBar>
       <TabPanel value={value} index={1}>
@@ -78,7 +79,9 @@ export default function SimpleTabs() {
         </Container>
       </TabPanel>
       <TabPanel value={value} index={0}>
-        Item Two
+        <Container maxWidth="md">
+            <StatisticsAurinPop></StatisticsAurinPop>
+        </Container>
       </TabPanel>
     </>
   );

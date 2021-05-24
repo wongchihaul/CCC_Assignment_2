@@ -182,10 +182,6 @@ router.get("/sentiment_score/info", (req, res) => {
                     group_level: "2",
                 },
                 (data) => {
-                    // Object.entries(JSON.parse(data)).forEach((
-                    // {key, value}) => {
-                    //     value = value[0]
-                    // });
                     data.rows.forEach((obj) => {
                         obj.value = obj.value[0]
                     });

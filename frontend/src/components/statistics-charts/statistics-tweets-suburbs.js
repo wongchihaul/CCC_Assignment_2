@@ -1,4 +1,4 @@
-// import LineChart from "../charts/lineChart";
+
 import { InputLabel, MenuItem, FormControl, Select } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import { useState, useEffect } from "react";
@@ -13,6 +13,9 @@ const useStyles = makeStyles((theme) => ({
       minWidth: 120,
     },
   },
+  chartInvisible:{
+    display:"none",
+  }
 }));
 function StatisticsTweetsSuburbs() {
   const classes = useStyles();
@@ -23,10 +26,13 @@ function StatisticsTweetsSuburbs() {
   const [data, setData] = useState();
 
   useEffect(() => {
-    asyncFetchData();
+    asyncFetchData("tweet_count");
   }, [0]);
-  const asyncFetchData = () => {
-    fetch(`http://127.0.0.1:3001/tweets/tweet_count/info?scenario=SCY`)
+  useEffect(() => {
+    asyncFetchData("sentiment_score");
+  }, [0]);
+  const asyncFetchData = (_type) => {
+    fetch(`http://127.0.0.1:3001/tweets/${_type}/info?scenario=SCY`)
       .then((response) => response.json())
       .then((json) => {
         let _cityList = [];
@@ -36,23 +42,12 @@ function StatisticsTweetsSuburbs() {
           }
         }
         setCityList(_cityList);
-        setData(json.rows);
-      })
-      .catch((error) => {
-        console.log("fetch data failed", error);
-      });
-
-    fetch(`http://127.0.0.1:3001/tweets/sentiment_score/info?scenario=SCY`)
-      .then((response) => response.json())
-      .then((json) => {
-        let _cityList = [];
-        for (let item of json.rows) {
-          if (!_cityList.includes(item.key[1])) {
-            _cityList.push(item.key[1]);
-          }
+        if(_type === "tweet_count"){
+          setData(json.rows);
+        }else{
+          setSentimentData(json.rows);
         }
-        setCityList(_cityList);
-        setSentimentData(json.rows);
+        
       })
       .catch((error) => {
         console.log("fetch data failed", error);
