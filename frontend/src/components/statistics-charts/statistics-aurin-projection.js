@@ -7,8 +7,8 @@ import {
   MenuItem,
 } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
-import PieChart from "../charts/pieChart";
-// import ColChart from "../charts/percentageBarChart";
+import BarChart from "../charts/barChart";
+
 
 const useStyles = makeStyles((theme) => ({
   chartTitle: {
@@ -24,15 +24,14 @@ const useStyles = makeStyles((theme) => ({
 function AurinPop() {
   const classes = useStyles();
   const [cityList, setCityList] = useState([]);
-  const [data, setData] = useState();
-  const [selectedCity, setSelectedCity] = useState("Melbourne");
+  const [selectedCity, setSelectedCity] = useState("Greater Melbourne");
 
 
   useEffect(() => {
     asyncFetchData();
   }, [0]);
   const asyncFetchData = () => {
-      fetch(`http://127.0.0.1:3001/aurin/labour/info`)
+      fetch(`http://127.0.0.1:3001/aurin/projection/info`)
       .then((response) => response.json())
       .then((json) => {
         let _cityList = [];
@@ -42,18 +41,14 @@ function AurinPop() {
           }   
         }
         setCityList(_cityList);
-        setData(json); 
       })
   }
-    function getData(_data){
-        return _data[selectedCity]
-    }
 
 
 
   return (
     <>
-      <h3 className={classes.chartTitle}>The Population Distribution & Unemployment Rate in </h3>
+      <h3 className={classes.chartTitle}>TPO 10 Projected Employment Growth 2017-2022 </h3>
       <FormControl
         className={classes.formControl}
         variant="outlined"
@@ -74,12 +69,9 @@ function AurinPop() {
         </Select>
       </FormControl>
       <Grid container spacing={3}>
-        <Grid item xs={6}>
-            {data && (<PieChart data={getData(data).details} angleField="pop_distribution" colorField="age_grp"></PieChart>)}
-        </Grid>
-        <Grid item xs={6}>
-            {data && (<PieChart data={getData(data).rate} angleField="value" colorField="name"></PieChart>)}
-        </Grid>
+          <Grid item sm={12}>
+            <BarChart city={selectedCity}></BarChart>
+          </Grid>
       </Grid>
     </>
   );

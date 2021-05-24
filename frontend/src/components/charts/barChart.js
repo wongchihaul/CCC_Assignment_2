@@ -1,16 +1,31 @@
 import React, { useState, useEffect } from 'react';
-import { Column } from '@ant-design/charts';
+import { Bar } from '@ant-design/charts';
 
-function DemoColumn(props){
+function BarChart(props){
+    const [data, setData] = useState()
+    
+    useEffect(() => {
+        asyncFetchData(props.city);
+    }, [props.city]);
+    const asyncFetchData = (_city) => {
+        fetch(`http://127.0.0.1:3001/aurin/projection/info?city=${_city}`)
+        .then(res=> res.json())
+        .then(json=>{
+            setData(json.sort((a,b)=>(b.percentage - a.percentage)))
+        })
+    }
   var config = {
-    data: props.data,
-    xField: props.xField,
-    yField: props.yField,
-    xAxis: { label: { autoRotate: true } },
-    scrollbar: { type: 'horizontal' },
-    color:props.color
+    data: data,
+    xField: 'percentage',
+    yField: 'name',
+    seriesField: 'year',
+    legend: { position: 'top-left' },
   };
-  return <Column {...config} />;
-};
+  return (
+      <>
+      {data && (<Bar {...config} />)}
+      </>
+  )
+}
 
-export default DemoColumn;
+export default BarChart;

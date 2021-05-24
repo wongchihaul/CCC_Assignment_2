@@ -5,8 +5,8 @@ function PieChart(props) {
       var config = {
         appendPadding: 10,
         data: data,
-        angleField: 'pop',
-        colorField: 'age_grp',
+        angleField: props.angleField,
+        colorField: props.colorField,
         radius: 0.8,
         label: {
           type: 'outer',

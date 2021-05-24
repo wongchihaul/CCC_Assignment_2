@@ -2,7 +2,7 @@
 import { InputLabel, MenuItem, FormControl, Select } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import { useState, useEffect } from "react";
-import BarChart from "../charts/barChart";
+import ColChart from "../charts/colChart";
 
 const useStyles = makeStyles((theme) => ({
   chartTitle: {
@@ -113,20 +113,20 @@ function StatisticsTweetsSuburbs() {
       <h3 className={classes.chartTitle}>in 2020</h3>
 
       {selectedData === "tweet_count" && data && selectedCity && (
-        <BarChart
+        <ColChart
           data={getData(data, selectedCity)}
           xField="suburb"
           yField="value"
           color="#7A7182"
-        ></BarChart>
+        ></ColChart>
       )}
       {selectedData === "sentiment_score" && sentimentData && (
-        <BarChart
+        <ColChart
           data={getData(sentimentData, selectedCity)}
           xField="suburb"
           yField="value"
           color="#9E7043"
-        ></BarChart>
+        ></ColChart>
       )}
     </>
   );
