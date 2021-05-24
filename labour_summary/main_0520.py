@@ -34,7 +34,7 @@ def process_sa4(path):
         for key, value in data['properties'].items():
             if key in init_dict:
                 try:
-                    output_json[sa4][key] = value
+                    output_json[sa4][key] = float(value)
                 except:
                     pass
 
