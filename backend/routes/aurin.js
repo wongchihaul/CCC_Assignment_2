@@ -36,12 +36,12 @@ router.get("/labour_summary/info", (req, res) => {
   if (query_info.sa4) {
     const sa4 = query_info.sa4;
 
-    transferToNum = Object.keys(labour_summary_data[sa4]).reduce((newData, key) =>{
-      newData[key] = parseFloat(labour_summary_data[sa4][key]);
-      return newData
-    }, {})
+    // transferToNum = Object.keys(labour_summary_data[sa4]).reduce((newData, key) =>{
+    //   newData[key] = parseFloat(labour_summary_data[sa4][key]);
+    //   return newData
+    // }, {})
 
-    res.json(transferToNum);
+    res.json(labour_summary_data[sa4]);
   } else {
     res.json(labour_summary_data);
   }
