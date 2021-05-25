@@ -43,14 +43,26 @@ function ControlPanel(props) {
           <Option value="tweets">Tweets</Option>
           <Option value="aurin">Aurin</Option>
         </Select>
-        <Select
-          defaultValue="Sentiment_score"
-          style={{ width: 120 }}
-          onChange={(value) => setPath2(value)}
-        >
-          <Option value="sentiment_score">Sentiment</Option>
-          <Option value="tweet_count">Number of Tweets</Option>
-        </Select>
+        {path1 == "tweets" && (
+          <Select
+            defaultValue="Sentiment_score"
+            style={{ width: 120 }}
+            onChange={(value) => setPath2(value)}
+          >
+            <Option value="sentiment_score">Sentiment</Option>
+            <Option value="tweet_count">Number of Tweets</Option>
+          </Select>
+        )}
+        {path1 == "aurin" && (
+          <Select
+            defaultValue="employ"
+            style={{ width: 120 }}
+            onChange={(value) => setPath2(value)}
+          >
+            <Option value="employ">Employment rate</Option>
+            <Option value="tweet_count">Number of Tweets</Option>
+          </Select>
+        )}
         <text>By</text>
 
         <Select
@@ -60,6 +72,7 @@ function ControlPanel(props) {
         >
           <Option value="SY">State</Option>
           <Option value="SCY">City</Option>
+          <Option value="SCSY">Suburb</Option>
         </Select>
         <Select
           defaultValue={year}

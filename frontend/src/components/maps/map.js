@@ -101,6 +101,7 @@ function Map() {
   const [MAP_TYPE, setMAP_TYPE] = useState("SA4");
   const [loading, setLoading] = useState(false);
   const [map_data, setMap_data] = useState(null);
+  const [fetch_data, setFetch_data] = useState(null);
 
   useEffect(() => {
     if (MAP_TYPE == "SA4") {
@@ -140,25 +141,32 @@ function Map() {
         : null
     );
   }, []);
+
   useEffect(() => {
-    console.log(dataset);
     const { path_1, scenario, path_2 } = dataset;
-    console.log(dataset);
-    console.log(
-      `http://127.0.0.1:3001/${path_1}/${path_2}/info?scenario=${scenario}`
-    );
     setLoading(true);
     fetch(`http://127.0.0.1:3001/${path_1}/${path_2}/info?scenario=${scenario}`)
       .then((response) => response.json())
       .then((json) => {
         let new_data = {};
+        const index = scenario.length - 2;
         for (let item of json.rows) {
-          if (item.key[1] == year) {
-            new_data[item.key[0]] = Math.round(item.value * 100) / 100;
+          let curr_year = item.key[item.key.length - 1];
+          if (curr_year in new_data) {
+            new_data[curr_year][item.key[index]] =
+              Math.round(item.value * 100) / 100;
+          } else {
+            new_data[curr_year] = {};
+            new_data[curr_year][item.key[index]] =
+              Math.round(item.value * 100) / 100;
           }
+          // if (item.key[1] == year) {
+          //   new_data[item.key[0]] = Math.round(item.value * 100) / 100;
+          // }
         }
-        console.log(new_data);
-        setMap_data(new_data);
+        console.log("newdata", new_data);
+        // setMap_data(new_data);
+        setFetch_data(new_data);
         setLoading(false);
       })
       .catch((error) => {
@@ -166,6 +174,12 @@ function Map() {
         console.log("fetch data failed", error);
       });
   }, [dataset]);
+
+  useEffect(() => {
+    if (fetch_data != null) {
+      setMap_data(fetch_data[year]);
+    }
+  }, [fetch_data, year]);
 
   const data = useMemo(() => {
     console.log("using memo");
