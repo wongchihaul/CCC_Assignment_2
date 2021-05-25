@@ -48,7 +48,7 @@ export function updateSentimentScoreByState(
     //   .domain(features.map(accessor))
     //   .range(range(map_value.length));
 
-    console.log(map_value, map_value["Victoria"]);
+    // console.log(map_value, map_value["Victoria"]);
     return {
       type: "FeatureCollection",
       features: features.map((f) => {
@@ -57,8 +57,11 @@ export function updateSentimentScoreByState(
           ...f.properties,
           value,
         };
-        properties[feature] =
-          Math.round(map_value[f.properties.STATE_NAME] * 100) / 100;
+        if(feature === "labour_summary"){
+          properties[feature] = Math.round(map_value[f.properties.SA4_NAME] * 100) / 100;
+        }else{
+          properties[feature] = Math.round(map_value[f.properties.STATE_NAME] * 100) / 100;
+        }
         return { ...f, properties };
       }),
     };

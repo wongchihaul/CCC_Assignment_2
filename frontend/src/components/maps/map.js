@@ -92,7 +92,7 @@ function Map() {
   const [viewport, setViewport] = useState({
     latitude: -27,
     longitude: 135,
-    zoom: 4,
+    zoom: 3,
     bearing: 0,
     pitch: 0,
   });
@@ -113,7 +113,6 @@ function Map() {
   useEffect(() => {
     if (MAP_TYPE == "SA4") {
       console.log("SA4", SA4_MAP);
-
       setAllData(SA4_MAP);
     } else {
       /* global fetch */
@@ -154,7 +153,8 @@ function Map() {
       setFeature(path_2);
     }
     setLoading(true);
-    fetch(`http://127.0.0.1:3001/${path_1}/${path_2}/info?scenario=${scenario}`)
+    if(path_1==="tweets"){
+      fetch(`http://127.0.0.1:3001/${path_1}/${path_2}/info?scenario=${scenario}`)
       .then((response) => response.json())
       .then((json) => {
         let new_data = {};
@@ -173,7 +173,7 @@ function Map() {
           //   new_data[item.key[0]] = Math.round(item.value * 100) / 100;
           // }
         }
-        console.log("newdata", new_data);
+        // console.log("newdata", new_data);
         // setMap_data(new_data);
         setFetch_data(new_data);
         setLoading(false);
@@ -182,11 +182,35 @@ function Map() {
         setLoading(false);
         console.log("fetch data failed", error);
       });
+    }else if(path_1==="aurin" && path_2==="labour_summary"){
+      fetch(`http://127.0.0.1:3001/${path_1}/${path_2}/info`)
+      .then((response) => response.json())
+      .then((json) => {
+        let new_data = {};
+        for(let key in json){
+          new_data[key] = json[key].yth_unemp_rt_15_24
+        }
+        setFetch_data(new_data);
+        setLoading(false);
+      })
+      .catch((error) => {
+        setLoading(false);
+        console.log("fetch data failed", error);
+      });
+    }
+    
   }, [dataset]);
 
   useEffect(() => {
+    
     if (fetch_data != null) {
-      setMap_data(fetch_data[year]);
+      console.log("fetch",fetch_data)
+      if(dataset.path_1==="aurin"){
+        setMap_data(fetch_data);
+      }else{
+        setMap_data(fetch_data[year]);
+      }
+      console.log("map",map_data)
     }
   }, [fetch_data, year]);
 

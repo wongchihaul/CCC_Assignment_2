@@ -50,17 +50,16 @@ function ControlPanel(props) {
             onChange={(value) => setPath2(value)}
           >
             <Option value="sentiment_score">Sentiment</Option>
-            <Option value="tweet_count">Number of Tweets</Option>
+            <Option value="tweet_count">Number of Tweets</Option>       
           </Select>
         )}
         {path1 == "aurin" && (
           <Select
-            defaultValue="employ"
+            defaultValue="Select"
             style={{ width: 120 }}
             onChange={(value) => setPath2(value)}
           >
-            <Option value="employ">Employment rate</Option>
-            <Option value="tweet_count">Number of Tweets</Option>
+            <Option value="labour_summary">Employment rate</Option>
           </Select>
         )}
         <text>By</text>
