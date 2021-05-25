@@ -20,7 +20,8 @@ export function updatePercentiles(featureCollection, accessor) {
 
 export function updateSentimentScoreByState(
   featureCollection,
-
+  city,
+  map_type,
   map_value,
   feature,
   accessor
@@ -44,11 +45,7 @@ export function updateSentimentScoreByState(
     };
   } else {
     console.log("working");
-    // const scale = scaleQuantile()
-    //   .domain(features.map(accessor))
-    //   .range(range(map_value.length));
-
-    // console.log(map_value, map_value["Victoria"]);
+    console.log(map_value);
     return {
       type: "FeatureCollection",
       features: features.map((f) => {
@@ -57,11 +54,33 @@ export function updateSentimentScoreByState(
           ...f.properties,
           value,
         };
-        if(feature === "labour_summary"){
-          properties[feature] = Math.round(map_value[f.properties.SA4_NAME] * 100) / 100;
-        }else{
-          properties[feature] = Math.round(map_value[f.properties.STATE_NAME] * 100) / 100;
+
+        if (map_type == "SA4") {
+          if (feature === "labour_summary") {
+            properties[feature] =
+              Math.round(map_value[f.properties.SA4_NAME] * 100) / 100;
+          } else {
+            properties[feature] =
+              Math.round(map_value[f.properties.STATE_NAME] * 100) / 100;
+          }
+        } else {
+          // if (city=="Melbourne"){
+          //    let suburb_name = f.properties.NAME.toLowerCase();
+          // properties[feature] = Math.round(map_value[suburb_name] * 100) / 100;
+          // }else{
+          const name_map = {
+            Sydney: "NSW_LOCA_2",
+            Brisbane: "QLD_LOCA_2",
+            Perth: "WA_LOCAL_2",
+            Melbourne: "NAME",
+          };
+          let suburb_name = f.properties[name_map[city]];
+          suburb_name = suburb_name.toLowerCase();
+          properties[feature] = Math.round(map_value[suburb_name] * 100) / 100;
+          // }
         }
+        // console.log(properties);
+
         return { ...f, properties };
       }),
     };
