@@ -1,13 +1,13 @@
 # Volume
 volumes:
   - vol_name: couchdb_vol-1
-    vol_size: 70
+    vol_size: 50
   - vol_name: couchdb_vol-2
-    vol_size: 70
+    vol_size: 50
   - vol_name: couchdb_vol-3
-    vol_size: 70
-  - vol_name: demo-vol
-    vol_size: 40
+    vol_size: 50
+  - vol_name: data_vol
+    vol_size: 350
 
 # Security group
 security_groups:
@@ -80,7 +80,7 @@ security_groups:
 # Instance
 instances:
   - name: couch_master
-    volumes: ["couchdb_vol-1"]
+    volumes: ["couchdb_vol-1", "data_vol"]
     flavor: uom.mse.2c9g
   - name: couch_slave-1
     volumes: ["couchdb_vol-2"]
@@ -89,7 +89,7 @@ instances:
     volumes: ["couchdb_vol-3"]
     flavor: uom.mse.2c9g
   - name: demo
-    volumes: ["demo-vol"]
+#    volumes: ["demo-vol"]
     flavor: uom.mse.1c4g
 
 # Common Vars
