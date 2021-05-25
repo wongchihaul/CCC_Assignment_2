@@ -99,37 +99,39 @@ router.get("/projection/info", (req, res) => {
     }, {})
 
     industries = {}
-    init = {
-      abs: 0,
-      percentage: 0
-    }
+   
     for(var key in simple){
       pos = key.indexOf(" ")
-      if (!Object.keys(industries).includes(key)){
-        newKey = key.substring(pos+1,key.length-1);
-        industries[newKey] = init;
+      if (!Object.keys(industries).includes(key.substring(pos+1))){
+        newKey = key.substring(pos+1);
+        industries[newKey] = {'abs': 0, 'percentage': 0};
       }
 
       if(key.substring(0,pos).includes('0')){
-        industries[key.substring(pos+1,key.length-1)]['abs'] = simple[key]
+        industries[key.substring(pos+1)]['abs'] = simple[key]
       }else{
-        industries[key.substring(pos+1,key.length-1)]['percentage'] = simple[key]
+        industries[key.substring(pos+1)]['percentage'] = simple[key]
       }
 
+      // console.log(industries)
     }
-    let list = []
-    for(let key in industries) {
-      let item = {
-        abs: industries[key].abs,
-        percentage: industries[key].percentage,
-        name: key
-      }
-      list.push(item)
-    } 
-    console.log(list)
-    res.json(list);
 
-    // res.json(industries);
+    
+
+    // let list = []
+    // for(let key in industries) {
+    //   let item = {
+    //     abs: industries[key].abs,
+    //     percentage: industries[key].percentage,
+    //     name: key
+    //   }
+    //   list.push(item)
+    // } 
+    // console.log(list)
+    // res.json(list);
+    
+
+    res.json(industries);
   } else {
     res.json(projection_data);
   }
