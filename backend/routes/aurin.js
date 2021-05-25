@@ -117,19 +117,19 @@ router.get("/projection/info", (req, res) => {
       }
 
     }
-    // let list = []
-    // for(let key in industries) {
-    //   let item = {
-    //     abs: industries[key].abs,
-    //     percentage: industries[key].percentage,
-    //     name: key
-    //   }
-    //   list.push(item)
-    // } 
-    // console.log(list)
-    // res.json(list);
+    let list = []
+    for(let key in industries) {
+      let item = {
+        abs: industries[key].abs,
+        percentage: industries[key].percentage,
+        name: key
+      }
+      list.push(item)
+    } 
+    console.log(list)
+    res.json(list);
 
-    res.json(industries);
+    // res.json(industries);
   } else {
     res.json(projection_data);
   }

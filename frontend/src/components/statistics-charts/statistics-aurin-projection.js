@@ -48,7 +48,7 @@ function AurinPop() {
 
   return (
     <>
-      <h3 className={classes.chartTitle}>TPO 10 Projected Employment Growth 2017-2022 </h3>
+      <h3 className={classes.chartTitle}>TPO 10 Projected Employment Growth 2017-2022 in </h3>
       <FormControl
         className={classes.formControl}
         variant="outlined"
