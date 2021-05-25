@@ -14,7 +14,8 @@ import { PopupCharts } from "./charts/popup-charts";
 import { makeStyles } from "@material-ui/core/styles";
 import ControlPanel from "./control-panel";
 
-var SA4_MAP = require("./SA4_MAP.json");
+var SA4_MAP = require("./geojson/SA4_MAP.json");
+var VIC_MAP = require("./geojson/VIC_MAP.json");
 
 const MAPBOX_TOKEN =
   "pk.eyJ1IjoidG9yYXljYWFhIiwiYSI6ImNrZXhmOTk4YzBqb2Mydm1mZzB3cnUxNWQifQ.tCTNSJ5vcc_-pF57gh7PVw"; // Set your mapbox token here
@@ -56,36 +57,34 @@ const useStyles = makeStyles(() => ({
   },
 }));
 
-const ini_fill_layer = {
-  id: "data",
-  type: "fill",
-  paint: {
-    "fill-color": {
-      property: "labour_summary",
-      stops: [
-        [0, "#ffffcc"],
-        [0.1, "#ffeda0"],
-        [0.2, "#fed976"],
-        [0.3, "#feb24c"],
-        [0.4, "#fd8d3c"],
-        [0.5, "#fc4e2a"],
-        [0.6, "#e31a1c"],
-        [0.7, "#bd0026"],
-      ],
+const gen_fill_layer = (scale, feature) => {
+  return {
+    id: "data",
+    type: "fill",
+    paint: {
+      "fill-color": {
+        property: feature,
+        stops: [
+          [0, "#ffffcc"],
+          // [0.1*scale, "#ffeda0"],
+          [0.2 * scale, "#fed976"],
+          // [0.3*scale, "#feb24c"],
+          [0.4 * scale, "#fd8d3c"],
+          // [0.5*scale, "#fc4e2a"],
+          [0.6 * scale, "#e31a1c"],
+          [0.8 * scale, "#bd0026"],
+          [1 * scale, "#ffeda0"],
+        ],
+      },
+      "fill-opacity": 0.8,
     },
-    "fill-opacity": 0.8,
-  },
+  };
 };
 
-// const ini_dataset = {
-//   path_1: "tweets",
-//   scenario: "SY",
-//   path_2: "sentiment_score",
-// };
 const ini_dataset = {
-  path_1: "aurin",
+  path_1: "tweets",
   scenario: "SY",
-  path_2: "labour_summary",
+  path_2: "sentiment_score",
 };
 
 function Map() {
@@ -93,7 +92,7 @@ function Map() {
   const [viewport, setViewport] = useState({
     latitude: -27,
     longitude: 135,
-    zoom: 3,
+    zoom: 4,
     bearing: 0,
     pitch: 0,
   });
@@ -102,10 +101,14 @@ function Map() {
   const [allData, setAllData] = useState(null);
   const [hoverInfo, setHoverInfo] = useState(null);
   const [popupInfo, setPopupInfo] = useState(null);
-  const [fillLayer, setFillLayer] = useState(ini_fill_layer);
+  const [fillLayer, setFillLayer] = useState(
+    gen_fill_layer(1, "sentiment_score")
+  );
   const [MAP_TYPE, setMAP_TYPE] = useState("SA4");
   const [loading, setLoading] = useState(false);
   const [map_data, setMap_data] = useState(null);
+  const [fetch_data, setFetch_data] = useState(null);
+  const [feature, setFeature] = useState("sentiment_score");
 
   useEffect(() => {
     if (MAP_TYPE == "SA4") {
@@ -119,7 +122,6 @@ function Map() {
       )
         .then((resp) => resp.json())
         .then((json) => {
-          console.log(json);
           setAllData(json);
         });
     }
@@ -145,74 +147,68 @@ function Map() {
         : null
     );
   }, []);
+
   useEffect(() => {
     const { path_1, scenario, path_2 } = dataset;
-    // console.log(dataset);
-    // console.log(
-    //   `http://127.0.0.1:3001/${path_1}/${path_2}/info?scenario=${scenario}`
-    // );
-    setLoading(true);
-    if(path_1==="tweets"){
-      fetch(`http://127.0.0.1:3001/${path_1}/${path_2}/info?scenario=${scenario}`)
-      .then((response) => response.json())
-      .then((json) => {
-        let new_data = {};
-        for (let item of json.rows) {
-          if (item.key[1] == year) {
-            new_data[item.key[0]] = Math.round(item.value * 100) / 100;
-          }
-        }
-        console.log("newdata")
-        console.log(new_data);
-        setMap_data(new_data);
-        setLoading(false);
-      })
-      .catch((error) => {
-        setLoading(false);
-        console.log("fetch data failed", error);
-      });
-    }else if(path_1==="aurin" && path_2==="labour_summary"){
-      fetch(`http://127.0.0.1:3001/${path_1}/${path_2}/info`)
-      .then((response) => response.json())
-      .then((json) => {
-        let new_data = {};
-        for(let key in json){
-          new_data[key] = json[key].yth_unemp_rt_15_24
-        }
-        console.log("new_data")
-        console.log(new_data);
-        setMap_data(new_data);
-        setLoading(false);
-      })
-      .catch((error) => {
-        setLoading(false);
-        console.log("fetch data failed", error);
-      });
+    if (path_2 != feature) {
+      setFeature(path_2);
     }
+    setLoading(true);
+    fetch(`http://127.0.0.1:3001/${path_1}/${path_2}/info?scenario=${scenario}`)
+      .then((response) => response.json())
+      .then((json) => {
+        let new_data = {};
+        const index = scenario.length - 2;
+        for (let item of json.rows) {
+          let curr_year = item.key[item.key.length - 1];
+          if (curr_year in new_data) {
+            new_data[curr_year][item.key[index]] =
+              Math.round(item.value * 100) / 100;
+          } else {
+            new_data[curr_year] = {};
+            new_data[curr_year][item.key[index]] =
+              Math.round(item.value * 100) / 100;
+          }
+          // if (item.key[1] == year) {
+          //   new_data[item.key[0]] = Math.round(item.value * 100) / 100;
+          // }
+        }
+        console.log("newdata", new_data);
+        // setMap_data(new_data);
+        setFetch_data(new_data);
+        setLoading(false);
+      })
+      .catch((error) => {
+        setLoading(false);
+        console.log("fetch data failed", error);
+      });
   }, [dataset]);
 
-  const data = useMemo(() => {
-    console.log("using memo 1");
-    if(map_data){
-      console.log("using memo 2");
-      console.log(
-        updateSentimentScoreByState(
-          ini_dataset.path_2,
-          allData,
-          map_data,
-          (f) => map_data[f.properties.SA4_NAME]?map_data[f.properties.SA4_NAME]:0
-        )
-      )
-      return (
-        allData &&
-        updateSentimentScoreByState(
-          ini_dataset.path_2,
-          allData,
-          map_data,
-          (f) => map_data[f.properties.SA4_NAME]?map_data[f.properties.SA4_NAME]:0
-        )
-      )
+  useEffect(() => {
+    if (fetch_data != null) {
+      setMap_data(fetch_data[year]);
     }
+  }, [fetch_data, year]);
+
+  const data = useMemo(() => {
+    console.log("using memo", map_data);
+    let max_value = -1;
+    for (let key in map_data) {
+      if (map_data[key] > max_value) {
+        max_value = map_data[key];
+      }
+    }
+    setFillLayer(gen_fill_layer(max_value, feature));
+
+    return (
+      allData &&
+      updateSentimentScoreByState(
+        allData,
+        map_data,
+        feature,
+        (f) => f.properties.STATE_CODE
+      )
+    );
   }, [allData, map_data]);
 
   function onUpdate(value) {
@@ -254,7 +250,7 @@ function Map() {
         }}
       >
         <Source type="geojson" data={data}>
-          <Layer {...ini_fill_layer} />
+          <Layer {...fillLayer} />
         </Source>
         {hoverInfo && !popupInfo && MAP_TYPE == "SA4" && (
           <div
@@ -266,7 +262,7 @@ function Map() {
             <div>SA4 Code: {hoverInfo.feature.properties.SA4_CODE}</div>
             <div>SA4_NAME: {hoverInfo.feature.properties.SA4_NAME}</div>
             <div>
-              {dataset.path_2}: {hoverInfo.feature.properties[ini_dataset.path_2]}
+              {dataset.path_2}: {hoverInfo.feature.properties[feature]}
             </div>
           </div>
         )}
@@ -278,7 +274,7 @@ function Map() {
             <div>State: {hoverInfo.feature.properties.STATE_NAME}</div>
             <div>State Code: {hoverInfo.feature.properties.STATE_CODE}</div>
             <div>
-              {dataset.path_2}: {hoverInfo.feature.properties[ini_dataset.path_2]}
+              {dataset.path_2}: {hoverInfo.feature.properties[feature]}
             </div>
           </div>
         )}

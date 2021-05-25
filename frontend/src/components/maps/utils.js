@@ -1,16 +1,13 @@
 import { range } from "d3-array";
 import { scaleQuantile } from "d3-scale";
 
-export function updatePercentiles(featureCollection, accessor, length) {
+export function updatePercentiles(featureCollection, accessor) {
   const { features } = featureCollection;
   const scale = scaleQuantile().domain(features.map(accessor)).range(range(9));
-  console.log(scale)
   return {
     type: "FeatureCollection",
     features: features.map((f) => {
       const value = accessor(f);
-      console.log("per")
-      console.log(scale(value))
       const properties = {
         ...f.properties,
         value,
@@ -22,9 +19,10 @@ export function updatePercentiles(featureCollection, accessor, length) {
 }
 
 export function updateSentimentScoreByState(
-  type,
   featureCollection,
+
   map_value,
+  feature,
   accessor
 ) {
   const { features } = featureCollection;
@@ -55,24 +53,13 @@ export function updateSentimentScoreByState(
       type: "FeatureCollection",
       features: features.map((f) => {
         const value = accessor(f);
-        if(type==="sentiment_score"){
-          const properties = {
-            ...f.properties,
-            value,
-            sentiment_score:
-              Math.round(map_value[f.properties.STATE_NAME] * 100) / 100,
-          };
-          return { ...f, properties };
-        }else if(type==="labour_summary"){
-          const properties = {
-            ...f.properties,
-            value,
-            labour_summary: Math.round(map_value[f.properties.SA4_NAME] * 100) / 100,
-          };
-          return { ...f, properties };
-        }
-        
-        
+        var properties = {
+          ...f.properties,
+          value,
+        };
+        properties[feature] =
+          Math.round(map_value[f.properties.STATE_NAME] * 100) / 100;
+        return { ...f, properties };
       }),
     };
   }

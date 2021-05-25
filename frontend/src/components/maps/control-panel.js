@@ -43,15 +43,26 @@ function ControlPanel(props) {
           <Option value="tweets">Tweets</Option>
           <Option value="aurin">Aurin</Option>
         </Select>
-        <Select
-          defaultValue="Sentiment_score"
-          style={{ width: 120 }}
-          onChange={(value) => setPath2(value)}
-        >
-          <Option value="sentiment_score">Sentiment</Option>
-          <Option value="tweet_count">Number of Tweets</Option>
-          {path1==="aurin" && (<Option value="labour_summary">Unemployment Rate</Option>)}
-        </Select>
+        {path1 == "tweets" && (
+          <Select
+            defaultValue="Sentiment_score"
+            style={{ width: 120 }}
+            onChange={(value) => setPath2(value)}
+          >
+            <Option value="sentiment_score">Sentiment</Option>
+            <Option value="tweet_count">Number of Tweets</Option>
+          </Select>
+        )}
+        {path1 == "aurin" && (
+          <Select
+            defaultValue="employ"
+            style={{ width: 120 }}
+            onChange={(value) => setPath2(value)}
+          >
+            <Option value="employ">Employment rate</Option>
+            <Option value="tweet_count">Number of Tweets</Option>
+          </Select>
+        )}
         <text>By</text>
 
         <Select
@@ -60,7 +71,8 @@ function ControlPanel(props) {
           onChange={(value) => setScenario(value)}
         >
           <Option value="SY">State</Option>
-          <Option value="SCY">City</Option>
+          <Option value="SCY">Suburb_sum</Option>
+          <Option value="SCSY">Suburb</Option>
         </Select>
         <Select
           defaultValue={year}
@@ -84,17 +96,15 @@ function ControlPanel(props) {
       {/* <div key={"year"} className="input">
         <label>Year</label>
         <input
-          className="m-input"
           type="range"
           value={year}
-<<<<<<< HEAD
-          min={2019}
-          max={2021}
-=======
           min={2018}
+          max={2020}
+          step={1}
+          onChange={(e) => setYear(e.target.value)}
         />
       </div> */}
-      </>
+    </>
   );
 }
 
