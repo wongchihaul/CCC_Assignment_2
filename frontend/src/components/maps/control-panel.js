@@ -5,31 +5,29 @@ function ControlPanel(props) {
 
   return (
     <div className="control-panel">
-      <h3>Interactive GeoJSON</h3>
+      <h3>Sentiment score in Australia</h3>
       <p>
-        Map showing median household income by state in year <b>{year}</b>. Hover over a state to
-        see details.
+        Map showing the Sentiment score income by state in year <b>{year}</b>. 
       </p>
-      <p>
-        Data source: <a href="www.census.gov">US Census Bureau</a>
-      </p>
+      <p>Hover over a state to see details.</p>
       <div className="source-link">
         <a
-          href="https://github.com/visgl/react-map-gl/tree/6.1-release/examples/geojson"
+          href="https://github.com/Toraycaaa/CCC_Assignment_2"
           target="_new"
         >
-          View Code ↗
+          View Source Code ↗
         </a>
       </div>
       <hr />
 
       <div key={'year'} className="input">
-        <label>Year</label>
+      <p>Year</p>
         <input
+          className="m-input"
           type="range"
           value={year}
-          min={1995}
-          max={2015}
+          min={2019}
+          max={2021}
           step={1}
           onChange={evt => props.onChange(evt.target.value)}
         />

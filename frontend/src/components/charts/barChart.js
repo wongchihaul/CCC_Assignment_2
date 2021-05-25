@@ -18,7 +18,7 @@ function BarChart(props){
     data: data,
     xField: 'percentage',
     yField: 'name',
-    seriesField: 'year',
+    seriesField: 'name',
     legend: { position: 'top-left' },
   };
   return (

@@ -1,6 +1,6 @@
 import {useState, useEffect, useCallback, useMemo} from 'react';
 import MapGL, {Source, Layer, Popup, FullscreenControl, ScaleControl, NavigationControl } from 'react-map-gl';
-// import ControlPanel from './control-panel';
+import ControlPanel from './control-panel';
 import {dataLayer} from './map-style.js';
 import {updatePercentiles} from './utils';
 import {PopupCharts} from './charts/popup-charts';
@@ -43,11 +43,11 @@ function Map() {
   const [viewport, setViewport] = useState({
     latitude: -27,
     longitude: 135,
-    zoom: 4,
+    zoom: 3,
     bearing: 0,
     pitch: 0
   });
-  const [year, setYear] = useState(1);
+  const [year, setYear] = useState(2019);
   const [allData, setAllData] = useState(null);
   const [hoverInfo, setHoverInfo] = useState(null);
   const [popupInfo, setPopupInfo] = useState(null);
@@ -68,7 +68,6 @@ function Map() {
         features,
         srcEvent: {offsetX, offsetY}
       } = event;
-      console.log(offsetX)
       const hoveredFeature = features && features[0];
       setHoverInfo(
         hoveredFeature
@@ -128,21 +127,23 @@ function Map() {
           <Popup
             tipSize={10}
             anchor="top"
+            style={{zIndex:100}}
             longitude={popupInfo.longitude}
             latitude={popupInfo.latitude}
             closeOnClick={true}
             onClose={setPopupInfo}
           >
-           <PopupCharts info={popupInfo}></PopupCharts>
+           <PopupCharts info={popupInfo} year={year}></PopupCharts>
            
           </Popup>
         )}
         <FullscreenControl style={fullscreenControlStyle} />
         <NavigationControl style={navStyle} />
-        <ScaleControl style={scaleControlStyle} />
+        <ScaleControl style={scaleControlStyle} />     
       </MapGL>
+      <ControlPanel year={year} onChange={value => setYear(value)} />
 
-      {/* <ControlPanel year={year} onChange={value => setYear(value)} /> */}
+      
     </>
   );
 }

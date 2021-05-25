@@ -11,6 +11,7 @@ import StatisticsTweetsNum from "../statistics-charts/statistics-tweets-num";
 import StatisticsTweetsSuburbs from "../statistics-charts/statistics-tweets-suburbs";
 import StatisticsAurinPop from "../statistics-charts/statistics-aurin-population";
 import StatisticsAurinProjection from "../statistics-charts/statistics-aurin-projection";
+import StatisticsTweetsEmployment from "../statistics-charts/statistics-tweets-unemployment";
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -75,6 +76,7 @@ export default function SimpleTabs() {
       </AppBar>
       <TabPanel value={value} index={1}>
         <Container maxWidth="md">
+            <StatisticsTweetsEmployment></StatisticsTweetsEmployment>
           <StatisticsTweetsNum></StatisticsTweetsNum>
           <StatisticsTweetsSuburbs></StatisticsTweetsSuburbs>
         </Container>
