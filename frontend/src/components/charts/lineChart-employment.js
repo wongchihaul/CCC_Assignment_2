@@ -35,7 +35,7 @@ function DemoColumn() {
     {
       name: 'employment_rate',
       state: "Queensland",
-      value: 0.716,
+      value: 0.746,
     },
     {
       name: 'employment_rate',
