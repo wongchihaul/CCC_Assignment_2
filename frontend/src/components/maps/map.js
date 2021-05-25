@@ -56,25 +56,28 @@ const useStyles = makeStyles(() => ({
   },
 }));
 
-const ini_fill_layer = {
-  id: "data",
-  type: "fill",
-  paint: {
-    "fill-color": {
-      property: "sentiment_score",
-      stops: [
-        [0, "#ffffcc"],
-        [0.1, "#ffeda0"],
-        [0.2, "#fed976"],
-        [0.3, "#feb24c"],
-        [0.4, "#fd8d3c"],
-        [0.5, "#fc4e2a"],
-        [0.6, "#e31a1c"],
-        [0.7, "#bd0026"],
-      ],
+const gen_fill_layer = (scale) => {
+  return {
+    id: "data",
+    type: "fill",
+    paint: {
+      "fill-color": {
+        property: "sentiment_score",
+        stops: [
+          [0, "#ffffcc"],
+          // [0.1*scale, "#ffeda0"],
+          [0.2 * scale, "#fed976"],
+          // [0.3*scale, "#feb24c"],
+          [0.4 * scale, "#fd8d3c"],
+          // [0.5*scale, "#fc4e2a"],
+          [0.6 * scale, "#e31a1c"],
+          [0.8 * scale, "#bd0026"],
+          [1 * scale, "#ffeda0"],
+        ],
+      },
+      "fill-opacity": 0.8,
     },
-    "fill-opacity": 0.8,
-  },
+  };
 };
 
 const ini_dataset = {
@@ -97,7 +100,7 @@ function Map() {
   const [allData, setAllData] = useState(null);
   const [hoverInfo, setHoverInfo] = useState(null);
   const [popupInfo, setPopupInfo] = useState(null);
-  const [fillLayer, setFillLayer] = useState(ini_fill_layer);
+  const [fillLayer, setFillLayer] = useState(gen_fill_layer(1));
   const [MAP_TYPE, setMAP_TYPE] = useState("SA4");
   const [loading, setLoading] = useState(false);
   const [map_data, setMap_data] = useState(null);
@@ -115,7 +118,6 @@ function Map() {
       )
         .then((resp) => resp.json())
         .then((json) => {
-          console.log(json);
           setAllData(json);
         });
     }
@@ -182,8 +184,15 @@ function Map() {
   }, [fetch_data, year]);
 
   const data = useMemo(() => {
-    console.log("using memo");
-    console.log(allData);
+    console.log("using memo", map_data);
+    let max_value = -1;
+    for (let key in map_data) {
+      if (map_data[key] > max_value) {
+        max_value = map_data[key];
+      }
+    }
+    setFillLayer(gen_fill_layer(max_value));
+
     return (
       allData &&
       updateSentimentScoreByState(
@@ -233,7 +242,7 @@ function Map() {
         }}
       >
         <Source type="geojson" data={data}>
-          <Layer {...ini_fill_layer} />
+          <Layer {...fillLayer} />
         </Source>
         {hoverInfo && !popupInfo && MAP_TYPE == "SA4" && (
           <div
