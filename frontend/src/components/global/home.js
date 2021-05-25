@@ -11,6 +11,15 @@ const useStyles = makeStyles((theme) => ({
   },
   memberContainer:{
     zIndex: 20,
+  },
+  subjectCode:{
+    fontSize:"50px",
+    color:"#fff",
+    margin: 0,
+  },
+  assignment:{
+    fontSize:"30px",
+    color:"#fff"
   }
 }));
 function Home() {
@@ -26,9 +35,10 @@ function Home() {
           alt=""
           id="mountain_behind"
         ></img>
-        <div id="text">Moon Light</div>
 
         <div className={classes.memberContainer}>
+          <h1 className={classes.subjectCode}>COMP90024</h1>
+          <h2 className={classes.assignment}>Assignment 2</h2>
           <a href="#" id="btn" onClick={() => setDisplayMembers(true)}>
             TEAM MEMBERS
           </a>

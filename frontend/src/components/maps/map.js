@@ -53,6 +53,12 @@ const useStyles = makeStyles(() => ({
     top: "70px",
     right: "10px",
     backgroundColor: "white",
+    maxWidth: "320px",
+    boxShadow: "0 2px 4px rgba(0,0,0,0.3)",
+    padding: "12px 24px",
+    fontSize: "13px",
+    lineHeight: 2,
+    color: "#6b6b76",
     opacity: 0.8,
   },
 }));
