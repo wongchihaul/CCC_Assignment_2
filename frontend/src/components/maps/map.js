@@ -16,6 +16,47 @@ import ControlPanel from "./control-panel";
 
 var SA4_MAP = require("./geojson/SA4_MAP.json");
 var VIC_MAP = require("./geojson/VIC_MAP.json");
+var QLD_MAP = require("./geojson/QLD_MAP.json");
+var WA_MAP = require("./geojson/WA_MAP.json");
+var NSW_MAP = require("./geojson/NSW_MAP.json");
+
+const name_map = {
+  Sydney: "NSW_LOCA_2",
+  Brisbane: "QLD_LOCA_2",
+  Perth: "WA_LOCA_2",
+  Melbourne: "NAME",
+};
+
+const city_view_port = {
+  Sydney: {
+    latitude: -33.85,
+    longitude: 151.2,
+    zoom: 11,
+    bearing: 0,
+    pitch: 0,
+  },
+  Brisbane: {
+    latitude: -27.47,
+    longitude: 153.02,
+    zoom: 10,
+    bearing: 0,
+    pitch: 0,
+  },
+  Perth: {
+    latitude: -31.95,
+    longitude: 115.85,
+    zoom: 10,
+    bearing: 0,
+    pitch: 0,
+  },
+  Melbourne: {
+    latitude: -37.84,
+    longitude: 144.95,
+    zoom: 10,
+    bearing: 0,
+    pitch: 0,
+  },
+};
 
 const MAPBOX_TOKEN =
   "pk.eyJ1IjoidG9yYXljYWFhIiwiYSI6ImNrZXhmOTk4YzBqb2Mydm1mZzB3cnUxNWQifQ.tCTNSJ5vcc_-pF57gh7PVw"; // Set your mapbox token here
@@ -103,6 +144,7 @@ function Map() {
     pitch: 0,
   });
   const [year, setYear] = useState(2020);
+  const [city, setCity] = useState("Melbourne");
   const [dataset, setDataSet] = useState(ini_dataset);
   const [allData, setAllData] = useState(null);
   const [hoverInfo, setHoverInfo] = useState(null);
@@ -115,9 +157,19 @@ function Map() {
   const [map_data, setMap_data] = useState(null);
   const [fetch_data, setFetch_data] = useState(null);
   const [feature, setFeature] = useState("sentiment_score");
+  const city_to_map = {
+    Melbourne: VIC_MAP,
+    Sydney: NSW_MAP,
+    Brisbane: QLD_MAP,
+    Perth: WA_MAP,
+  };
 
   useEffect(() => {
-    if (MAP_TYPE == "SA4") {
+    if (MAP_TYPE == "suburb") {
+      console.log("suburb", city_to_map[city]);
+      setViewport(city_view_port[city]);
+      setAllData(city_to_map[city]);
+    } else if (MAP_TYPE == "SA4") {
       console.log("SA4", SA4_MAP);
       setAllData(SA4_MAP);
     } else {
@@ -130,7 +182,7 @@ function Map() {
           setAllData(json);
         });
     }
-  }, []);
+  }, [MAP_TYPE, city]);
 
   useEffect(() => {
     console.log(year);
@@ -155,70 +207,110 @@ function Map() {
 
   useEffect(() => {
     const { path_1, scenario, path_2 } = dataset;
+    console.log("Scenario: ", scenario);
+    if (scenario == "SY" && MAP_TYPE != "SA4") {
+      setMAP_TYPE("SA4");
+      console.log("changing map type to SA4");
+    }
+    if (scenario != "SY" && MAP_TYPE != "suburb") {
+      setMAP_TYPE("suburb");
+      console.log("changing map type to suburb");
+    }
     if (path_2 != feature) {
       setFeature(path_2);
     }
+    console.log("dataset changing", dataset);
     setLoading(true);
-    if(path_1==="tweets"){
-      fetch(`http://127.0.0.1:3001/${path_1}/${path_2}/info?scenario=${scenario}`)
-      .then((response) => response.json())
-      .then((json) => {
-        let new_data = {};
-        const index = scenario.length - 2;
-        for (let item of json.rows) {
-          let curr_year = item.key[item.key.length - 1];
-          if (curr_year in new_data) {
-            new_data[curr_year][item.key[index]] =
-              Math.round(item.value * 100) / 100;
-          } else {
-            new_data[curr_year] = {};
-            new_data[curr_year][item.key[index]] =
-              Math.round(item.value * 100) / 100;
+    if (path_1 === "tweets") {
+      fetch(
+        `http://127.0.0.1:3001/${path_1}/${path_2}/info?scenario=${scenario}`
+      )
+        .then((response) => response.json())
+        .then((json) => {
+          if (scenario == "SY") {
+            let new_data = {};
+            const index = scenario.length - 2;
+            for (let item of json.rows) {
+              let curr_year = item.key[item.key.length - 1];
+              if (curr_year in new_data) {
+                new_data[curr_year][item.key[index]] =
+                  Math.round(item.value * 100) / 100;
+              } else {
+                new_data[curr_year] = {};
+                new_data[curr_year][item.key[index]] =
+                  Math.round(item.value * 100) / 100;
+              }
+              // if (item.key[1] == year) {
+              //   new_data[item.key[0]] = Math.round(item.value * 100) / 100;
+              // }
+            }
+            console.log("newdata", new_data);
+            // setMap_data(new_data);
+            setFetch_data(new_data);
+            setLoading(false);
+          } else if (scenario.length > 2) {
+            console.log("FETCHDATA", json);
+
+            let new_data = {};
+            const index = 2;
+            for (let item of json.rows) {
+              let curr_city = item.key[1];
+              if (curr_city in new_data) {
+                new_data[curr_city][item.key[index].toLowerCase()] =
+                  Math.round(item.value * 100) / 100;
+              } else {
+                new_data[curr_city] = {};
+                new_data[curr_city][item.key[index].toLowerCase()] =
+                  Math.round(item.value * 100) / 100;
+              }
+              // if (item.key[1] == year) {
+              //   new_data[item.key[0]] = Math.round(item.value * 100) / 100;
+              // }
+            }
+            console.log("newdata", new_data);
+            // setMap_data(new_data);
+            setFetch_data(new_data);
+            setLoading(false);
           }
-          // if (item.key[1] == year) {
-          //   new_data[item.key[0]] = Math.round(item.value * 100) / 100;
-          // }
-        }
-        // console.log("newdata", new_data);
-        // setMap_data(new_data);
-        setFetch_data(new_data);
-        setLoading(false);
-      })
-      .catch((error) => {
-        setLoading(false);
-        console.log("fetch data failed", error);
-      });
-    }else if(path_1==="aurin" && path_2==="labour_summary"){
+        })
+        .catch((error) => {
+          setLoading(false);
+          console.log("fetch data failed", error);
+        });
+    } else if (path_1 === "aurin" && path_2 === "labour_summary") {
       fetch(`http://127.0.0.1:3001/${path_1}/${path_2}/info`)
-      .then((response) => response.json())
-      .then((json) => {
-        let new_data = {};
-        for(let key in json){
-          new_data[key] = json[key].yth_unemp_rt_15_24
-        }
-        setFetch_data(new_data);
-        setLoading(false);
-      })
-      .catch((error) => {
-        setLoading(false);
-        console.log("fetch data failed", error);
-      });
+        .then((response) => response.json())
+        .then((json) => {
+          let new_data = {};
+          for (let key in json) {
+            new_data[key] = json[key].yth_unemp_rt_15_24;
+          }
+          setFetch_data(new_data);
+          setLoading(false);
+        })
+        .catch((error) => {
+          setLoading(false);
+          console.log("fetch data failed", error);
+        });
     }
-    
   }, [dataset]);
 
   useEffect(() => {
-    
     if (fetch_data != null) {
-      console.log("fetch",fetch_data)
-      if(dataset.path_1==="aurin"){
+      console.log("fetch", fetch_data);
+      if (dataset.path_1 === "aurin") {
         setMap_data(fetch_data);
-      }else{
+      } else {
         setMap_data(fetch_data[year]);
       }
-      console.log("map",map_data)
+      console.log("map", map_data);
+      if (MAP_TYPE == "SA4") {
+        setMap_data(fetch_data[year]);
+      } else {
+        setMap_data(fetch_data[city]);
+      }
     }
-  }, [fetch_data, year]);
+  }, [fetch_data, year, city]);
 
   const data = useMemo(() => {
     console.log("using memo", map_data);
@@ -228,12 +320,15 @@ function Map() {
         max_value = map_data[key];
       }
     }
+    console.log("current max", max_value);
     setFillLayer(gen_fill_layer(max_value, feature));
 
     return (
       allData &&
       updateSentimentScoreByState(
         allData,
+        city,
+        MAP_TYPE,
         map_data,
         feature,
         (f) => f.properties.STATE_CODE
@@ -242,12 +337,30 @@ function Map() {
   }, [allData, map_data]);
 
   function onUpdate(value) {
-    const { new_dataset, new_year } = value;
-    if (new_year != year) {
-      setYear(new_year);
-    }
-    if (new_dataset != dataset || dataset == null) {
-      setDataSet(new_dataset);
+    const { new_dataset } = value;
+    if (new_dataset.scenario == "SY") {
+      const { new_year } = value;
+      if (new_year != year) {
+        setYear(new_year);
+      }
+      if (
+        JSON.stringify(new_dataset) != JSON.stringify(dataset) ||
+        dataset == null
+      ) {
+        setDataSet(new_dataset);
+      }
+    } else {
+      const { new_city } = value;
+      if (new_city != city) {
+        console.log("newcity", new_city);
+        setCity(new_city);
+      }
+      if (
+        JSON.stringify(new_dataset) != JSON.stringify(dataset) ||
+        dataset == null
+      ) {
+        setDataSet(new_dataset);
+      }
     }
   }
 
@@ -301,8 +414,7 @@ function Map() {
             className={classes.tooltip}
             style={{ left: hoverInfo.x, top: hoverInfo.y }}
           >
-            <div>State: {hoverInfo.feature.properties.STATE_NAME}</div>
-            <div>State Code: {hoverInfo.feature.properties.STATE_CODE}</div>
+            <div>Suburb: {hoverInfo.feature.properties[name_map[city]]}</div>
             <div>
               {dataset.path_2}: {hoverInfo.feature.properties[feature]}
             </div>

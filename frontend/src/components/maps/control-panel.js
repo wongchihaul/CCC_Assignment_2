@@ -11,18 +11,31 @@ function ControlPanel(props) {
   const [path1, setPath1] = useState(props.cfg.path_1);
   const [path2, setPath2] = useState(props.cfg.path_2);
   const [scenario, setScenario] = useState(props.cfg.scenario);
+  const [city, setCity] = useState("Melbourne");
   const [loading, setLoading] = useState(false);
 
   function onSearch() {
-    const searchTerm = {
-      new_year: year,
-      new_dataset: {
-        path_1: path1,
-        path_2: path2,
-        scenario: scenario,
-      },
-    };
-    props.onChange(searchTerm);
+    if (scenario == "SY") {
+      const searchTerm = {
+        new_year: year,
+        new_dataset: {
+          path_1: path1,
+          path_2: path2,
+          scenario: scenario,
+        },
+      };
+      props.onChange(searchTerm);
+    } else {
+      const searchTerm = {
+        new_city: city,
+        new_dataset: {
+          path_1: path1,
+          path_2: path2,
+          scenario: scenario,
+        },
+      };
+      props.onChange(searchTerm);
+    }
   }
 
   return (
@@ -69,22 +82,36 @@ function ControlPanel(props) {
             <p>By</p>
             <Select
               defaultValue="SY"
-              style={{ width: 110, marginRight: "10px" }}
+              style={{ width: 120 }}
               onChange={(value) => setScenario(value)}
             >
               <Option value="SY">State</Option>
               <Option value="SCY">Suburb_sum</Option>
               <Option value="SCSY">Suburb</Option>
             </Select>
-            <Select
-              defaultValue={year}
-              style={{ width: 110 }}
-              onChange={(value) => setYear(value)}
-            >
-              <Option value="2019">2019</Option>
-              <Option value="2020">2020</Option>
-              <Option value="2021">2021</Option>
-            </Select>
+            {scenario == "SY" && (
+              <Select
+                defaultValue={year}
+                style={{ width: 120 }}
+                onChange={(value) => setYear(value)}
+              >
+                <Option value="2019">2019</Option>
+                <Option value="2020">2020</Option>
+                <Option value="2021">2021</Option>
+              </Select>
+            )}
+            {scenario != "SY" && (
+              <Select
+                defaultValue="Melbourne"
+                style={{ width: 120 }}
+                onChange={(value) => setCity(value)}
+              >
+                <Option value="Melbourne">Melbourne</Option>
+                <Option value="Sydney">Sydney</Option>
+                <Option value="Brisbane">Brisbane</Option>
+                <Option value="Perth">Perth</Option>
+              </Select>
+            )}
           </>
         )}
       </div>
