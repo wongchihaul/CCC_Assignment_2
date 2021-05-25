@@ -71,7 +71,7 @@ function ControlPanel(props) {
           onChange={(value) => setScenario(value)}
         >
           <Option value="SY">State</Option>
-          <Option value="SCY">City</Option>
+          <Option value="SCY">Suburb_sum</Option>
           <Option value="SCSY">Suburb</Option>
         </Select>
         <Select

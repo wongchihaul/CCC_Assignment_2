@@ -14,7 +14,8 @@ import { PopupCharts } from "./charts/popup-charts";
 import { makeStyles } from "@material-ui/core/styles";
 import ControlPanel from "./control-panel";
 
-var SA4_MAP = require("./SA4_MAP.json");
+var SA4_MAP = require("./geojson/SA4_MAP.json");
+var VIC_MAP = require("./geojson/VIC_MAP.json");
 
 const MAPBOX_TOKEN =
   "pk.eyJ1IjoidG9yYXljYWFhIiwiYSI6ImNrZXhmOTk4YzBqb2Mydm1mZzB3cnUxNWQifQ.tCTNSJ5vcc_-pF57gh7PVw"; // Set your mapbox token here
@@ -56,13 +57,13 @@ const useStyles = makeStyles(() => ({
   },
 }));
 
-const gen_fill_layer = (scale) => {
+const gen_fill_layer = (scale, feature) => {
   return {
     id: "data",
     type: "fill",
     paint: {
       "fill-color": {
-        property: "sentiment_score",
+        property: feature,
         stops: [
           [0, "#ffffcc"],
           // [0.1*scale, "#ffeda0"],
@@ -100,11 +101,14 @@ function Map() {
   const [allData, setAllData] = useState(null);
   const [hoverInfo, setHoverInfo] = useState(null);
   const [popupInfo, setPopupInfo] = useState(null);
-  const [fillLayer, setFillLayer] = useState(gen_fill_layer(1));
+  const [fillLayer, setFillLayer] = useState(
+    gen_fill_layer(1, "sentiment_score")
+  );
   const [MAP_TYPE, setMAP_TYPE] = useState("SA4");
   const [loading, setLoading] = useState(false);
   const [map_data, setMap_data] = useState(null);
   const [fetch_data, setFetch_data] = useState(null);
+  const [feature, setFeature] = useState("sentiment_score");
 
   useEffect(() => {
     if (MAP_TYPE == "SA4") {
@@ -146,6 +150,9 @@ function Map() {
 
   useEffect(() => {
     const { path_1, scenario, path_2 } = dataset;
+    if (path_2 != feature) {
+      setFeature(path_2);
+    }
     setLoading(true);
     fetch(`http://127.0.0.1:3001/${path_1}/${path_2}/info?scenario=${scenario}`)
       .then((response) => response.json())
@@ -191,13 +198,14 @@ function Map() {
         max_value = map_data[key];
       }
     }
-    setFillLayer(gen_fill_layer(max_value));
+    setFillLayer(gen_fill_layer(max_value, feature));
 
     return (
       allData &&
       updateSentimentScoreByState(
         allData,
         map_data,
+        feature,
         (f) => f.properties.STATE_CODE
       )
     );
@@ -254,7 +262,7 @@ function Map() {
             <div>SA4 Code: {hoverInfo.feature.properties.SA4_CODE}</div>
             <div>SA4_NAME: {hoverInfo.feature.properties.SA4_NAME}</div>
             <div>
-              {dataset.path_2}: {hoverInfo.feature.properties.sentiment_score}
+              {dataset.path_2}: {hoverInfo.feature.properties[feature]}
             </div>
           </div>
         )}
@@ -266,7 +274,7 @@ function Map() {
             <div>State: {hoverInfo.feature.properties.STATE_NAME}</div>
             <div>State Code: {hoverInfo.feature.properties.STATE_CODE}</div>
             <div>
-              {dataset.path_2}: {hoverInfo.feature.properties.sentiment_score}
+              {dataset.path_2}: {hoverInfo.feature.properties[feature]}
             </div>
           </div>
         )}

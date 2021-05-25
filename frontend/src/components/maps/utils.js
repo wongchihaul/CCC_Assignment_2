@@ -20,7 +20,9 @@ export function updatePercentiles(featureCollection, accessor) {
 
 export function updateSentimentScoreByState(
   featureCollection,
+
   map_value,
+  feature,
   accessor
 ) {
   const { features } = featureCollection;
@@ -51,12 +53,12 @@ export function updateSentimentScoreByState(
       type: "FeatureCollection",
       features: features.map((f) => {
         const value = accessor(f);
-        const properties = {
+        var properties = {
           ...f.properties,
           value,
-          sentiment_score:
-            Math.round(map_value[f.properties.STATE_NAME] * 100) / 100,
         };
+        properties[feature] =
+          Math.round(map_value[f.properties.STATE_NAME] * 100) / 100;
         return { ...f, properties };
       }),
     };
