@@ -1,0 +1,10 @@
+---
+- name: stop existing container
+  shell: docker-compose down --rmi local
+  args:
+    chdir: "{{ git_repo }}/frontend"
+
+- name: deploy frontend container
+  shell: docker-compose up --build -d
+  args:
+    chdir: "{{ git_repo }}/frontend"

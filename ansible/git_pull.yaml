@@ -1,5 +1,5 @@
 ---
-- hosts: instances
+- hosts: masternode
   vars_files:
     - host_vars/config.yaml
   gather_facts: true

@@ -5,4 +5,4 @@
     - host_vars/config.yaml
   roles:
     - role: git-pull
-    - role: deploy-backend
+    - role: deploy-frontend
