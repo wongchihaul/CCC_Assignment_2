@@ -1,0 +1,590 @@
+{
+  "Capital Region": {
+    "yth_unemp_rt_15_24": 6.5,
+    "mpy_rt_15_64": 75.4,
+    "working_age_pop_15_64": 146000.0,
+    "unemp_rt_15": 4.3,
+    "ptic_rt_15": 63.6
+  },
+  "Central Coast": {
+    "yth_unemp_rt_15_24": 10.2,
+    "mpy_rt_15_64": 72.6,
+    "working_age_pop_15_64": 200200.0,
+    "unemp_rt_15": 5.5,
+    "ptic_rt_15": 59.0
+  },
+  "Central West": {
+    "yth_unemp_rt_15_24": 8.8,
+    "mpy_rt_15_64": 78.7,
+    "working_age_pop_15_64": 130700.0,
+    "unemp_rt_15": 4.3,
+    "ptic_rt_15": 67.9
+  },
+  "Coffs Harbour - Grafton": {
+    "yth_unemp_rt_15_24": 12.3,
+    "mpy_rt_15_64": 63.7,
+    "working_age_pop_15_64": 79000.0,
+    "unemp_rt_15": 7.9,
+    "ptic_rt_15": 50.7
+  },
+  "Far West and Orana": {
+    "yth_unemp_rt_15_24": 6.9,
+    "mpy_rt_15_64": 77.2,
+    "working_age_pop_15_64": 64300.0,
+    "unemp_rt_15": 2.6,
+    "ptic_rt_15": 59.8
+  },
+  "Hunter Valley exc Newcastle": {
+    "yth_unemp_rt_15_24": 14.9,
+    "mpy_rt_15_64": 74.0,
+    "working_age_pop_15_64": 166400.0,
+    "unemp_rt_15": 6.0,
+    "ptic_rt_15": 61.3
+  },
+  "Illawarra": {
+    "yth_unemp_rt_15_24": 14.9,
+    "mpy_rt_15_64": 71.1,
+    "working_age_pop_15_64": 208200.0,
+    "unemp_rt_15": 6.8,
+    "ptic_rt_15": 63.2
+  },
+  "Mid North Coast": {
+    "yth_unemp_rt_15_24": 15.4,
+    "mpy_rt_15_64": 65.5,
+    "working_age_pop_15_64": 118300.0,
+    "unemp_rt_15": 8.0,
+    "ptic_rt_15": 47.7
+  },
+  "Murray": {
+    "yth_unemp_rt_15_24": 8.5,
+    "mpy_rt_15_64": 72.2,
+    "working_age_pop_15_64": 74400.0,
+    "unemp_rt_15": 5.1,
+    "ptic_rt_15": 61.0
+  },
+  "New England and North West": {
+    "yth_unemp_rt_15_24": 12.0,
+    "mpy_rt_15_64": 71.7,
+    "working_age_pop_15_64": 107500.0,
+    "unemp_rt_15": 6.3,
+    "ptic_rt_15": 61.1
+  },
+  "Newcastle and Lake Macquarie": {
+    "yth_unemp_rt_15_24": 18.2,
+    "mpy_rt_15_64": 71.5,
+    "working_age_pop_15_64": 246600.0,
+    "unemp_rt_15": 7.8,
+    "ptic_rt_15": 63.5
+  },
+  "Richmond - Tweed": {
+    "yth_unemp_rt_15_24": 9.6,
+    "mpy_rt_15_64": 73.5,
+    "working_age_pop_15_64": 144500.0,
+    "unemp_rt_15": 5.1,
+    "ptic_rt_15": 58.0
+  },
+  "Riverina": {
+    "yth_unemp_rt_15_24": 5.8,
+    "mpy_rt_15_64": 74.7,
+    "working_age_pop_15_64": 100100.0,
+    "unemp_rt_15": 4.9,
+    "ptic_rt_15": 66.5
+  },
+  "Southern Highlands and Shoalhaven": {
+    "yth_unemp_rt_15_24": 9.1,
+    "mpy_rt_15_64": 68.0,
+    "working_age_pop_15_64": 81100.0,
+    "unemp_rt_15": 4.8,
+    "ptic_rt_15": 50.3
+  },
+  "Sydney - Baulkham Hills and Hawkesbury": {
+    "yth_unemp_rt_15_24": 13.3,
+    "mpy_rt_15_64": 76.2,
+    "working_age_pop_15_64": 167000.0,
+    "unemp_rt_15": 6.0,
+    "ptic_rt_15": 69.9
+  },
+  "Sydney - Blacktown": {
+    "yth_unemp_rt_15_24": 15.2,
+    "mpy_rt_15_64": 72.0,
+    "working_age_pop_15_64": 258000.0,
+    "unemp_rt_15": 7.1,
+    "ptic_rt_15": 69.2
+  },
+  "Sydney - City and Inner South": {
+    "yth_unemp_rt_15_24": 14.0,
+    "mpy_rt_15_64": 77.2,
+    "working_age_pop_15_64": 292800.0,
+    "unemp_rt_15": 6.7,
+    "ptic_rt_15": 75.0
+  },
+  "Sydney - Eastern Suburbs": {
+    "yth_unemp_rt_15_24": 11.0,
+    "mpy_rt_15_64": 77.4,
+    "working_age_pop_15_64": 215200.0,
+    "unemp_rt_15": 5.1,
+    "ptic_rt_15": 72.2
+  },
+  "Sydney - Inner South West": {
+    "yth_unemp_rt_15_24": 10.6,
+    "mpy_rt_15_64": 70.4,
+    "working_age_pop_15_64": 414900.0,
+    "unemp_rt_15": 6.5,
+    "ptic_rt_15": 62.8
+  },
+  "Sydney - Inner West": {
+    "yth_unemp_rt_15_24": 11.9,
+    "mpy_rt_15_64": 75.2,
+    "working_age_pop_15_64": 232600.0,
+    "unemp_rt_15": 6.5,
+    "ptic_rt_15": 70.4
+  },
+  "Sydney - North Sydney and Hornsby": {
+    "yth_unemp_rt_15_24": 11.9,
+    "mpy_rt_15_64": 78.0,
+    "working_age_pop_15_64": 288500.0,
+    "unemp_rt_15": 4.8,
+    "ptic_rt_15": 69.6
+  },
+  "Sydney - Northern Beaches": {
+    "yth_unemp_rt_15_24": 11.5,
+    "mpy_rt_15_64": 80.1,
+    "working_age_pop_15_64": 178600.0,
+    "unemp_rt_15": 4.4,
+    "ptic_rt_15": 70.3
+  },
+  "Sydney - Outer South West": {
+    "yth_unemp_rt_15_24": 12.3,
+    "mpy_rt_15_64": 73.2,
+    "working_age_pop_15_64": 189600.0,
+    "unemp_rt_15": 6.1,
+    "ptic_rt_15": 67.5
+  },
+  "Sydney - Outer West and Blue Mountains": {
+    "yth_unemp_rt_15_24": 13.6,
+    "mpy_rt_15_64": 74.0,
+    "working_age_pop_15_64": 212300.0,
+    "unemp_rt_15": 5.5,
+    "ptic_rt_15": 66.8
+  },
+  "Sydney - Parramatta": {
+    "yth_unemp_rt_15_24": 17.8,
+    "mpy_rt_15_64": 67.4,
+    "working_age_pop_15_64": 349800.0,
+    "unemp_rt_15": 8.1,
+    "ptic_rt_15": 63.9
+  },
+  "Sydney - Ryde": {
+    "yth_unemp_rt_15_24": 8.8,
+    "mpy_rt_15_64": 75.0,
+    "working_age_pop_15_64": 148200.0,
+    "unemp_rt_15": 5.8,
+    "ptic_rt_15": 71.2
+  },
+  "Sydney - South West": {
+    "yth_unemp_rt_15_24": 22.3,
+    "mpy_rt_15_64": 61.9,
+    "working_age_pop_15_64": 306900.0,
+    "unemp_rt_15": 8.6,
+    "ptic_rt_15": 59.2
+  },
+  "Sydney - Sutherland": {
+    "yth_unemp_rt_15_24": 4.5,
+    "mpy_rt_15_64": 80.4,
+    "working_age_pop_15_64": 148400.0,
+    "unemp_rt_15": 3.1,
+    "ptic_rt_15": 69.4
+  },
+  "Ballarat": {
+    "yth_unemp_rt_15_24": 15.8,
+    "mpy_rt_15_64": 72.1,
+    "working_age_pop_15_64": 106500.0,
+    "unemp_rt_15": 6.1,
+    "ptic_rt_15": 62.3
+  },
+  "Bendigo": {
+    "yth_unemp_rt_15_24": 11.8,
+    "mpy_rt_15_64": 74.9,
+    "working_age_pop_15_64": 96400.0,
+    "unemp_rt_15": 5.0,
+    "ptic_rt_15": 60.2
+  },
+  "Geelong": {
+    "yth_unemp_rt_15_24": 10.1,
+    "mpy_rt_15_64": 74.5,
+    "working_age_pop_15_64": 204800.0,
+    "unemp_rt_15": 4.4,
+    "ptic_rt_15": 64.2
+  },
+  "Hume": {
+    "yth_unemp_rt_15_24": 11.6,
+    "mpy_rt_15_64": 77.7,
+    "working_age_pop_15_64": 111000.0,
+    "unemp_rt_15": 3.3,
+    "ptic_rt_15": 66.7
+  },
+  "Latrobe - Gippsland": {
+    "yth_unemp_rt_15_24": 12.1,
+    "mpy_rt_15_64": 71.8,
+    "working_age_pop_15_64": 163000.0,
+    "unemp_rt_15": 5.8,
+    "ptic_rt_15": 56.3
+  },
+  "Melbourne - Inner": {
+    "yth_unemp_rt_15_24": 15.3,
+    "mpy_rt_15_64": 76.7,
+    "working_age_pop_15_64": 564000.0,
+    "unemp_rt_15": 6.0,
+    "ptic_rt_15": 73.7
+  },
+  "Melbourne - Inner East": {
+    "yth_unemp_rt_15_24": 14.5,
+    "mpy_rt_15_64": 72.9,
+    "working_age_pop_15_64": 275300.0,
+    "unemp_rt_15": 5.6,
+    "ptic_rt_15": 66.0
+  },
+  "Melbourne - Inner South": {
+    "yth_unemp_rt_15_24": 14.7,
+    "mpy_rt_15_64": 71.8,
+    "working_age_pop_15_64": 300400.0,
+    "unemp_rt_15": 6.0,
+    "ptic_rt_15": 65.5
+  },
+  "Melbourne - North East": {
+    "yth_unemp_rt_15_24": 14.9,
+    "mpy_rt_15_64": 73.1,
+    "working_age_pop_15_64": 369300.0,
+    "unemp_rt_15": 6.5,
+    "ptic_rt_15": 65.7
+  },
+  "Melbourne - North West": {
+    "yth_unemp_rt_15_24": 17.6,
+    "mpy_rt_15_64": 66.2,
+    "working_age_pop_15_64": 277300.0,
+    "unemp_rt_15": 9.7,
+    "ptic_rt_15": 61.7
+  },
+  "Melbourne - Outer East": {
+    "yth_unemp_rt_15_24": 12.6,
+    "mpy_rt_15_64": 73.6,
+    "working_age_pop_15_64": 340200.0,
+    "unemp_rt_15": 5.6,
+    "ptic_rt_15": 63.9
+  },
+  "Melbourne - South East": {
+    "yth_unemp_rt_15_24": 15.8,
+    "mpy_rt_15_64": 69.7,
+    "working_age_pop_15_64": 591400.0,
+    "unemp_rt_15": 7.3,
+    "ptic_rt_15": 65.2
+  },
+  "Melbourne - West": {
+    "yth_unemp_rt_15_24": 20.2,
+    "mpy_rt_15_64": 68.0,
+    "working_age_pop_15_64": 579900.0,
+    "unemp_rt_15": 8.9,
+    "ptic_rt_15": 65.1
+  },
+  "Mornington Peninsula": {
+    "yth_unemp_rt_15_24": 17.1,
+    "mpy_rt_15_64": 74.7,
+    "working_age_pop_15_64": 194700.0,
+    "unemp_rt_15": 5.5,
+    "ptic_rt_15": 64.1
+  },
+  "North West": {
+    "yth_unemp_rt_15_24": 10.3,
+    "mpy_rt_15_64": 72.6,
+    "working_age_pop_15_64": 85800.0,
+    "unemp_rt_15": 3.0,
+    "ptic_rt_15": 57.5
+  },
+  "Shepparton": {
+    "yth_unemp_rt_15_24": 17.9,
+    "mpy_rt_15_64": 69.7,
+    "working_age_pop_15_64": 80700.0,
+    "unemp_rt_15": 6.7,
+    "ptic_rt_15": 58.9
+  },
+  "Warrnambool and South West": {
+    "yth_unemp_rt_15_24": 3.9,
+    "mpy_rt_15_64": 77.1,
+    "working_age_pop_15_64": 76600.0,
+    "unemp_rt_15": 3.1,
+    "ptic_rt_15": 67.1
+  },
+  "Brisbane - East": {
+    "yth_unemp_rt_15_24": 21.2,
+    "mpy_rt_15_64": 75.3,
+    "working_age_pop_15_64": 154000.0,
+    "unemp_rt_15": 7.6,
+    "ptic_rt_15": 66.2
+  },
+  "Brisbane - North": {
+    "yth_unemp_rt_15_24": 16.1,
+    "mpy_rt_15_64": 74.8,
+    "working_age_pop_15_64": 150200.0,
+    "unemp_rt_15": 6.6,
+    "ptic_rt_15": 67.7
+  },
+  "Brisbane - South": {
+    "yth_unemp_rt_15_24": 10.3,
+    "mpy_rt_15_64": 73.1,
+    "working_age_pop_15_64": 262200.0,
+    "unemp_rt_15": 6.4,
+    "ptic_rt_15": 67.7
+  },
+  "Brisbane - West": {
+    "yth_unemp_rt_15_24": 16.9,
+    "mpy_rt_15_64": 70.7,
+    "working_age_pop_15_64": 130300.0,
+    "unemp_rt_15": 6.4,
+    "ptic_rt_15": 65.2
+  },
+  "Cairns": {
+    "yth_unemp_rt_15_24": 13.0,
+    "mpy_rt_15_64": 74.2,
+    "working_age_pop_15_64": 167200.0,
+    "unemp_rt_15": 6.1,
+    "ptic_rt_15": 67.8
+  },
+  "Darling Downs - Maranoa": {
+    "yth_unemp_rt_15_24": 16.5,
+    "mpy_rt_15_64": 73.3,
+    "working_age_pop_15_64": 78900.0,
+    "unemp_rt_15": 4.6,
+    "ptic_rt_15": 66.3
+  },
+  "Central Queensland": {
+    "yth_unemp_rt_15_24": 10.5,
+    "mpy_rt_15_64": 75.2,
+    "working_age_pop_15_64": 146300.0,
+    "unemp_rt_15": 6.2,
+    "ptic_rt_15": 69.9
+  },
+  "Gold Coast": {
+    "yth_unemp_rt_15_24": 14.5,
+    "mpy_rt_15_64": 74.8,
+    "working_age_pop_15_64": 417700.0,
+    "unemp_rt_15": 6.9,
+    "ptic_rt_15": 65.9
+  },
+  "Ipswich": {
+    "yth_unemp_rt_15_24": 18.5,
+    "mpy_rt_15_64": 66.4,
+    "working_age_pop_15_64": 249200.0,
+    "unemp_rt_15": 9.0,
+    "ptic_rt_15": 65.6
+  },
+  "Logan - Beaudesert": {
+    "yth_unemp_rt_15_24": 18.2,
+    "mpy_rt_15_64": 67.8,
+    "working_age_pop_15_64": 225100.0,
+    "unemp_rt_15": 8.3,
+    "ptic_rt_15": 62.5
+  },
+  "Mackay - Isaac - Whitsunday": {
+    "yth_unemp_rt_15_24": 12.0,
+    "mpy_rt_15_64": 78.8,
+    "working_age_pop_15_64": 117300.0,
+    "unemp_rt_15": 5.5,
+    "ptic_rt_15": 73.5
+  },
+  "Moreton Bay - North": {
+    "yth_unemp_rt_15_24": 17.7,
+    "mpy_rt_15_64": 64.9,
+    "working_age_pop_15_64": 151800.0,
+    "unemp_rt_15": 8.7,
+    "ptic_rt_15": 53.8
+  },
+  "Moreton Bay - South": {
+    "yth_unemp_rt_15_24": 17.0,
+    "mpy_rt_15_64": 74.0,
+    "working_age_pop_15_64": 143100.0,
+    "unemp_rt_15": 8.5,
+    "ptic_rt_15": 69.6
+  },
+  "Queensland - Outback": {
+    "yth_unemp_rt_15_24": 27.9,
+    "mpy_rt_15_64": 69.0,
+    "working_age_pop_15_64": 53200.0,
+    "unemp_rt_15": 11.0,
+    "ptic_rt_15": 71.6
+  },
+  "Sunshine Coast": {
+    "yth_unemp_rt_15_24": 15.8,
+    "mpy_rt_15_64": 72.6,
+    "working_age_pop_15_64": 235000.0,
+    "unemp_rt_15": 6.8,
+    "ptic_rt_15": 59.5
+  },
+  "Toowoomba": {
+    "yth_unemp_rt_15_24": 21.9,
+    "mpy_rt_15_64": 74.4,
+    "working_age_pop_15_64": 93000.0,
+    "unemp_rt_15": 6.2,
+    "ptic_rt_15": 60.9
+  },
+  "Townsville": {
+    "yth_unemp_rt_15_24": 11.0,
+    "mpy_rt_15_64": 70.2,
+    "working_age_pop_15_64": 151400.0,
+    "unemp_rt_15": 6.3,
+    "ptic_rt_15": 64.0
+  },
+  "Wide Bay": {
+    "yth_unemp_rt_15_24": 27.7,
+    "mpy_rt_15_64": 60.5,
+    "working_age_pop_15_64": 170400.0,
+    "unemp_rt_15": 11.7,
+    "ptic_rt_15": 49.9
+  },
+  "Adelaide - Central and Hills": {
+    "yth_unemp_rt_15_24": 12.9,
+    "mpy_rt_15_64": 77.3,
+    "working_age_pop_15_64": 197600.0,
+    "unemp_rt_15": 5.8,
+    "ptic_rt_15": 66.8
+  },
+  "Adelaide - North": {
+    "yth_unemp_rt_15_24": 15.7,
+    "mpy_rt_15_64": 67.4,
+    "working_age_pop_15_64": 288100.0,
+    "unemp_rt_15": 8.2,
+    "ptic_rt_15": 61.1
+  },
+  "Adelaide - South": {
+    "yth_unemp_rt_15_24": 16.8,
+    "mpy_rt_15_64": 73.9,
+    "working_age_pop_15_64": 234500.0,
+    "unemp_rt_15": 7.2,
+    "ptic_rt_15": 63.0
+  },
+  "Adelaide - West": {
+    "yth_unemp_rt_15_24": 12.2,
+    "mpy_rt_15_64": 70.4,
+    "working_age_pop_15_64": 162700.0,
+    "unemp_rt_15": 6.2,
+    "ptic_rt_15": 61.6
+  },
+  "Barossa - Yorke - Mid North": {
+    "yth_unemp_rt_15_24": 14.5,
+    "mpy_rt_15_64": 73.4,
+    "working_age_pop_15_64": 66100.0,
+    "unemp_rt_15": 5.8,
+    "ptic_rt_15": 57.8
+  },
+  "South Australia - Outback": {
+    "yth_unemp_rt_15_24": 9.2,
+    "mpy_rt_15_64": 71.0,
+    "working_age_pop_15_64": 52700.0,
+    "unemp_rt_15": 7.5,
+    "ptic_rt_15": 62.6
+  },
+  "South Australia - South East": {
+    "yth_unemp_rt_15_24": 14.2,
+    "mpy_rt_15_64": 71.9,
+    "working_age_pop_15_64": 113800.0,
+    "unemp_rt_15": 6.9,
+    "ptic_rt_15": 58.2
+  },
+  "Bunbury": {
+    "yth_unemp_rt_15_24": 13.0,
+    "mpy_rt_15_64": 75.2,
+    "working_age_pop_15_64": 118700.0,
+    "unemp_rt_15": 5.5,
+    "ptic_rt_15": 66.2
+  },
+  "Mandurah": {
+    "yth_unemp_rt_15_24": 23.7,
+    "mpy_rt_15_64": 70.8,
+    "working_age_pop_15_64": 54200.0,
+    "unemp_rt_15": 10.3,
+    "ptic_rt_15": 53.5
+  },
+  "Perth - Inner": {
+    "yth_unemp_rt_15_24": 9.1,
+    "mpy_rt_15_64": 74.3,
+    "working_age_pop_15_64": 132300.0,
+    "unemp_rt_15": 4.0,
+    "ptic_rt_15": 68.2
+  },
+  "Perth - North East": {
+    "yth_unemp_rt_15_24": 13.1,
+    "mpy_rt_15_64": 75.7,
+    "working_age_pop_15_64": 179800.0,
+    "unemp_rt_15": 6.5,
+    "ptic_rt_15": 68.3
+  },
+  "Perth - North West": {
+    "yth_unemp_rt_15_24": 14.3,
+    "mpy_rt_15_64": 75.1,
+    "working_age_pop_15_64": 383900.0,
+    "unemp_rt_15": 7.2,
+    "ptic_rt_15": 69.2
+  },
+  "Perth - South East": {
+    "yth_unemp_rt_15_24": 14.3,
+    "mpy_rt_15_64": 71.0,
+    "working_age_pop_15_64": 354600.0,
+    "unemp_rt_15": 7.7,
+    "ptic_rt_15": 68.0
+  },
+  "Perth - South West": {
+    "yth_unemp_rt_15_24": 17.2,
+    "mpy_rt_15_64": 73.8,
+    "working_age_pop_15_64": 287200.0,
+    "unemp_rt_15": 7.1,
+    "ptic_rt_15": 67.0
+  },
+  "Western Australia - Wheat Belt": {
+    "yth_unemp_rt_15_24": 8.1,
+    "mpy_rt_15_64": 77.1,
+    "working_age_pop_15_64": 85500.0,
+    "unemp_rt_15": 3.5,
+    "ptic_rt_15": 66.7
+  },
+  "Hobart": {
+    "yth_unemp_rt_15_24": 14.2,
+    "mpy_rt_15_64": 73.0,
+    "working_age_pop_15_64": 152700.0,
+    "unemp_rt_15": 6.0,
+    "ptic_rt_15": 63.3
+  },
+  "Launceston and North East": {
+    "yth_unemp_rt_15_24": 15.7,
+    "mpy_rt_15_64": 70.9,
+    "working_age_pop_15_64": 92300.0,
+    "unemp_rt_15": 6.9,
+    "ptic_rt_15": 61.1
+  },
+  "South East": {
+    "yth_unemp_rt_15_24": 20.6,
+    "mpy_rt_15_64": 68.0,
+    "working_age_pop_15_64": 24000.0,
+    "unemp_rt_15": 6.5,
+    "ptic_rt_15": 57.6
+  },
+  "West and North West": {
+    "yth_unemp_rt_15_24": 12.3,
+    "mpy_rt_15_64": 67.4,
+    "working_age_pop_15_64": 66200.0,
+    "unemp_rt_15": 6.9,
+    "ptic_rt_15": 55.2
+  },
+  "Darwin": {
+    "yth_unemp_rt_15_24": 13.1,
+    "mpy_rt_15_64": 78.3,
+    "working_age_pop_15_64": 99900.0,
+    "unemp_rt_15": 6.1,
+    "ptic_rt_15": 76.5
+  },
+  "Northern Territory - Outback": {
+    "yth_unemp_rt_15_24": 13.8,
+    "mpy_rt_15_64": 68.7,
+    "working_age_pop_15_64": 67900.0,
+    "unemp_rt_15": 4.9,
+    "ptic_rt_15": 68.5
+  }
+}

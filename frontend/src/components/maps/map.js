@@ -14,6 +14,8 @@ import { PopupCharts } from "./charts/popup-charts";
 import { makeStyles } from "@material-ui/core/styles";
 import ControlPanel from "./control-panel";
 
+const endpoint = "45.113.233.7";
+
 var SA4_MAP = require("./geojson/SA4_MAP.json");
 var VIC_MAP = require("./geojson/VIC_MAP.json");
 var QLD_MAP = require("./geojson/QLD_MAP.json");
@@ -223,7 +225,7 @@ function Map() {
     setLoading(true);
     if (path_1 === "tweets") {
       fetch(
-        `http://127.0.0.1:3001/${path_1}/${path_2}/info?scenario=${scenario}`
+        `http://${endpoint}:3001/${path_1}/${path_2}/info?scenario=${scenario}`
       )
         .then((response) => response.json())
         .then((json) => {
@@ -278,7 +280,7 @@ function Map() {
           console.log("fetch data failed", error);
         });
     } else if (path_1 === "aurin" && path_2 === "labour_summary") {
-      fetch(`http://127.0.0.1:3001/${path_1}/${path_2}/info`)
+      fetch(`http://${endpoint}:3001/${path_1}/${path_2}/info`)
         .then((response) => response.json())
         .then((json) => {
           let new_data = {};
