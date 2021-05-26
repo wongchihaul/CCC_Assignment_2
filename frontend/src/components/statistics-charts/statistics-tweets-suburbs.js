@@ -1,8 +1,8 @@
-
 import { InputLabel, MenuItem, FormControl, Select } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import { useState, useEffect } from "react";
 import ColChart from "../charts/colChart";
+const endpoint = "45.113.233.7";
 
 const useStyles = makeStyles((theme) => ({
   chartTitle: {
@@ -13,9 +13,9 @@ const useStyles = makeStyles((theme) => ({
       minWidth: 120,
     },
   },
-  chartInvisible:{
-    display:"none",
-  }
+  chartInvisible: {
+    display: "none",
+  },
 }));
 function StatisticsTweetsSuburbs() {
   const classes = useStyles();
@@ -32,7 +32,7 @@ function StatisticsTweetsSuburbs() {
     asyncFetchData("sentiment_score");
   }, [0]);
   const asyncFetchData = (_type) => {
-    fetch(`http://127.0.0.1:3001/tweets/${_type}/info?scenario=SCY`)
+    fetch(`http://${endpoint}:3001/tweets/${_type}/info?scenario=SCY`)
       .then((response) => response.json())
       .then((json) => {
         let _cityList = [];
@@ -42,12 +42,11 @@ function StatisticsTweetsSuburbs() {
           }
         }
         setCityList(_cityList);
-        if(_type === "tweet_count"){
+        if (_type === "tweet_count") {
           setData(json.rows);
-        }else{
+        } else {
           setSentimentData(json.rows);
         }
-        
       })
       .catch((error) => {
         console.log("fetch data failed", error);

@@ -8,7 +8,7 @@ import {
 } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import BarChart from "../charts/barChart";
-
+const endpoint = "45.113.233.7";
 
 const useStyles = makeStyles((theme) => ({
   chartTitle: {
@@ -26,29 +26,28 @@ function AurinPop() {
   const [cityList, setCityList] = useState([]);
   const [selectedCity, setSelectedCity] = useState("Greater Melbourne");
 
-
   useEffect(() => {
     asyncFetchData();
   }, [0]);
   const asyncFetchData = () => {
-      fetch(`http://127.0.0.1:3001/aurin/projection/info`)
+    fetch(`http://${endpoint}:3001/aurin/projection/info`)
       .then((response) => response.json())
       .then((json) => {
         let _cityList = [];
-        for (let key in json){
+        for (let key in json) {
           if (!_cityList.includes(key)) {
             _cityList.push(key);
-          }   
+          }
         }
         setCityList(_cityList);
-      })
-  }
-
-
+      });
+  };
 
   return (
     <>
-      <h3 className={classes.chartTitle}>Projected Employment Growth 2017-2022 in </h3>
+      <h3 className={classes.chartTitle}>
+        Projected Employment Growth 2017-2022 in{" "}
+      </h3>
       <FormControl
         className={classes.formControl}
         variant="outlined"
@@ -69,9 +68,9 @@ function AurinPop() {
         </Select>
       </FormControl>
       <Grid container spacing={3}>
-          <Grid item sm={12}>
-            <BarChart city={selectedCity}></BarChart>
-          </Grid>
+        <Grid item sm={12}>
+          <BarChart city={selectedCity}></BarChart>
+        </Grid>
       </Grid>
     </>
   );

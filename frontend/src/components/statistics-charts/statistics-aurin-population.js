@@ -9,6 +9,7 @@ import {
 import { makeStyles } from "@material-ui/core/styles";
 import PieChart from "../charts/pieChart";
 // import ColChart from "../charts/percentageBarChart";
+const endpoint = "45.113.233.7";
 
 const useStyles = makeStyles((theme) => ({
   chartTitle: {
@@ -27,33 +28,32 @@ function AurinPop() {
   const [data, setData] = useState();
   const [selectedCity, setSelectedCity] = useState("Melbourne");
 
-
   useEffect(() => {
     asyncFetchData();
   }, [0]);
   const asyncFetchData = () => {
-      fetch(`http://127.0.0.1:3001/aurin/labour/info`)
+    fetch(`http://${endpoint}:3001/aurin/labour/info`)
       .then((response) => response.json())
       .then((json) => {
         let _cityList = [];
-        for (let key in json){
+        for (let key in json) {
           if (!_cityList.includes(key)) {
             _cityList.push(key);
-          }   
+          }
         }
         setCityList(_cityList);
-        setData(json); 
-      })
+        setData(json);
+      });
+  };
+  function getData(_data) {
+    return _data[selectedCity];
   }
-    function getData(_data){
-        return _data[selectedCity]
-    }
-
-
 
   return (
     <>
-      <h3 className={classes.chartTitle}>The Population Distribution & Unemployment Rate in </h3>
+      <h3 className={classes.chartTitle}>
+        The Population Distribution & Unemployment Rate in{" "}
+      </h3>
       <FormControl
         className={classes.formControl}
         variant="outlined"
@@ -75,10 +75,22 @@ function AurinPop() {
       </FormControl>
       <Grid container spacing={3}>
         <Grid item xs={6}>
-            {data && (<PieChart data={getData(data).details} angleField="pop_distribution" colorField="age_grp"></PieChart>)}
+          {data && (
+            <PieChart
+              data={getData(data).details}
+              angleField="pop_distribution"
+              colorField="age_grp"
+            ></PieChart>
+          )}
         </Grid>
         <Grid item xs={6}>
-            {data && (<PieChart data={getData(data).rate} angleField="value" colorField="name"></PieChart>)}
+          {data && (
+            <PieChart
+              data={getData(data).rate}
+              angleField="value"
+              colorField="name"
+            ></PieChart>
+          )}
         </Grid>
       </Grid>
     </>

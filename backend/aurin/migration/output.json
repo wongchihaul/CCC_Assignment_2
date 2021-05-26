@@ -1,0 +1,27 @@
+{
+    "Sydney": {
+        "humanitarian": 4084,
+        "skilled": 35342,
+        "family": 22500
+    },
+    "Adelaide": {
+        "humanitarian": 963,
+        "skilled": 8674,
+        "family": 3784
+    },
+    "Brisbane": {
+        "humanitarian": 26,
+        "skilled": 463,
+        "family": 748
+    },
+    "Melbourne": {
+        "humanitarian": 3678,
+        "skilled": 35184,
+        "family": 20034
+    },
+    "Perth": {
+        "humanitarian": 241,
+        "skilled": 6266,
+        "family": 6244
+    }
+}
