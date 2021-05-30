@@ -1,18 +1,15 @@
-# CCC_Assignment_2
+# User Guide
 
-1. You should manually source your github ssh private key. E.g. `export SSHPrivateKey=~/.ssh/git_id_rsa`
-2. You should change the path of python interpreter according to your own environment.
-3. I've changed my Nectar password to plaintext in `unimelb-comp90024-2021-grp-10-openrc.sh` to make development less annoying. Feel free to use it.
+**FYI:**
 
-## TODO:
+**1. You should open `ansible/unimelb-comp90024-2021-grp-10-openrc.sh` and change *OS_USERNAME* to your MRC username**
 
-1. Continue configuring roles;
-2. Set up CouchDB clusters (Or, install CouchDB directly);
-3. Optional: Set our account envs invisible;
+**2. Make sure you are in root directory**
 
-## DONE
-
-1. Set up runtime environment for and installed dependencies for couchdb_servers and demo_servers separately.
-2. Assigned IP addresses derived from tasks to our servers to avoid hardcoding.
-3. Changed `mrc.yaml` in root directory to a more convention name `site.yaml`
-4. Moved contents in `couchdb.yaml` and `demo.yaml` to `local.yaml` because all of those contents should be used locally to set up servers.
+```bash
+cd ansible
+sh create_instance.sh
+sh deploy_couchdb.sh && sh deploy_crawler.sh
+sh git_clone.sh && sh deploy_frontend.sh && sh deploy_backend.sh
+```
+Wait a while for the set up completes. Then open browser, enter `http://45.113.233.83:3000` in address bar and you should see our website 
