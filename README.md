@@ -15,7 +15,7 @@
     </tr>
     <tr>
        <td>Twitter</td>
-       <td>About 17 million tweets</td>
+       <td>About 20 million tweets</td>
        <td>Most of tweets are from four capital city, Melbourne, Sydney, Perth and Brisbane</td>
     </tr>
 
@@ -25,6 +25,9 @@
        <td>All of aurin data is about labour market, including the unemployment rate of the australia, weekly payroll and projection of employment in the future. They are all in LGA level</td>
     </tr>
   </table>
+
+- **Twitter data schema**
+  ![](tweet_schema.png)
 
 ## Work Split
 
