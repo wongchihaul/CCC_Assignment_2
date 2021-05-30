@@ -1,8 +1,4 @@
-# CCC_Assignment_2
-
-1. You should manually source your github ssh private key. E.g. `export SSHPrivateKey=~/.ssh/git_id_rsa`
-2. You should change the path of python interpreter according to your own environment.
-3. I've changed my Nectar password to plaintext in `unimelb-comp90024-2021-grp-10-openrc.sh` to make development less annoying. Feel free to use it.
+# User Guide
 
 ## Automation Deployment
 
